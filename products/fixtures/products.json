@@ -1,0 +1,834 @@
+[
+{
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+        "name": "Everyday T-Shirt - Black",
+        "category": 3,
+        "sku": "Eve/tsh/bla",
+        "description": "Heavyweight tee, 6oz 205gsm Everyday Plain T-Shirt. Not too boxy, not too slim. Built for all seasons and occasions. Heavy-duty, \"stay-round\" neckline.",
+        "size": "M",
+        "composition": "100% Cotton",
+        "price": "20.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/Power-house-black-t-shirt-1_1024x.jpg?v=1594994903",
+        "image": "Power-house-black-t-shirt-1_1024x.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+        "name": "Everyday T-Shirt - Heather Grey",
+        "category": 3,
+        "sku": "Eve/tsh/gre",
+        "description": "Heavyweight tee, 6oz 205gsm Everyday Plain T-Shirt. Not too boxy, not too slim. Built for all seasons and occasions. Heavy-duty, \"stay-round\" neckline.",
+        "size": "M",
+        "composition": "100% Cotton",
+        "price": "20.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/Power-house-heather-grey-ash-t-shirt-1.jpg?v=1594995041",
+        "image": "Power-house-heather-grey-ash-t-shirt-1.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "name": "Everyday T-Shirt - Navy Blue",
+        "category": 3,
+        "sku": "Eve/tsh/nav",
+        "description": "Heavyweight tee, 6oz 205gsm Everyday Plain T-Shirt. Not too boxy, not too slim. Built for all seasons and occasions. Heavy-duty, \"stay-round\" neckline.",
+        "size": "M",
+        "composition": "100% Cotton",
+        "price": "20.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/Power-house-navy-blue-t-shirt-1.jpg?v=1594994969",
+        "image": "Power-house-navy-blue-t-shirt-1.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+        "name": "Everyday T-Shirt - Forest Green",
+        "category": 3,
+        "sku": "Eve/tsh/for",
+        "description": "Heavyweight tee, 6oz 205gsm Everyday Plain T-Shirt. Not too boxy, not too slim. Built for all seasons and occasions. Heavy-duty, \"stay-round\" neckline.",
+        "size": "M",
+        "composition": "100% Cotton",
+        "price": "20.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/Power-house-forest-green-t-shirt-1.jpg?v=1594995122",
+        "image": "Power-house-forest-green-t-shirt-1.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+        "name": "Long Sleeve T-Shirt - Heather Grey",
+        "category": 3,
+        "sku": "Lon/lon/gre",
+        "description": "7oz Heavyweight Plain long sleeve T-Shirt. The essential long sleeve with \"stay-round\" neckline.",
+        "size": "M",
+        "composition": "90% Cotton, 10% Polyester",
+        "price": "22.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/grey-long-sleeve-1.jpg?v=1573730960",
+        "image": "grey-long-sleeve-1.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+        "name": "Long Sleeve T-Shirt - Black",
+        "category": 3,
+        "sku": "Lon/Lon/bla",
+        "description": "7oz Heavyweight Plain long sleeve T-Shirt. The essential long sleeve with \"stay-round\" neckline.",
+        "size": "M",
+        "composition": "100% Cotton",
+        "price": "22.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/black-long-sleeve-1.jpg?v=1573730966",
+        "image": "black-long-sleeve-1.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+        "name": "Long Sleeve T-Shirt - Forest Green",
+        "category": 3,
+        "sku": "Lon/Lon/for",
+        "description": "7oz Heavyweight Plain long sleeve T-Shirt. The essential long sleeve with \"stay-round\" neckline.",
+        "size": "M",
+        "composition": "100% Cotton",
+        "price": "22.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/pro-club-long-sleeved-t-shirt-forest-green-1.jpg?v=1589480904",
+        "image": "pro-club-long-sleeved-t-shirt-forest-green-1.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+        "name": "Long Sleeve T-Shirt - Navy Blue",
+        "category": 3,
+        "sku": "Lon/Lon/nav",
+        "description": "7oz Heavyweight Plain long sleeve T-Shirt. The essential long sleeve with \"stay-round\" neckline.",
+        "size": "M",
+        "composition": "100% Cotton",
+        "price": "22.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/pro-club-long-sleeved-t-shirt-navy-blue-1.jpg?v=1589480712",
+        "image": "pro-club-long-sleeved-t-shirt-navy-blue-1.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 9,
+    "fields": {
+        "name": "Hoodie - Black",
+        "category": 4,
+        "sku": "Hoo/hoo/bla",
+        "description": "Heavyweight 12oz 400gsm hooded sweatshirt. Metal drawstring eyelets, side ribbing an essential for every wardrobe.",
+        "size": "M",
+        "composition": "100& Cotton",
+        "price": "40.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/hooded-black-crewneck-12oz-side-ribbing-power-house-1.jpg?v=1604567659",
+        "image": "hooded-black-crewneck-12oz-side-ribbing-power-house-1.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 10,
+    "fields": {
+        "name": "Hoodie - Heather Grey",
+        "category": 4,
+        "sku": "Hoo/Hoo/Hea",
+        "description": "Heavyweight 12oz 400gsm hooded sweatshirt. Metal drawstring eyelets, side ribbing an essential for every wardrobe.",
+        "size": "M",
+        "composition": "100% Cotton",
+        "price": "40.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/hooded-grey-crewneck-12oz-side-ribbing-power-house-1.jpg?v=1604567931",
+        "image": "hooded-grey-crewneck-12oz-side-ribbing-power-house-1.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 11,
+    "fields": {
+        "name": "Hoodie - Morel",
+        "category": 4,
+        "sku": "Hoo/Hoo/Mor",
+        "description": "Heavyweight 12oz 400gsm hooded sweatshirt. Metal drawstring eyelets, side ribbing an essential for every wardrobe.",
+        "size": "M",
+        "composition": "100% Cotton",
+        "price": "40.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/hooded-morel-crewneck-12oz-side-ribbing-power-house-1.jpg?v=1604567816",
+        "image": "hooded-morel-crewneck-12oz-side-ribbing-power-house-1.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 12,
+    "fields": {
+        "name": "Hoodie - Ecru Ash",
+        "category": 4,
+        "sku": "Hoo/Hoo/Ecr",
+        "description": "Heavyweight 12oz 400gsm hooded sweatshirt. Metal drawstring eyelets, side ribbing an essential for every wardrobe.",
+        "size": "M",
+        "composition": "100% Cotton",
+        "price": "40.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/hooded-natural-crewneck-12oz-side-ribbing-power-house-1.jpg?v=1604568042",
+        "image": "hooded-natural-crewneck-12oz-side-ribbing-power-house-1.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 13,
+    "fields": {
+        "name": "Crewneck - Black",
+        "category": 4,
+        "sku": "Cre/Cre/Bla",
+        "description": "Heavyweight 12oz 400gsm crewneck sweatshirt. An essential for every wardrobe.",
+        "size": "M",
+        "composition": "100% Cotton",
+        "price": "35.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/black-12oz-side-ribbing-power-house-1.jpg?v=1604569319",
+        "image": "black-12oz-side-ribbing-power-house-1.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 14,
+    "fields": {
+        "name": "Crewneck - Heather Grey",
+        "category": 4,
+        "sku": "Cre/Cre/Hea",
+        "description": "Heavyweight 12oz 400gsm crewneck sweatshirt. An essential for every wardrobe.",
+        "size": "M",
+        "composition": "100% Cotton",
+        "price": "35.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/heather-grey-12oz-side-ribbing-power-house-1.jpg?v=1604569426",
+        "image": "heather-grey-12oz-side-ribbing-power-house-1.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 15,
+    "fields": {
+        "name": "Crewneck - Ecru Ash",
+        "category": 4,
+        "sku": "Cre/Cre/Ecr",
+        "description": "Heavyweight 12oz 400gsm crewneck sweatshirt. An essential for every wardrobe.",
+        "size": "M",
+        "composition": "100% Cotton",
+        "price": "35.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/natural-crewneck-12oz-side-ribbing-power-house-1.jpg?v=1604569221",
+        "image": "natural-crewneck-12oz-side-ribbing-power-house-1.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 16,
+    "fields": {
+        "name": "Crewneck - Forest Green",
+        "category": 4,
+        "sku": "Cre/Cre/For",
+        "description": "Heavyweight 12oz 400gsm crewneck sweatshirt. An essential for every wardrobe.",
+        "size": "M",
+        "composition": "100% Cotton",
+        "price": "35.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/forest-green-12oz-side-ribbing-power-house-1.jpg?v=1604569489",
+        "image": "forest-green-12oz-side-ribbing-power-house-1.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 17,
+    "fields": {
+        "name": "Hoodie - Forest Green",
+        "category": 4,
+        "sku": "Hoo/Hoo/For",
+        "description": "Heavyweight 12oz 400gsm hooded sweatshirt. Metal drawstring eyelets, side ribbing an essential for every wardrobe.",
+        "size": "M",
+        "composition": "100% Cotton",
+        "price": "40.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/hooded-green-crewneck-12oz-side-ribbing-power-house-1.jpg?v=1604569809",
+        "image": "hooded-green-crewneck-12oz-side-ribbing-power-house-1.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 18,
+    "fields": {
+        "name": "Field Pants - Black",
+        "category": 2,
+        "sku": "Fie/Fie/Bla",
+        "description": "Heavy Field Pants, garment dyed and washed. Raised seam fatigue pockets with a relaxed fit.",
+        "size": "M",
+        "composition": "100% Cotton",
+        "price": "35.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/sowing-field-pants-black-1.jpg?v=1585818650",
+        "image": "sowing-field-pants-black-1.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 19,
+    "fields": {
+        "name": "Field Pants - Navy",
+        "category": 2,
+        "sku": "Fie/Fie/Nav",
+        "description": "Heavy Field Pants, garment dyed and washed. Raised seam fatigue pockets with a relaxed fit.",
+        "size": "M",
+        "composition": "100% Cotton",
+        "price": "35.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/navy-sowing-field-pants-1.jpg?v=1660824873",
+        "image": "navy-sowing-field-pants-1.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 20,
+    "fields": {
+        "name": "Field Pants - Olive",
+        "category": 2,
+        "sku": "Fie/Fie/Oli",
+        "description": "Heavy Field Pants, garment dyed and washed. Raised seam fatigue pockets with a relaxed fit.",
+        "size": "M",
+        "composition": "100% Cotton",
+        "price": "35.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/olive-sowing-field-pants-1.jpg?v=1614770138",
+        "image": "olive-sowing-field-pants-1.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 21,
+    "fields": {
+        "name": "Field Pants - Tan",
+        "category": 2,
+        "sku": "Fie/Fie/Tan",
+        "description": "Heavy Field Pants, garment dyed and washed. Raised seam fatigue pockets with a relaxed fit.",
+        "size": "M",
+        "composition": "100% Cotton",
+        "price": "35.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/sowing-field-pants-sand-1.jpg?v=1585820571",
+        "image": "sowing-field-pants-sand-1.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 22,
+    "fields": {
+        "name": "Field Pants - Brown",
+        "category": 2,
+        "sku": "Fie/Fie/Bro",
+        "description": "Heavy Field Pants, garment dyed and washed. Raised seam fatigue pockets with a relaxed fit.",
+        "size": "M",
+        "composition": "100% Cotton",
+        "price": "35.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/brown-sowing-field-pants-1.jpg?v=1660824901",
+        "image": "brown-sowing-field-pants-1.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 23,
+    "fields": {
+        "name": "Relaxed Fit Jeans - Washed Black",
+        "category": 2,
+        "sku": "90'/90'/Was",
+        "description": "Relaxed straight fit jeans in black. Constructed using mid-weight washed denim.",
+        "size": "M",
+        "composition": "100% Cotton",
+        "price": "50.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/Power-house-90s-jeans-black-washed-7.jpg?v=1638362334",
+        "image": "Power-house-90s-jeans-black-washed-7.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 24,
+    "fields": {
+        "name": "Relaxed Fit Jeans - Indigo",
+        "category": 2,
+        "sku": "90'/90'/Ind",
+        "description": "Relaxed straight fit jeans in indigo. Constructed using mid-weight washed denim.",
+        "size": "M",
+        "composition": "100% Cotton",
+        "price": "50.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/Power-house-90s-jeans-indigo-6.jpg?v=1638363845",
+        "image": "Power-house-90s-jeans-indigo-6.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 25,
+    "fields": {
+        "name": "Relaxed Fit Jeans - Washed Blue",
+        "category": 2,
+        "sku": "90'/90'/Was/1",
+        "description": "Relaxed straight fit jeans in washed blue. Constructed using mid-weight washed denim.",
+        "size": "M",
+        "composition": "100% Cotton",
+        "price": "50.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/Power-house-90s-jeans-blue-washed-7.jpg?v=1638362571",
+        "image": "Power-house-90s-jeans-blue-washed-7.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 26,
+    "fields": {
+        "name": "Deadstock Pants - Sand",
+        "category": 2,
+        "sku": "Dea/Dea/San",
+        "description": "Relaxed straight fit, Mid weight Deadstock Military Trousers with external hip pockets with brass buttons. Great for the outdoors",
+        "size": "M",
+        "composition": "100% Cotton Twill",
+        "price": "40.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/DEADSTOCK-P44-TROUSERS-SAND-5.jpg?v=1581004337",
+        "image": "DEADSTOCK-P44-TROUSERS-SAND-5.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 27,
+    "fields": {
+        "name": "Deadstock Pants - Olive",
+        "category": 2,
+        "sku": "Dea/Dea/Oli",
+        "description": "Relaxed straight fit, Mid weight Deadstock Military Trousers with external hip pockets with brass buttons. Great for the outdoors",
+        "size": "M",
+        "composition": "100% Cotton Twill",
+        "price": "40.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/DEADSTOCK-P44-TROUSERS-OLIVE-2.jpg?v=1581004136",
+        "image": "DEADSTOCK-P44-TROUSERS-OLIVE-2.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 28,
+    "fields": {
+        "name": "Fatigue Pocket Pants - Olive",
+        "category": 2,
+        "sku": "Fat/Fat/Oli",
+        "description": "Straight relaxed fit Ripstop Fatigue pocket trousers with contrast pockets.",
+        "size": "M",
+        "composition": "100% Ripstop Cotton",
+        "price": "65.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/ripstop-fatigue-trousers-green-1.jpg?v=1585053451",
+        "image": "ripstop-fatigue-trousers-green-1.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 29,
+    "fields": {
+        "name": "Fatigue Pocket Pants - Black",
+        "category": 2,
+        "sku": "Fat/Fat/Bla",
+        "description": "Straight relaxed fit Ripstop Fatigue pocket trousers with contrast pockets.",
+        "size": "M",
+        "composition": "100% Ripstop Cotton",
+        "price": "60.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/ripstop-fatigue-trousers-black-1.jpg?v=1585054109",
+        "image": "ripstop-fatigue-trousers-black-1.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 30,
+    "fields": {
+        "name": "Corduroy Fatigue Pants - Olive",
+        "category": 2,
+        "sku": "Cor/Cor/Oli",
+        "description": "Straight relaxed fit corduroy fatigue pocket trousers.",
+        "size": "M",
+        "composition": "100% Cotton",
+        "price": "55.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/green-fatigue-pants-1_7625ef75-82e7-4a19-9bd1-091384553ef2.jpg?v=1573241105",
+        "image": "green-fatigue-pants-1_7625ef75-82e7-4a19-9bd1-091384553ef2.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 31,
+    "fields": {
+        "name": "Corduroy Fatigue Pants - Smoke",
+        "category": 2,
+        "sku": "Cor/Cor/Smo",
+        "description": "Straight relaxed fit corduroy fatigue pocket trousers.",
+        "size": "M",
+        "composition": "100% Cotton",
+        "price": "55.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/11_47ec1f70-05d2-43d3-9f24-0ff75ce38e0d.jpg?v=1578573506",
+        "image": "11_47ec1f70-05d2-43d3-9f24-0ff75ce38e0d.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 32,
+    "fields": {
+        "name": "Cargo Pants - Stone",
+        "category": 2,
+        "sku": "Car/Car/Sto",
+        "description": "Relaxed fit cargo pants with herringbone construction, ripstop contrast detail pockets, Drawstring on waist and ankles.",
+        "size": "M",
+        "composition": "100% Cotton",
+        "price": "40.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/46_0a76561f-9981-4ec2-9424-f9edafe09cd2.jpg?v=1573239112",
+        "image": "46_0a76561f-9981-4ec2-9424-f9edafe09cd2.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 33,
+    "fields": {
+        "name": "Cargo Pants - Olive",
+        "category": 2,
+        "sku": "Car/Car/Oli",
+        "description": "Relaxed fit cargo pants with herringbone construction, ripstop contrast detail pockets, Drawstring on waist and ankles.",
+        "size": "M",
+        "composition": "100% Cotton",
+        "price": "40.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/41_f405696c-9320-4afc-8153-a293cea512bd.jpg?v=1573239120",
+        "image": "41_f405696c-9320-4afc-8153-a293cea512bd.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 34,
+    "fields": {
+        "name": "6-Panel Cap - Black",
+        "category": 6,
+        "sku": "6-P/6-P/Bla",
+        "description": "The Essential 6-Panel Cap in Black, with a Low-profile fit and a concealable nylon webbed strap. You cant go wrong.\r\n\r\nOne Size Fits All",
+        "size": "M",
+        "composition": "100% Cotton Twill",
+        "price": "20.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/power-house-6-panel-camp-cap-black-1.jpg?v=1594995501",
+        "image": "power-house-6-panel-camp-cap-black-1.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 35,
+    "fields": {
+        "name": "6-Panel Cap - Natural",
+        "category": 6,
+        "sku": "6-P/6-P/Nat",
+        "description": "The Essential 6-Panel Cap in Natural, with a Low-profile fit and a concealable nylon webbed strap. You cant go wrong.\r\n\r\nOne Size Fits All",
+        "size": "M",
+        "composition": "100% Cotton Twill",
+        "price": "20.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/power-house-6-panel-camp-cap-natural-1.jpg?v=1594996294",
+        "image": "power-house-6-panel-camp-cap-natural-1.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 36,
+    "fields": {
+        "name": "6-Panel Cap - Navy Blue",
+        "category": 6,
+        "sku": "6-P/6-P/Nav",
+        "description": "The Essential 6-Panel Cap in Navy Blue, with a Low-profile fit and a concealable nylon webbed strap. You cant go wrong.\r\n\r\nOne Size Fits All",
+        "size": "M",
+        "composition": "100% Cotton Twill",
+        "price": "20.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/power-house-6-panel-camp-cap-navy-1.jpg?v=1594996449",
+        "image": "power-house-6-panel-camp-cap-navy-1.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 37,
+    "fields": {
+        "name": "6-Panel Cap - Olive",
+        "category": 6,
+        "sku": "6-P/6-P/Oli",
+        "description": "The Essential 6-Panel Cap in Olive, with a Low-profile fit and a concealable nylon webbed strap. You cant go wrong.\r\n\r\nOne Size Fits All",
+        "size": "M",
+        "composition": "100% Cotton Twill",
+        "price": "20.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/power-house-6-panel-camp-cap-olive-1.jpg?v=1620213803",
+        "image": "power-house-6-panel-camp-cap-olive-1.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 38,
+    "fields": {
+        "name": "6-Panel Cap - Tan",
+        "category": 6,
+        "sku": "6-P/6-P/Tan",
+        "description": "The Essential 6-Panel Cap in Tan, with a Low-profile fit and a concealable nylon webbed strap. You cant go wrong.\r\n\r\nOne Size Fits All",
+        "size": "M",
+        "composition": "100% Cotton Twill",
+        "price": "20.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/power-house-6-panel-camp-cap-tan-1.jpg?v=1594996790",
+        "image": "power-house-6-panel-camp-cap-tan-1.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 39,
+    "fields": {
+        "name": "6-Panel Cap - Black/Beige",
+        "category": 6,
+        "sku": "6-P/6-P/Bla",
+        "description": "The Essential 6-Panel Cap in Black/Beige, with a Low-profile fit and a concealable nylon webbed strap. You cant go wrong.\r\n\r\nOne Size Fits All",
+        "size": "M",
+        "composition": "100% Nylon",
+        "price": "20.00",
+        "rating": null,
+        "image_url": "https://cdn.shopify.com/s/files/1/1242/5594/products/black-nylon-6panel-cap-1.jpg?v=1603193572",
+        "image": "black-nylon-6panel-cap-1.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 40,
+    "fields": {
+        "name": "Socks - Black",
+        "category": 6,
+        "sku": "Soc/Soc/Bla",
+        "description": "Simple solid colour. A versatile wardrobe essential. Suitable for business and casual wear.",
+        "size": "M",
+        "composition": "59% Cotton, 26% Acrylic, 12% Polyamide, 2% Elastane, 1% Polyester",
+        "price": "3.50",
+        "rating": null,
+        "image_url": "https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/450757/item/goods_94_450757.jpg?width=722&impolicy=quality_70&imformat=chrome",
+        "image": "socks-black.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 41,
+    "fields": {
+        "name": "Socks - Grey",
+        "category": 6,
+        "sku": "Soc/Soc/Gre",
+        "description": "Simple solid colour. A versatile wardrobe essential. Suitable for business and casual wear.",
+        "size": "M",
+        "composition": "43% Cotton, 43% Acrylic, 11% Polyamide, 2% Elastane, 1% Polyester",
+        "price": "3.50",
+        "rating": null,
+        "image_url": "https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/450757/item/goods_03_450757.jpg?width=722&impolicy=quality_70&imformat=chrome",
+        "image": "socks-grey.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 42,
+    "fields": {
+        "name": "Socks - Navy",
+        "category": 6,
+        "sku": "Soc/Soc/Nav",
+        "description": "Simple solid colour. A versatile wardrobe essential. Suitable for business and casual wear.",
+        "size": "M",
+        "composition": "59% Cotton, 26% Acrylic, 12% Polyamide, 2% Elastane, 1% Polyester",
+        "price": "3.50",
+        "rating": null,
+        "image_url": "https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/450757/item/goods_83_450757.jpg?width=722&impolicy=quality_70&imformat=chrome",
+        "image": "socks-navy.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 43,
+    "fields": {
+        "name": "Socks - Cream",
+        "category": 6,
+        "sku": "Soc/Soc/Cre",
+        "description": "Simple solid colour. A versatile wardrobe essential. Suitable for business and casual wear.",
+        "size": "M",
+        "composition": "59% Cotton, 26% Acrylic, 12% Polyamide, 2% Elastane, 1% Polyester",
+        "price": "3.50",
+        "rating": null,
+        "image_url": "https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/450757/item/goods_34_450757.jpg?width=722&impolicy=quality_70&imformat=chrome",
+        "image": "socks-cream.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 44,
+    "fields": {
+        "name": "Socks - Taupe",
+        "category": 6,
+        "sku": "Soc/Soc/Tau",
+        "description": "Simple solid colour. A versatile wardrobe essential. Suitable for business and casual wear.",
+        "size": "M",
+        "composition": "59% Cotton, 26% Acrylic, 12% Polyamide, 2% Elastane, 1% Polyester",
+        "price": "3.50",
+        "rating": null,
+        "image_url": "https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/450757/item/goods_88_450757.jpg?width=722&impolicy=quality_70&imformat=chrome",
+        "image": "socks-taupe.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 45,
+    "fields": {
+        "name": "Socks - Olive",
+        "category": 6,
+        "sku": "Soc/Soc/Oli",
+        "description": "Simple solid colour. A versatile wardrobe essential. Suitable for business and casual wear.",
+        "size": "M",
+        "composition": "59% Cotton, 26% Acrylic, 12% Polyamide, 2% Elastane, 1% Polyester",
+        "price": "3.50",
+        "rating": null,
+        "image_url": "https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/450757/item/goods_57_450757.jpg?width=722&impolicy=quality_70&imformat=chrome",
+        "image": "socks-olive.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 46,
+    "fields": {
+        "name": "Overdyed Twill Overshirt - Khaki",
+        "category": 5,
+        "sku": "Ove/Twi/Kha",
+        "description": "This overshirt is inspired by French workwear style. With a slightly boxy fit and a button-up front, this version has an overdyed appearance. Single chest pocket and two front pockets",
+        "size": "M",
+        "composition": "100% Cotton",
+        "price": "50.00",
+        "rating": null,
+        "image_url": "https://lp.arket.com/app006prod?set=key[resolve.pixelRatio],value[1]&set=key[resolve.width],value[700]&set=key[resolve.height],value[10000]&set=key[resolve.imageFit],value[containerwidth]&set=key[resolve.allowImageUpscaling],value[0]&set=key[resolve.format],value[webp]&set=key[resolve.quality],value[80]&set=ImageVersion[1],origin[dam],source[%2F21%2F81%2F21813cb964f08bf9e9f645c93970eba923dae583.jpg],type[DESCRIPTIVESTILLLIFE]&call=url[file%3A%2Fproduct%2Fdynamic.chain]",
+        "image": "twill-overshirt-khaki.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 47,
+    "fields": {
+        "name": "Overdyed Twill Overshirt - Light Beige",
+        "category": 5,
+        "sku": "Ove/Twi/Lig",
+        "description": "This overshirt is inspired by French workwear style. With a slightly boxy fit and a button-up front, this version has an overdyed appearance. Single chest pocket and two front pockets",
+        "size": "M",
+        "composition": "100% Cotton",
+        "price": "50.00",
+        "rating": null,
+        "image_url": "https://lp.arket.com/app006prod?set=key[resolve.pixelRatio],value[1]&set=key[resolve.width],value[650]&set=key[resolve.height],value[10000]&set=key[resolve.imageFit],value[containerwidth]&set=key[resolve.allowImageUpscaling],value[0]&set=key[resolve.format],value[webp]&set=key[resolve.quality],value[80]&set=ImageVersion[1],origin[dam],source[%2F89%2F7b%2F897b5c8a2933571039b6d2f706d717603614af44.jpg],type[DESCRIPTIVESTILLLIFE]&call=url[file%3A%2Fproduct%2Fdynamic.chain]",
+        "image": "twill-overshirt-light-beige.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 48,
+    "fields": {
+        "name": "Overdyed Twill Overshirt - Navy",
+        "category": 5,
+        "sku": "Ove/Twi/Nav",
+        "description": "This overshirt is inspired by French workwear style. With a slightly boxy fit and a button-up front, this version has an overdyed appearance. Single chest pocket and two front pockets",
+        "size": "M",
+        "composition": "100% Cotton",
+        "price": "50.00",
+        "rating": null,
+        "image_url": "https://lp.arket.com/app006prod?set=key[resolve.pixelRatio],value[1]&set=key[resolve.width],value[700]&set=key[resolve.height],value[10000]&set=key[resolve.imageFit],value[containerwidth]&set=key[resolve.allowImageUpscaling],value[0]&set=key[resolve.format],value[webp]&set=key[resolve.quality],value[80]&set=ImageVersion[1],origin[dam],source[%2Fc4%2F05%2Fc40563e56cb9249624a6c7864188bcc3104d721e.jpg],type[DESCRIPTIVESTILLLIFE]&call=url[file%3A%2Fproduct%2Fdynamic.chain]",
+        "image": "twill-overshirt-navy.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 49,
+    "fields": {
+        "name": "Oxford Shirt - Light Blue",
+        "category": 5,
+        "sku": "Oxf/Oxf/Lig",
+        "description": "A regular-fit shirt with a button-down collar. Sewn from an organic cotton Oxford weave. A casual style with a regular front placket and a chest pocket.",
+        "size": "M",
+        "composition": "Cotton 100%\r\nButton: Seashell 100%",
+        "price": "40.00",
+        "rating": null,
+        "image_url": "https://lp.arket.com/app006prod?set=key[resolve.pixelRatio],value[1]&set=key[resolve.width],value[700]&set=key[resolve.height],value[10000]&set=key[resolve.imageFit],value[containerwidth]&set=key[resolve.allowImageUpscaling],value[0]&set=key[resolve.format],value[webp]&set=key[resolve.quality],value[80]&set=ImageVersion[2],origin[dam],source[%2F80%2F56%2F8056ad87f9e1c683dbd1aa3bc6c96b0b09caa10b.jpg],type[DESCRIPTIVESTILLLIFE]&call=url[file%3A%2Fproduct%2Fdynamic.chain]",
+        "image": "oxford-shirt-light-blue.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 50,
+    "fields": {
+        "name": "Oxford Shirt - Navy",
+        "category": 5,
+        "sku": "Oxf/Oxf/Nav",
+        "description": "A regular-fit shirt with a button-down collar. Sewn from an organic cotton Oxford weave. A casual style with a regular front placket and a chest pocket.",
+        "size": "M",
+        "composition": "Cotton 100%\r\nButton: Seashell 100%",
+        "price": "40.00",
+        "rating": null,
+        "image_url": "https://lp.arket.com/app006prod?set=key[resolve.pixelRatio],value[1]&set=key[resolve.width],value[700]&set=key[resolve.height],value[10000]&set=key[resolve.imageFit],value[containerwidth]&set=key[resolve.allowImageUpscaling],value[0]&set=key[resolve.format],value[webp]&set=key[resolve.quality],value[80]&set=ImageVersion[3],origin[dam],source[%2F17%2F31%2F173178cd16fc88ac65fc409aea51d9e029287188.jpg],type[DESCRIPTIVESTILLLIFE]&call=url[file%3A%2Fproduct%2Fdynamic.chain]",
+        "image": "oxford-shirt-navy.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 51,
+    "fields": {
+        "name": "Oxford Shirt - White",
+        "category": 5,
+        "sku": "Oxf/Oxf/Whi",
+        "description": "A regular-fit shirt with a button-down collar. Sewn from an organic cotton Oxford weave. A casual style with a regular front placket and a chest pocket.",
+        "size": "M",
+        "composition": "Cotton 100%\r\nButton: Seashell 100%",
+        "price": "40.00",
+        "rating": null,
+        "image_url": "https://lp.arket.com/app006prod?set=key[resolve.pixelRatio],value[1]&set=key[resolve.width],value[700]&set=key[resolve.height],value[10000]&set=key[resolve.imageFit],value[containerwidth]&set=key[resolve.allowImageUpscaling],value[0]&set=key[resolve.format],value[webp]&set=key[resolve.quality],value[80]&set=ImageVersion[4],origin[dam],source[%2Fba%2F8a%2Fba8a7d5b52dcf484162146d09465521420f0420e.jpg],type[DESCRIPTIVESTILLLIFE]&call=url[file%3A%2Fproduct%2Fdynamic.chain]",
+        "image": "oxford-shirt-white.jpeg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 52,
+    "fields": {
+        "name": "Oxford Shirt - Blue Striped",
+        "category": 5,
+        "sku": "Oxf/Oxf/Blu",
+        "description": "A regular-fit shirt with a button-down collar. Sewn from an organic cotton Oxford weave. A casual style with a regular front placket and a chest pocket.",
+        "size": "M",
+        "composition": "Cotton 100%\r\nButton: Seashell 100%",
+        "price": "40.00",
+        "rating": null,
+        "image_url": "https://lp.arket.com/app006prod?set=key[resolve.pixelRatio],value[1]&set=key[resolve.width],value[700]&set=key[resolve.height],value[10000]&set=key[resolve.imageFit],value[containerwidth]&set=key[resolve.allowImageUpscaling],value[0]&set=key[resolve.format],value[webp]&set=key[resolve.quality],value[80]&set=ImageVersion[3],origin[dam],source[%2F73%2F5d%2F735d1dd964a26000af51f0d4a6adf4083fa6d797.jpg],type[DESCRIPTIVESTILLLIFE]&call=url[file%3A%2Fproduct%2Fdynamic.chain]",
+        "image": "oxford-shirt-blue-striped.jpeg"
+    }
+}
+]

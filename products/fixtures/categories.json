@@ -1,0 +1,50 @@
+[
+{
+    "model": "products.category",
+    "pk": 1,
+    "fields": {
+        "category_name": "new_arrivals",
+        "name_to_display": "New Arrivals"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 2,
+    "fields": {
+        "category_name": "trousers-jeans",
+        "name_to_display": "Trousers/Jeans"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 3,
+    "fields": {
+        "category_name": "tshirts",
+        "name_to_display": "T-shirts"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 4,
+    "fields": {
+        "category_name": "sweatshirt-hoodies",
+        "name_to_display": "Sweatshirts/Hoodies"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 5,
+    "fields": {
+        "category_name": "shirts",
+        "name_to_display": "Shirts"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 6,
+    "fields": {
+        "category_name": "accessories",
+        "name_to_display": "Accessories"
+    }
+}
+]
