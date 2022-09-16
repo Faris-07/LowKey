@@ -40,7 +40,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Lowkey</a>
+        <a class="navbar-brand" href="/">Lowkey</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -55,11 +55,11 @@
                  </a>
                  <div class="dropdown-menu border-1" aria-labelledby="clothing-link">
                     <a href="{% url 'products' %}" class="dropdown-item">New Arrivals</a>
-                    <a href="" class="dropdown-item">Shirts</a>
-                    <a href="" class="dropdown-item">Trouser/Jeans</a>
-                    <a href="" class="dropdown-item">Sweatshirts/Hoodies</a>
-                    <a href="" class="dropdown-item">T-shirts</a>
-                    <a href="" class="dropdown-item">Accessories</a>
+                    <a href="{% url 'products' %}?category=shirts" class="dropdown-item">Shirts</a>
+                    <a href="{% url 'products' %}?category=trousers-jeans" class="dropdown-item">Trouser/Jeans</a>
+                    <a href="{% url 'products' %}?category=sweatshirt-hoodies" class="dropdown-item">Sweatshirts/Hoodies</a>
+                    <a href="{% url 'products' %}?category=tshirts" class="dropdown-item">T-shirts</a>
+                    <a href="{% url 'products' %}?category=accessories" class="dropdown-item">Accessories</a>
                  </div>
               </li>
            </ul>
@@ -82,7 +82,7 @@
                  <li class="list-inline-item dropdown">
                     <a class="text-dark nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                        <div class="text-center">
-                          <div><i class="fas fa-user"></i></div>
+                          <div><i class="fas fa-user fa-sm"></i></div>
                           <p class="my-0">Account</p>
                        </div>
                     </a>
@@ -103,7 +103,7 @@
                  <li class="list-inline-item">
                     <a class="{% if grand_total %}text-info{% else %}text-dark{% endif %} nav-link" href="">
                        <div class="text-center">
-                          <div><i class="fas fa-shopping-bag"></i></div>
+                          <div><i class="fas fa-shopping-bag fa-sm"></i></div>
                           <p class="my-0">
                              {% if grand_total %}
                              ${{ grand_total|floatformat:2 }}
