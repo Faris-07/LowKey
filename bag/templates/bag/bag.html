@@ -10,4 +10,26 @@
 {% endblock %}
 
 {% block content %}
+<div class="container mb-2">
+    <div class="row">
+        <div class="col">
+            <h2 class="logo-font mt-4 mb-4">Shopping Bag</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            {% if bag_items %}
+                <div class="table-responsive rounded"></div>
+            {% else %}
+            <div class="col-12">   
+                <p>Your bag is empty.</p>
+                <a href="{% url 'products' %}" class="btn btn-dark rounded-0">
+                    <span>Continue Shopping</span>
+                </a>
+            </div>     
+            {% endif %}
+        </div>
+    </div>
+</div>
 {% endblock %}
