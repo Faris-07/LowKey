@@ -5,6 +5,7 @@ from .models import Product, Category
 
 # Create your views here.
 
+
 def AllProductsView(request):
     """ A view to show all products, including sorting and search queries """
 
