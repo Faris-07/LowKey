@@ -3,14 +3,23 @@
 
 {% block content %}
     <div class="container-fluid">
-        
+        {% if current_categories == none %}
         <div class="row">
             <div class="col text-center mt-3">
-                <h2 class="logo-font">{{ current_categories}}</h2>
+                <h2 class="logo-font">Products</h2>
+                <p>Explore our range of clothing</p>
                 <hr class="w-50 mb-1">
             </div>
         </div>
-        
+        {% else %}
+        <div class="row">
+            <div class="col text-center mt-3">
+                <h2 class="logo-font">{{ current_categories }}</h2>
+                <p>Explore our range of clothing {{ category }}</p>
+                <hr class="w-50 mb-1">
+            </div>
+        </div>
+        {% endif %}
 
         <div class="row">
             <div class="product-container col-10 offset-1">

@@ -29,18 +29,25 @@
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="product-details-container mb-5 mt-md-5">
                     <p class="mb-0 font-weight-bold">{{ product.name }}</p>
-                    <p class="mt-3">Description:</p>
+                    <p class="mt-3"><strong>Description:</strong></p>
                     <p class="mt-1">{{ product.description }}</p>
-                    <p class="mt-3">Size:</p>
+                    {% if product.category_name == accessories %}
+                    <p class="mt-3"><strong>Size:</strong></p>
+                    <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border w-50">
+                        <option value="M">One Size</option>
+                    </select>
+                    {% else %}
+                    <p class="mt-3"><strong>Size:</strong></p>
                     <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border w-50">
                         <option value="S">Small</option>
                         <option value="M">Medium</option>
                         <option value="L">Large</option>
                         <option value="XL">X-Large</option>
                     </select>
-                    <p class="mt-3">Composition:</p>
+                    {% endif %}
+                    <p class="mt-3"><strong>Composition:</strong></p>
                     <p class="mt-1">{{ product.composition }}</p>
-                    <p class="lead">£{{ product.price }}</p>
+                    <p class="lead"><strong>£{{ product.price }}</strong></p>
                 </div>
             </div>
         </div>

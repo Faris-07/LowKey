@@ -11,7 +11,7 @@
     "model": "products.category",
     "pk": 2,
     "fields": {
-        "category_name": "trousers-jeans",
+        "category_name": "trousers_jean",
         "name_to_display": "Trousers/Jeans"
     }
 },
@@ -27,7 +27,7 @@
     "model": "products.category",
     "pk": 4,
     "fields": {
-        "category_name": "sweatshirt-hoodies",
+        "category_name": "sweatshirt_hoodies",
         "name_to_display": "Sweatshirts/Hoodies"
     }
 },
