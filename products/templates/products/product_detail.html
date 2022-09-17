@@ -31,7 +31,7 @@
                     <p class="mb-0 font-weight-bold">{{ product.name }}</p>
                     <p class="mt-3"><strong>Description:</strong></p>
                     <p class="mt-1">{{ product.description }}</p>
-                    {% if product.category_name == accessories %}
+                    {% if product.category == accessories %}
                     <p class="mt-3"><strong>Size:</strong></p>
                     <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border w-50">
                         <option value="M">One Size</option>
