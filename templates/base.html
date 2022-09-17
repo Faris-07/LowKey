@@ -110,7 +110,7 @@
                           <div><i class="fas fa-shopping-bag fa-sm"></i></div>
                           <p class="my-0">
                              {% if grand_total %}
-                             ${{ grand_total|floatformat:2 }}
+                             £{{ grand_total|floatformat:2 }}
                              {% else %}
                              £0.00
                              {% endif %}
@@ -141,7 +141,7 @@
     <script>
         $(document).ready(function(){
 	        $(window).scroll(function () {
-			    if ($(this).scrollTop() > 50) {
+			    if ($(this).scrollTop() > 700) {
 				    $('#back-to-top').fadeIn();
 			    } else {
 				    $('#back-to-top').fadeOut();
