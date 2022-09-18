@@ -27,6 +27,7 @@
                                 <th scope="col">Shopping Bag Items</th>
                                 <th scope="col"></th>
                                 <th scope="col">Price</th>
+                                <th scope="col">Size</th>
                                 <th scope="col">Qty</th>
                                 <th scope="col">Subtotal</th>
                             </tr>
@@ -44,7 +45,10 @@
                                 <td class="py-3">
                                     <p class="my-0">£{{ item.product.price }}</p>
                                 </td>
-                                <td class="py-3 w-25">
+                                <td class="py-3">
+                                    <p class="my-0">{{ item.product.size }}</p>
+                                </td>
+                                <td class="py-3 w-20">
                                     <p class="my-0">{{ item.quantity }}</p>
                                 </td>
                                 <td class="py-3">
