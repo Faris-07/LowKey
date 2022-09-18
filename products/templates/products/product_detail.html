@@ -31,20 +31,22 @@
                     <p class="mb-0 font-weight-bold">{{ product.name }}</p>
                     <p class="mt-3"><strong>Description:</strong></p>
                     <p class="mt-1">{{ product.description }}</p>
-                    {% if product.category == accessories %}
+                    {% with product.size as s %}
+                    {% if s %}
                     <p class="mt-3"><strong>Size:</strong></p>
-                    <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border w-50">
-                        <option value="M">One Size</option>
+                    <select class="form-control custom-select custom-select-sm rounded-0 border w-50" name="product_size" id="id_product_size">
+                        <option value="s">Small</option>
+                        <option value="m">Medium</option>
+                        <option value="l">Large</option>
+                        <option value="xl">X-Large</option>
                     </select>
                     {% else %}
                     <p class="mt-3"><strong>Size:</strong></p>
-                    <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border w-50" name="product_size" id="id_product_size">
-                        <option value="S">Small</option>
-                        <option value="M">Medium</option>
-                        <option value="L">Large</option>
-                        <option value="XL">X-Large</option>
+                    <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border w-50">
+                        <option value="m">One Size</option>
                     </select>
                     {% endif %}
+                    {% endwith %}
                     <p class="mt-3"><strong>Composition:</strong></p>
                     <p class="mt-1">{{ product.composition }}</p>
                     <p class="lead"><strong>£{{ product.price }}</strong></p>
