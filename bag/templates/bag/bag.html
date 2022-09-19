@@ -20,10 +20,6 @@
     <div class="row">
         <div class="col">
             {% if bag_items %}
-                {{ bag_items }}
-                <br>
-                <br>
-                {{ request.session.bag }}
                 <div class="table-responsive rounded">
                     <table class="table table-sm table-borderless">
                         <thead class="text-black">
@@ -53,7 +49,39 @@
                                     <p class="my-0">{% if item.product.size %}{{ item.size|upper }}{% else %}Onesize{% endif %}</p>
                                 </td>
                                 <td class="py-3 w-20">
-                                    <p class="my-0">{{ item.quantity }}</p>
+                                    <form class="form update-form" method="POST" action="">
+                                        {% csrf_token %}
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <button class="decrement-qty btn btn-sm rounded-0" 
+                                                        data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
+                                                        <span>
+                                                            <i class="fas fa-minus fa-sm"></i>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                                <input class="form-control form-control-sm qty_input" type="number"
+                                                    name="quantity" value="{{ item.quantity }}" min="1" max="5"
+                                                    data-item_id="{{ item.item_id }}"
+                                                    id="id_qty_{{ item.item_id }}">
+                                                <div class="input-group-append">
+                                                    <button class="increment-qty btn btn-sm rounded-0"
+                                                        data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
+                                                        <span>
+                                                            <i class="fas fa-plus fa-sm"></i>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                                {% if item.product.size %}
+                                                    <input type="hidden" name="product_size" value="{{ item.size }}">
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <p class="small pr-1 mb-0 btn btn-sm update-btn text-info">update</p>
+                                    <i class="fa fa-trash btn text-danger remove-btn remove_{{ item.item_id }}"
+                                            aria-hidden="true"></i>
                                 </td>
                                 <td class="py-3">
                                     <p class="my-0">£{{ item.product.price }}</p>
