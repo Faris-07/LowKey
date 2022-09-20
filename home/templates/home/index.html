@@ -24,4 +24,64 @@
             </div>
         </div>
     </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center mt-3">
+                <h1 class="logo-font">The Essentials</h1>
+                <p>Explore our range of clothing</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="product-container col-10 offset-1">
+                <div class="row mb-5 mt-3">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mt-3">
+                            <div class="card h-100 pt-4 border-0">
+                                <a href="{% url 'products' %}?category=tshirts">
+                                    <img class="card-img-top img-fluid" src="/media/Power-house-black-t-shirt-1_1024x.jpeg" alt="">
+                                </a>
+                                <div class="card-body pb-0">
+                                    <h4 class="card-text mb-3"><strong>The Heavyweight Tee</strong></h4>
+                                    <p class="lead mb-0 text-left" style="font-size: 17.5px;">The only Tee you need</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mt-3">
+                            <div class="card h-100 pt-4 border-0">
+                                <a href="{% url 'products' %}?category=trousers_jeans">
+                                    <img class="card-img-top img-fluid" src="/media/olive-sowing-field-pants-1.jpeg" alt="">
+                                </a>
+                                <div class="card-body pb-0">
+                                    <h4 class="card-text mb-3"><strong>Trouser Focus</strong></h4>
+                                    <p class="lead mb-0 text-left" style="font-size: 17.5px;">From trousers to jeans we have them all</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mt-3">
+                            <div class="card h-100 pt-4 border-0">
+                                <a href="{% url 'products' %}?category=shirts">
+                                    <img class="card-img-top img-fluid pt-2" src="/media/oxford-shirt-light-blue.jpeg" alt="">
+                                </a>
+                                <div class="card-body pb-0">
+                                    <h4 class="card-text mb-3 pt-5"><strong>The Shirt</strong></h4>
+                                    <p class="lead mb-0 text-left" style="font-size: 17.5px;">The classic, wear it up or down</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mt-3">
+                            <div class="card h-100 pt-4 border-0">
+                                <a href="{% url 'products' %}?category=accessories">
+                                    <img class="card-img-top img-fluid" src="/media/power-house-6-panel-camp-cap-tan-1.jpeg" alt="">
+                                </a>
+                                <div class="card-body pb-0">
+                                    <h4 class="card-text mb-3"><strong>Accessories</strong></h4>
+                                    <p class="lead mb-0 text-left" style="font-size: 17.5px;">Caps, socks and more...</p>
+                                </div>
+                            </div>
+                        </div>     
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
 {% endblock %}
