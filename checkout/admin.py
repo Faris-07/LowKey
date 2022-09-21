@@ -18,11 +18,12 @@ class OrderAdmin(admin.ModelAdmin):
 
     fields = ('order_number', 'order_date', 'full_name', 'email', 'phone_number',
               'street_address1', 'street_address2', 'town_city', 'county',
-              'country', 'postcode', 'order_date', 'delivery_cost', 'order_total',
+              'country', 'postcode', 'delivery_cost', 'order_total',
               'grand_total',)
 
     list_display = ('order_number', 'order_date', 'full_name', 'phone_number',
                     'order_total', 'delivery_cost',
                     'grand_total',)
 
-admin.site.register(Order, OrderAdmin)
+    # displays most recent orders on the top
+    ordering = ('-order_date',)
