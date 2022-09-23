@@ -12,10 +12,10 @@
                 <hr class="w-50 mb-1">
             </div>
         </div>
-        {% elif current_categories.last == tshirts %}
+        {% elif current_categories.last == 'tshirts' %}
         <div class="row">
             <div class="col text-center mt-3">
-                <h2 class="logo-font">T-shirts</h2>
+                <h2 class="logo-font">{{ current_categories.last.name_to_display }}</h2>
                 <p>Explore our range of clothing</p>
                 <hr class="w-50 mb-1">
             </div>
