@@ -15,12 +15,12 @@ class UserProfile(models.Model):
     full_name = models.CharField(max_length=50, null=False, blank=False)
     email = models.EmailField(max_length=254, null=False, blank=False)
     default_phone_number = models.CharField(max_length=20, null=True, blank=True)
-    default_country = CountryField(blank_label='Country *', null=True, blank=True)
-    default_postcode = models.CharField(max_length=20, null=True, blank=True)
-    default_town_city = models.CharField(max_length=40, null=True, blank=True)
     default_street_address1 = models.CharField(max_length=80, null=True, blank=True)
     default_street_address2 = models.CharField(max_length=80, null=True, blank=True)
+    default_postcode = models.CharField(max_length=20, null=True, blank=True)
+    default_town_city = models.CharField(max_length=40, null=True, blank=True)
     default_county = models.CharField(max_length=80, null=True, blank=True)
+    default_country = CountryField(blank_label='Country *', null=True, blank=True)
     registration_date = models.DateField(auto_now_add=True)
 
     def __str__(self):
