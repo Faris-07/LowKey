@@ -32,6 +32,7 @@
                     <p class="mt-3"><strong>Description:</strong></p>
                     <p class="mt-1">{{ product.description }}</p>
                     <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
+                    {% csrf_token %}    
                     {% with product.size as s %}
                     {% if s %}
                     <p class="mt-3"><strong>Size:</strong></p>
@@ -47,8 +48,10 @@
                         <option value="m">One Size</option>
                     </select>
                     {% endif %}
-                    {% endwith %}
-                        {% csrf_token %}
+                    {% endwith %} 
+                    <p class="mt-3"><strong>Composition:</strong></p>
+                    <p class="mt-1">{{ product.composition }}</p>
+                    <p class="lead"><strong>£{{ product.price }}</strong></p>
                         <div class="form-row">
                             <div class="col-12">
                                 <p class="mt-3"><strong>Quantity:</strong></p>
@@ -64,9 +67,12 @@
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
                     </form>
-                    <p class="mt-3"><strong>Composition:</strong></p>
-                    <p class="mt-1">{{ product.composition }}</p>
-                    <p class="lead"><strong>£{{ product.price }}</strong></p>   
+                    {% if request.user.is_superuser %}
+                        <div class="text-center mt-4">
+                            <a class="btn btn-danger rounded-0 p-2 mt-2 mr-2" href="{% url 'delete_product' product.id %}">Delete</a>
+                            <a class="btn btn-dark rounded-0 p-2 w-30 mt-2" href="{% url 'edit_product' product.id %}">Edit Product</a>
+                        </div>
+                    {% endif %}   
                 </div>
             </div>
         </div>
