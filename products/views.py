@@ -93,7 +93,7 @@ def EditProduct(request, product_id):
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES, instance=product)
         if form.is_valid():
-            form.save()
+            product = form.save()
             messages.success(request, f"Success, {product.name} has been updated.")
             return redirect(reverse('product_detail', args=[product.id]))
         else:
@@ -115,4 +115,4 @@ def delete_product(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
     messages.success(request, f'{product.name} has been deleted')
-    return redirect(reverse('products')
+    return redirect(reverse('products'))
