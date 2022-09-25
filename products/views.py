@@ -68,7 +68,7 @@ def ProductDetail(request, product_id):
 
     return render(request, 'products/product_detail.html', context)
 
-def add_product(request):
+def AddProduct(request):
     """ Add a product to the store """
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
@@ -87,7 +87,7 @@ def add_product(request):
 
     return render(request, template, context)
 
-def edit_product(request, product_id):
+def EditProduct(request, product_id):
     """ Edit a product in the store """
     product = get_object_or_404(Product, pk=product_id)
     if request.method == 'POST':
