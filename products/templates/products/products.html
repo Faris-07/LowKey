@@ -4,7 +4,7 @@
 {% block content %}
     <div class="container-fluid">
         {% for category in current_categories %}
-        {% if current_categories.last == none %}
+        {% if category == none %}
         <div class="row">
             <div class="col text-center mt-3">
                 <h2 class="logo-font">Products</h2>
@@ -15,7 +15,7 @@
         {% elif current_categories.last == 'tshirts' %}
         <div class="row">
             <div class="col text-center mt-3">
-                <h2 class="logo-font">{{ current_categories.last.name_to_display }}</h2>
+                <h2 class="logo-font">{{ category.name_to_display }}</h2>
                 <p>Explore our range of clothing</p>
                 <hr class="w-50 mb-1">
             </div>
@@ -23,7 +23,7 @@
         {% elif current_categories.last == trousers_jeans %}
         <div class="row">
             <div class="col text-center mt-3">
-                <h2 class="logo-font">{{ category.name_to_display }}</h2>
+                <h2 class="logo-font">Trouser & Jeans</h2>
                 <p>Explore our range of clothing</p>
                 <hr class="w-50 mb-1">
             </div>
@@ -31,7 +31,7 @@
         {% else %}
         <div class="row">
             <div class="col text-center mt-3">
-                <h2 class="logo-font">{{ current_categories.last }}</h2>
+                <h2 class="logo-font">{{ category.name_to_display }}</h2>
                 <p>Explore our range of clothing {{ category.name_to_display }}</p>
                 <hr class="w-50 mb-1">
             </div>
