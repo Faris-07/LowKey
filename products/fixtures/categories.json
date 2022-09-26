@@ -12,7 +12,7 @@
     "pk": 2,
     "fields": {
         "category_name": "trousers_jean",
-        "name_to_display": "Trousers/Jeans"
+        "name_to_display": "Trousers & Jeans"
     }
 },
 {
@@ -28,7 +28,7 @@
     "pk": 4,
     "fields": {
         "category_name": "sweatshirt_hoodies",
-        "name_to_display": "Sweatshirts/Hoodies"
+        "name_to_display": "Sweatshirts & Hoodies"
     }
 },
 {
