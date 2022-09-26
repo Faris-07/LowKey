@@ -6,7 +6,7 @@
         {% for category in current_categories %}
         {% if current_categories.last == none %}
         <div class="row">
-            <div class="col text-center mt-3">
+            <div class="col text-center">
                 <h2 class="logo-font">Products</h2>
                 <p>Explore our range of clothing</p>
                 <hr class="w-50 mb-1">
@@ -14,7 +14,7 @@
         </div>
         {% elif current_categories.last == 'tshirts' %}
         <div class="row">
-            <div class="col text-center mt-3">
+            <div class="col text-center">
                 <h2 class="logo-font">{{ category.name_to_display }}</h2>
                 <p>Explore our range of clothing</p>
                 <hr class="w-50 mb-1">
@@ -22,7 +22,7 @@
         </div>
         {% elif current_categories.last == trousers_jeans %}
         <div class="row">
-            <div class="col text-center mt-3">
+            <div class="col text-center">
                 <h2 class="logo-font">Trouser & Jeans</h2>
                 <p>Explore our range of clothing</p>
                 <hr class="w-50 mb-1">
@@ -30,7 +30,7 @@
         </div>
         {% else %}
         <div class="row">
-            <div class="col text-center mt-3">
+            <div class="col text-center">
                 <h2 class="logo-font">{{ category.name_to_display }}</h2>
                 <p>Explore our range of {{ category.name_to_display }}</p>
                 <hr class="w-50 mb-1">

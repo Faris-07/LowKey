@@ -27,6 +27,10 @@ body {
     width: fit-content;
 }
 
+.navbar .nav-item {
+    margin-left: 25px;
+}
+
 .back-to-top {
     position: fixed;
     bottom: 25px;
