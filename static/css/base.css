@@ -102,6 +102,22 @@ body {
 	color: #999;
 }
 
+.bag {
+    font-size: 12px;
+    vertical-align: top;
+    margin-left: -10px;
+}
+
+.badge {
+    border-radius: 0;
+    padding: .375rem .5625rem;
+    font-weight: normal
+}
+
+.badge.badge-pill {
+    border-radius: 10rem;
+}
+
 .trigger-btn {
 	display: inline-block;
 	margin: 100px auto;
