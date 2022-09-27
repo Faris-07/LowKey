@@ -153,7 +153,6 @@ def checkout_success(request, order_number):
             profile_data = {
                 'full_name': profile.full_name,
                 'email': profile.email,
-                'phone_number': profile.phone_number,
                 'default_phone_number': order.phone_number,
                 'default_street_address1': order.street_address1,
                 'default_street_address2': order.street_address2,
