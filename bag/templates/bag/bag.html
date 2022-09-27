@@ -14,16 +14,16 @@
 <div class="container mb-2">
     <div class="row">
         <div class="col">
-            <h2 class="logo-font mt-4 mb-4">Shopping Bag</h2>
+            <h2 class="logo-font mb-4">Shopping Bag</h2>
         </div>
     </div>
 
-    <div class="row">
+    <div class="row d-none d-md-block d-lg-none d-none d-lg-block d-xl-none d-none d-xl-block">
         <div class="col">
             {% if bag_items %}
                 <div class="table-responsive rounded">
                     <table class="table table-sm table-borderless">
-                        <thead class="text-black">
+                        <thead class="text-dark">
                             <tr>
                                 <th scope="col">Shopping Bag Items</th>
                                 <th scope="col"></th>
@@ -126,11 +126,12 @@
     </div>
 </div>
 
-<div class="row d-block d-sm-none d-none d-sm-block d-md-none d-none d-md-block d-lg-none">
+<div class="row d-block d-sm-none d-none d-sm-block d-md-none">
     <div class="product-container col-12">
         {% if bag_items %}
         <div class="row mb-2"></div>
         <div class="row">
+            <div class="col-10 offset-1"><p class="text-dark font-weight-bold">Shopping Bag Items</p></div>
             {% for item in bag_items %}
                 <div class="col-10 offset-1">
                     <div class="card h-100 pt-4 border-0">
@@ -145,12 +146,12 @@
                         <div class="card-footer bg-white pt-0 border-0 text-left">
                             <div class="row">
                                 <div class="col">
-                                    <p class="lead mb-0 text-left">£{{ item.product.price }}</p>
-                                    <p class="lead mb-0 text-left">Size: {% if item.product.size %}{{ item.size|upper }}{% else %}Onesize{% endif %}</p>
+                                    <p class="lead mb-0 text-left mt-2">£{{ item.product.price }}</p>
+                                    <p class="lead mb-0 text-left mt-2">Size: {% if item.product.size %}{{ item.size|upper }}{% else %}Onesize{% endif %}</p>
                                     {% if item.product.size %}
                                         <input type="hidden" name="product_size" value="{{ item.size }}">
                                     {% endif %}
-                                    <form class="form update-form" method="POST" action="">
+                                    <form class="form update-form mt-2" method="POST" action="">
                                         {% csrf_token %}
                                         <div class="form-group">
                                             <div class="input-group">
@@ -182,7 +183,6 @@
                                     </form>
                                     <a class="update-link text-info"><small>Update</small></a>
                                     <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small>Remove</small></a>
-                                    <p class="my-0">£{{ item.product.price | calc_subtotal:item.quantity  }}</p>
                                 </div>
                             </div>
                         </div>
@@ -190,17 +190,17 @@
                 </div>
                 
             {% endfor %}
-                <div class="col-12 justify-content-center">
+                <div class="col-10 offset-1 justify-content-center mt-4">
                     <h6><strong>Sub Total: £{{ total|floatformat:2 }}</strong></h6>
                     <h6>Delivery: £{{ delivery|floatformat:2 }}</h6>
-                    <h4 class="mt-4"><strong>Total: £{{ grand_total|floatformat:2 }}</strong></h4>
+                    <h4 class="mt-2"><strong>Total: £{{ grand_total|floatformat:2 }}</strong></h4>
                 </div>
-                <div class="col-6">
+                <div class="col-10 offset-1 mt-2">
                     <a href="{% url 'products' %}" class="btn btn-dark rounded-0 justify-content-start">
-                        <span>Continue Shopping</span>
+                        <span>Back</span>
                     </a>
-                    <a href="{% url 'checkout' %}" class="btn btn-dark rounded-0 justify-content-end">
-                        <span class="text-uppercase">Proceed to checkout</span>
+                    <a href="{% url 'checkout' %}" class="btn btn-dark rounded-0 justify-content-end float-right">
+                        <span class="text-uppercase">Checkout</span>
                         <span class="icon">
                             <i class="fas fa-lock"></i>
                         </span>
