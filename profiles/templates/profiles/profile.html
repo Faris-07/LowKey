@@ -53,12 +53,13 @@
                                     <td>{{ order.order_date }}</td>
                                     <td>
                                         <ul class="list-unstyled">
-                                            {% for item in order.lineitems.all %}
+                                            {% for item in order.orderitems.all %}
                                                 <li class="small">
-                                                    {% if item.product.has_sizes %}
-                                                        Size {{ item.product.size|upper }}
-                                                    {% endif %}{{ item.product.name }} x{{ item.quantity }}
-                                                </li>
+                                                    {% if item.product.size %}
+                                                        Size {{ item.product_size|upper }}
+                                                    {% endif %}
+                                                </li>    
+                                                <li class="small">{{ item.product.name }} x {{ item.quantity }}</li>
                                             {% endfor %}
                                         </ul>
                                     </td>
@@ -70,11 +71,11 @@
                 </div>
             </div>
 
-    <div class="row mt-2">
-        <div class="col-12">
-            <h4>Wishlist:</h4>
-        </div>
+<div class="row mt-2">
+    <div class="col-12">
+        <h4>Wishlist:</h4>
     </div>
+</div>
 {% if products %}
 <div class="row">
     <div class="product-container col-12">
@@ -84,6 +85,9 @@
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                     <div class="card h-100 pt-4 border-0">
                         {% if product.image %}
+                        <button type="submit" value="{{ product.id }}" class="btn-like">
+                            <i class="fas fa-heart"></i>
+                        </button>
                         <a href="{% url 'product_detail' product.id %}">
                             <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                         </a>
@@ -114,6 +118,4 @@
     <a class="btn btn-dark border-0 text-center" href="{% url 'products' %}">Add Products To Wishlist</a>
 </div>
 {% endif %}
-        </div>
-        </div>
 {% endblock %}
