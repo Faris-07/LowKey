@@ -62,18 +62,33 @@ def AllProductsView(request):
 def ProductDetail(request, product_id):
     """ A view to show individual product details """
 
-    product = get_object_or_404(Product, pk=product_id)
+    if request.POST:
+        product = get_object_or_404(Product, pk=product_id)
+        if product.likes.filter(id=request.user.id).exists():
+            product.likes.remove(request.user)
+            messages.success(
+                request, f'Removed {product.name} from your wishlist'
+                )
+        else:
+            product.likes.add(request.user)
+            messages.success(
+                request, f'Added {product.name} to your wishlist'
+                )
+        return HttpResponseRedirect(reverse('product_detail', args=[product.id]))
+    else:
+        product = get_object_or_404(Product, pk=product_id)
+        liked = False
+        if product.likes.filter(id=request.user.id).exists():
+            liked = True
+        
+        template = 'products/wishlist.html'
+        context = {
+            'product': product,
+            'liked': liked,
+        }
 
-    liked = False
-    if product.likes.filter(id=request.user.id).exists():
-        liked = True
+        return render(request, 'products/product_detail.html', context)
 
-    context = {
-        'product': product,
-        'liked': liked,
-    }
-
-    return render(request, 'products/product_detail.html', context)
 
 def wishlist_product(request, product_id):
     product = get_object_or_404(Product, pk=product_id)

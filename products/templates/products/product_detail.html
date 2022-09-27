@@ -17,6 +17,25 @@
             <a href="{{ product.image.url }}" target="_blank">
             <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
             </a>
+            {% if user.is_authenticated %}
+                <form class="d-inline" action="{% url 'product_detail' product.id %}" method="POST">
+                    {% csrf_token %}
+                    {% if liked %}
+                    <button type="submit" value="{{ product.id }}" class="btn-like">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    {% else %}
+                    <button type="submit" value="{{ product.id }}" class="btn-like">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    {% endif %}
+                </form>
+                {% else %}
+                <!-- Button to trigger account required modal -->
+                <button type="button" class="btn-like">
+                    <i class="far fa-heart"></i>
+                </button>
+            {% endif %}
             {% else %}
             <a href="">
             <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
