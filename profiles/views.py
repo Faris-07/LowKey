@@ -25,7 +25,7 @@ def profile(request):
             messages.error(request, 'Update failed. Please ensure the form is valid.')
     else:
         form = UserProfileForm(instance=profile)
-    orders = profile.orders.all()
+    orders = profile.orders.all().order_by('-order_date')
 
     template = 'profiles/profile.html'
     context = {
@@ -39,6 +39,7 @@ def profile(request):
 
 def user_orders(request, order_number):
     order = get_object_or_404(Order, order_number=order_number)
+    order_date = order.date.strftime("%d-%m-%Y %H:%M:%S")
 
     messages.info(request, (
         f'This is a past confirmation for order number {order_number}. '
