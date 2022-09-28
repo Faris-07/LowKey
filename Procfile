@@ -1,1 +1,1 @@
-web: gunicorn lowkey-menswear.wsgi:application
+web: gunicorn project5.wsgi:application
