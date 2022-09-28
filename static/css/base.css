@@ -3,10 +3,8 @@ html {
 }
 
 body {
-    background: url() no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 164px);
-    color: #555;
+    min-height: 100vh;
+    overflow-x: hidden;
     font-family: 'Noto Sans', sans-serif;
 }
 
@@ -157,9 +155,15 @@ body {
 
 .btn-like {
     position: absolute;
-    top: 35px;
+    top: 37px;
     right: 15px;
+    background-color: transparent;
     color: #dc3545;
+    border: hidden;
+}
+
+.jumbotron {
+    background-color: transparent;
 }
 
 @media only screen and (max-width: 800px) {

@@ -8,19 +8,18 @@
     </div>
 {% endblock %}
 {% block content %}
-<div class="col-12 mb-2">
+<div class="col-12 mb-2 d-none d-md-block d-lg-none d-none d-lg-block d-xl-none d-none d-xl-block">
     <div id="carouselExampleSlidesOnly" class="carousel slide h-100" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img class="w-100 h-100" src="/media/new-arrival-image.jpg" alt="First slide">
-            <div class="carousel-caption"><h1 class="text-light">
+            <div class="carousel-caption jumbotron"><h1 class="text-light">
                 New Arrivals
             </h1>
-            <div class="my-2">
-                <h4>
-                <a href="{% url 'products' %}" class="btn btn-lg text-light text-uppercase py-3">Shop Now</a>
-                </h4>
-            </div></div>
+            <h4>
+            <a href="{% url 'products' %}" class="btn btn-lg text-light text-uppercase mt-2">Shop Now</a>
+            </h4>
+            </div>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src="/media/new-arrival-image.jpg" alt="Second slide">
@@ -30,11 +29,55 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="col-12 mb-2 d-block d-sm-none d-none d-sm-block d-md-none">
+        <div id="carouselExampleSlidesOnly" class="carousel slide h-100" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100 overflow-hidden" src="/media/new-arrivals-image-sm.jpg" alt="First slide">
+                <div class="carousel-caption jumbotron"><h3 class="text-light">
+                    New Arrivals
+                </h3>
+                <h4>
+                <a href="{% url 'products' %}" class="btn btn-lg text-light mt-2">Shop Now</a>
+                </h4>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 overflow-hidden" src="/media/tshirt-slide-2.jpeg" alt="Second slide">
+                <div class="carousel-caption jumbotron"><h3 class="text-light">
+                    T-shirts
+                </h3>
+                <h4>
+                <a href="{% url 'products' %}" class="btn btn-lg text-light mt-2">Shop Now</a>
+                </h4>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 overflow-hidden" src="/media/accessories-slider-3-sm.jpg" alt="Third slide">
+                <div class="carousel-caption jumbotron"><h3 class="text-light">
+                    Accessories
+                </h3>
+                <h4>
+                <a href="{% url 'products' %}?category=accessories" class="btn btn-lg text-light mt-2">Shop Now</a>
+                </h4>
+                </div>
+              </div>
+            </div>
+        </div>
     </div>  
+
     <div class="container-fluid">
-        <div class="row">
+        <div class="row d-none d-md-block d-lg-none d-none d-lg-block d-xl-none d-none d-xl-block">
             <div class="col text-center mt-3">
                 <h1 class="">The Essentials</h1>
+                <p>Explore our range of clothing</p>
+            </div>
+        </div>
+        <div class="row d-block d-sm-none d-none d-sm-block d-md-none">
+            <div class="col text-center mt-3">
+                <h3 class="">The Essentials</h3>
                 <p>Explore our range of clothing</p>
             </div>
         </div>

@@ -20,6 +20,53 @@
                 <h2 class="logo-font mb-4">{{ user }}'s Profile</h2>
             </div>
         </div>
+        <div class="row mt-2">
+            <div class="col-12">
+                <h4>Wishlist:</h4>
+            </div>
+        </div>
+        {% if products %}
+        <div class="row mb-5">
+            <div class="product-container col-12">
+                <div class="row mb-2"></div>
+                <div class="row">
+                    {% for product in products %}
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card h-100 pt-4 border-0">
+                                {% if product.image %}
+                                <button type="submit" value="{{ product.id }}" class="btn-like">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <a href="{% url 'product_detail' product.id %}">
+                                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                </a>
+                                {% else %}
+                                <a href="{% url 'product_detail' product.id %}">
+                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                                </a>
+                                {% endif %}
+                                <div class="card-body pb-0">
+                                    <p class="mb-0">{{ product.name }}</p>
+                                </div>
+                                <div class="card-footer bg-white pt-0 border-0 text-left">
+                                    <div class="row">
+                                        <div class="col">
+                                            <p class="lead mb-0 text-left">£{{ product.price }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        {% else %}
+        <div class="col-12 mb-5">
+            <p class="text-center">You dont have any products in you Wishlist</p>
+            <a class="btn btn-dark border-0 text-center" href="{% url 'products' %}">Add Products To Wishlist</a>
+        </div>
+        {% endif %}
         <div class="row">
             <div class="col-12 col-lg-6">
                 <p class="text-muted">Default Delivery Information</p>
@@ -31,6 +78,7 @@
             </div>
             <div class="col-12 col-lg-6">
                 <p class="text-muted">Order History</p>
+                {% if orders %}
                 <div class="order-history table-responsive">
                     <table class="table table-sm table-borderless">
                         <thead>
@@ -69,53 +117,14 @@
                         </tbody>
                     </table>
                 </div>
-            </div>
-
-<div class="row mt-2">
-    <div class="col-12">
-        <h4>Wishlist:</h4>
-    </div>
-</div>
-{% if products %}
-<div class="row">
-    <div class="product-container col-12">
-        <div class="row mb-2"></div>
-        <div class="row">
-            {% for product in products %}
-                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                    <div class="card h-100 pt-4 border-0">
-                        {% if product.image %}
-                        <button type="submit" value="{{ product.id }}" class="btn-like">
-                            <i class="fas fa-heart"></i>
-                        </button>
-                        <a href="{% url 'product_detail' product.id %}">
-                            <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
-                        </a>
-                        {% else %}
-                        <a href="{% url 'product_detail' product.id %}">
-                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
-                        </a>
-                        {% endif %}
-                        <div class="card-body pb-0">
-                            <p class="mb-0">{{ product.name }}</p>
-                        </div>
-                        <div class="card-footer bg-white pt-0 border-0 text-left">
-                            <div class="row">
-                                <div class="col">
-                                    <p class="lead mb-0 text-left">£{{ product.price }}</p>
-                                </div>
-                            </div>
-                        </div>
+                {% else %}
+                    <p class="text-center pt-4">Looks like you dont have any orders yet</p>
+                    <p class="text-center">Browse our complete range here.</p>
+                    <div class="text-center">
+                    <a href="{% url 'products' %}" class="btn btn-dark border-0 text-center">Shop Now!</a>
                     </div>
-                </div>
-            {% endfor %}
+                {% endif %}
+            </div>
         </div>
     </div>
-</div>
-{% else %}
-<div class="col-12 mb-5">
-    <p class="text-center">You dont have any products in you Wishlist</p>
-    <a class="btn btn-dark border-0 text-center" href="{% url 'products' %}">Add Products To Wishlist</a>
-</div>
-{% endif %}
 {% endblock %}
