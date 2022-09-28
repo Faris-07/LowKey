@@ -3,11 +3,14 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 
+
 class Category(models.Model):
     """ category model """
+
     class Meta:
         """ override plural name """
-        verbose_name_plural = 'Categories'
+
+        verbose_name_plural = "Categories"
 
     category_name = models.CharField(max_length=50)
     name_to_display = models.CharField(max_length=254, null=True, blank=True)
@@ -28,22 +31,24 @@ product_size_choices = (
     ("XL", "XL"),
 )
 
+
 class Product(models.Model):
+    """ Product model """
     name = models.CharField(max_length=254)
-    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
+    category = models.ForeignKey(
+        "Category", null=True, blank=True, on_delete=models.SET_NULL
+    )
     sku = models.CharField(max_length=254, null=True, blank=True)
     description = models.TextField()
     size = models.BooleanField(default=False, null=True, blank=True)
     composition = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
-    rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
+    rating = models.DecimalField(max_digits=6, decimal_places=2, null=True,
+                                 blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
-    likes = models.ManyToManyField(
-        User,
-        related_name='product_likes',
-        blank=True
-        )
+    likes = models.ManyToManyField(User, related_name="product_likes",
+                                   blank=True)
 
     def __str__(self):
         return self.name
