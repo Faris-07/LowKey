@@ -3,7 +3,9 @@ from .models import UserProfile
 
 
 class UserProfileForm(forms.ModelForm):
+    """ User's profile form """
     class Meta:
+        """ Retrieves fields from UserProfile model """
         model = UserProfile
         exclude = ('user',)
 
@@ -30,4 +32,3 @@ class UserProfileForm(forms.ModelForm):
             self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].label = False
             self.fields[field].widget.attrs['class'] = 'w-100 p-1 mb-2 border-black rounded-0'
-            
