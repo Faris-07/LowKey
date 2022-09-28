@@ -25,12 +25,15 @@ class Order(models.Model):
     postcode = models.CharField(max_length=20, null=False, blank=False)
     country = CountryField(blank_label='Country *', null=False, blank=False)
     order_date = models.DateTimeField(auto_now_add=True)
-    delivery_cost = models.DecimalField(max_digits=6, decimal_places=2, null=False, default=0)
+    delivery_cost = models.DecimalField(max_digits=6, decimal_places=2,
+                                        null=False, default=0)
     order_total = models.DecimalField(
         max_digits=10, decimal_places=2, null=False, default=0)
-    grand_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
+    grand_total = models.DecimalField(max_digits=10, decimal_places=2,
+                                      null=False, default=0)
     original_bag = models.TextField(null=False, blank=False, default='')
-    stripe_pid = models.CharField(max_length=254, null=False, blank=False, default='')
+    stripe_pid = models.CharField(max_length=254, null=False, blank=False,
+                                  default='')
 
     def _generate_order_number(self):
         """ generate a random, unique order number """
@@ -49,8 +52,8 @@ class Order(models.Model):
 
     def full_address(self):
         """ return address """
-        return (f"{self.street_address1}, {self.street_address2}, {self.town_city}, "
-                f"{self.county}, {self.postcode}")
+        return (f"{self.street_address1}, {self.street_address2}, "
+                f"{self.town_city}, {self.county}, {self.postcode}")
 
     def save(self, *args, **kwargs):
         """ if the order doesn't have an order number, create one """
