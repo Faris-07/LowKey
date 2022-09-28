@@ -1,0 +1,1 @@
+web: gunicorn lowkey-menswear.wsgi:application
