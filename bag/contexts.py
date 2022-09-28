@@ -34,7 +34,7 @@ def bag_contents(request):
                     'size': item_size,
                 })
 
-    delivery = total * Decimal(settings.STANDARD_DELIVERY_PRICE / 100)
+    delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
 
     grand_total = delivery + total
     

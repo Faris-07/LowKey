@@ -1,214 +1,213 @@
 {% load static %}
-
 <!doctype html>
 <html lang="en">
-  <head>
-
-   {% block meta %}
+    <head>
+        {% block meta %}
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    {% endblock %}
-
-    {% block extra_meta %}
-    {% endblock %}
-
-    {% block corecss %}
+        {% endblock %}
+        {% block extra_meta %}
+        {% endblock %}
+        {% block corecss %}
+        <!-- Bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&display=swap" rel="stylesheet">
+        <!-- CSS styling -->
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="180x180" href="../media/favicon/favicon_io/apple-touch-icon.png">
-         <link rel="icon" type="image/png" sizes="32x32" href="../media/favicon/favicon_io/favicon-32x32.png">
-         <link rel="icon" type="image/png" sizes="16x16" href="../media/favicon/favicon_io/favicon-16x16.png">
-         <link rel="manifest" href="/site.webmanifest">
-    {% endblock %}
-
-    {% block extra_css %}
-    {% endblock %}
-
-    {% block corejs %}
+        <link rel="icon" type="image/png" sizes="32x32" href="../media/favicon/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../media/favicon/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        {% endblock %}
+        {% block extra_css %}
+        {% endblock %}
+        {% block corejs %}
+        <!-- Fontawesome Icons CDN-->
         <script src="https://kit.fontawesome.com/29943ffe3f.js" crossorigin="anonymous"></script>
+        <!-- Bootsrap CDN -->
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <!-- Stripe -->
         <script src="https://js.stripe.com/v3/"></script>
-    {% endblock %}
-
-    {% block extra_js %}
-    {% endblock %}
-
-    <title>LowKey {% block extra_title %}{% endblock %}</title>
-  </head>
-  <body>
-
-    {% url 'home' as home %}
-    {% url 'account_signup' as signup %}
-    {% url 'account_login' as login %}
-    {% url 'account_logout' as logout %}
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
-        <a class="navbar-brand" href="{% url 'home' %}">Lowkey</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-              <li class="nav-item">
-                 <a class="nav-link {% if request.path == home %} active {% endif %}" href="{% url 'home' %}">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                 <a class="nav-link" href="#" id="shop-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                 Shop
-                 </a>
-                 <div class="dropdown-menu border-1" aria-labelledby="clothing-link">
-                    <a href="{% url 'products' %}" class="dropdown-item">New Arrivals</a>
-                    <a href="{% url 'products' %}?category=shirts" class="dropdown-item">Shirts</a>
-                    <a href="{% url 'products' %}?category=trousers_jeans" class="dropdown-item">Trouser & Jeans</a>
-                    <a href="{% url 'products' %}?category=sweatshirt_hoodies" class="dropdown-item">Sweatshirts & Hoodies</a>
-                    <a href="{% url 'products' %}?category=tshirts" class="dropdown-item">T-shirts</a>
-                    <a href="{% url 'products' %}?category=accessories" class="dropdown-item">Accessories</a>
-                 </div>
-              </li>
-           </ul>
-           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-              <form method="GET" action="{% url 'products' %}">
-                 <div class="input-group w-100">
-                    <input class="form-control border rounded-0" type="text" name="q" placeholder="Search">
-                    <div class="input-group-append">
-                       <button class="form-control btn border rounded-0 text-dark" type="submit">
-                       <span class="icon">
-                       <i class="fas fa-search"></i>
-                       </span>
-                       </button>
-                    </div>
-                 </div>
-              </form>
-           </div>
-           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-              <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-               <li class="list-inline-item">
-                  <a class="text-dark nav-link" href="{% url 'profile' %}">
-                      <div class="text-center">
-                          <div><i class="fas fa-heart"></i></div>
-                      </div>
-                  </a>
-              </li>
-                 <li class="list-inline-item dropdown">
-                    <a class="text-dark nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                       <div class="text-center">
-                          <div><i class="fas fa-user"></i></div>
-                       </div>
-                    </a>
-                    <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                       {% if request.user.is_authenticated %}
-                       {% if request.user.is_superuser %}
-                       <a href="{% url 'add_product' %}" class="dropdown-item">Manage</a>
-                       {% endif %}
-                       <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                       <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                       {% else %}
-                       <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                       <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-                       {% endif %}
-                    </div>
-                 </li>
-                 <!-- Shopping Bag -->
-                 <li class="list-inline-item">
-                    <a class="{% if grand_total %}text-info{% else %}text-dark{% endif %} nav-link" href="{% url 'bag_view' %}">
-                       <div class="text-center">
-                          <div><i class="fas fa-shopping-bag fa-lg"></i>
-                           {% if product_count %}
-                           <span class='badge badge-dark badge-pill bag'> {{ product_count }} </span>
-                           {% endif %}
-                          </div>
-                       </div>
-                    </a>
-                 </li>
-              </ul>
-           </div>
-        </div>
-    </nav>
-
-    <a id="back-to-top" href="#" class="btn btn-dark btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
-    
-    {% if messages %}
+        {% endblock %}
+        {% block extra_js %}
+        {% endblock %}
+        <title>LowKey {% block extra_title %}{% endblock %}</title>
+    </head>
+    <body>
+        <!-- Navigation -->
+        {% url 'home' as home %}
+        {% url 'account_signup' as signup %}
+        {% url 'account_login' as login %}
+        {% url 'account_logout' as logout %}
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+            <a class="navbar-brand" href="{% url 'home' %}">Lowkey</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == home %} active {% endif %}" href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="shop-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Shop
+                        </a>
+                        <div class="dropdown-menu border-1" aria-labelledby="clothing-link">
+                            <a href="{% url 'products' %}" class="dropdown-item">New Arrivals</a>
+                            <a href="{% url 'products' %}?category=shirts" class="dropdown-item">Shirts</a>
+                            <a href="{% url 'products' %}?category=trousers_jeans" class="dropdown-item">Trouser & Jeans</a>
+                            <a href="{% url 'products' %}?category=sweatshirt_hoodies" class="dropdown-item">Sweatshirts & Hoodies</a>
+                            <a href="{% url 'products' %}?category=tshirts" class="dropdown-item">T-shirts</a>
+                            <a href="{% url 'products' %}?category=accessories" class="dropdown-item">Accessories</a>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Search Bar -->
+                <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+                    <form method="GET" action="{% url 'products' %}">
+                        <div class="input-group w-100">
+                            <input class="form-control border rounded-0" type="text" name="q" placeholder="Search">
+                            <div class="input-group-append">
+                                <button class="form-control btn border rounded-0 text-dark" type="submit">
+                                <span class="icon">
+                                <i class="fas fa-search"></i>
+                                </span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- Wishlist -->
+                <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+                    <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+                        <li class="list-inline-item">
+                            <a class="text-dark nav-link" href="{% url 'profile' %}">
+                                <div class="text-center">
+                                    <div><i class="fas fa-heart"></i></div>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- Profile Dropdown -->
+                        <li class="list-inline-item dropdown">
+                            <a class="text-dark nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="text-center">
+                                    <div><i class="fas fa-user"></i></div>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                                {% if request.user.is_authenticated %}
+                                {% if request.user.is_superuser %}
+                                <a href="{% url 'add_product' %}" class="dropdown-item">Manage</a>
+                                {% endif %}
+                                <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                                {% else %}
+                                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                                {% endif %}
+                            </div>
+                        </li>
+                        <!-- Shopping Bag -->
+                        <li class="list-inline-item">
+                            <a class="{% if grand_total %}text-info{% else %}text-dark{% endif %} nav-link" href="{% url 'bag_view' %}">
+                                <div class="text-center">
+                                    <div><i class="fas fa-shopping-bag fa-lg"></i>
+                                        {% if product_count %}
+                                        <span class='badge badge-dark badge-pill bag'> {{ product_count }} </span>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Back-to-top Button -->
+        <a id="back-to-top" href="#" class="btn btn-dark btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+        <!-- Toast Messages -->
+        {% if messages %}
         <div class="message-container">
             {% for message in messages %}
-                {% with message.level as level %}
-                    {% if level == 40 %}
-                        {% include 'includes/toasts/toast_error.html' %}
-                    {% elif level == 30 %}
-                        {% include 'includes/toasts/toast_warning.html' %}
-                    {% elif level == 25 %}
-                        {% include 'includes/toasts/toast_success.html' %}
-                    {% else %}
-                        {% include 'includes/toasts/toast_info.html' %}
-                    {% endif %}
-                {% endwith %}
+            {% with message.level as level %}
+            {% if level == 40 %}
+            {% include 'includes/toasts/toast_error.html' %}
+            {% elif level == 30 %}
+            {% include 'includes/toasts/toast_warning.html' %}
+            {% elif level == 25 %}
+            {% include 'includes/toasts/toast_success.html' %}
+            {% else %}
+            {% include 'includes/toasts/toast_info.html' %}
+            {% endif %}
+            {% endwith %}
             {% endfor %}
         </div>
-    {% endif %}
-
-    {% block page_header %}
-    {% endblock %}
-
-    {% block content %}
-    {% endblock %}
-
-   <div class="col-12 mt-5 mb-0 mw-100">
-    <footer class="col-12 mt-3 bg-light">
-      <ul class="nav justify-content-center mb-2">
-        <li class="nav-item"><a href="{% url 'home' %}" class="nav-link px-2 text-muted">Home</a></li>
-        <li class="nav-item"><a href="{% url 'products' %}" class="nav-link px-2 text-muted">Products</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-      </ul>
-      <p class="text-center text-muted">© 2022 Lowkey Menswear</p>
-      <div class="text-center">
-         <p class="text-center text-dark text-muted">Developed by <a href='https://github.com/Faris-07' class="link-light"
-             target="_onblank">Farrow</a>
-         </p>
-     </div>
-    </footer>
-   </div>
-
-    {% block postloadjs %}
-      <script type="text/javascript">
-         $('.toast').toast('show');
-      </script>
-    {% endblock %}
-
-      <script>
-         $(document).ready(function(){
-            $('.navbar-nav').on('click', 'a', function(){
-               $('.navbar-nav a.active').removeClass('active');
-               $(this).addClass('active')
+        {% endif %}
+        {% block page_header %}
+        {% endblock %}
+        {% block content %}
+        <!-- Content Goes Here -->
+        {% endblock %}
+        <!-- Footer --> 
+        <div class="col-12 mt-5 mb-0 mw-100">
+            <footer class="col-12 mt-3 bg-light">
+                <ul class="nav justify-content-center mb-2">
+                    <li class="nav-item"><a href="{% url 'home' %}" class="nav-link px-2 text-muted">Home</a></li>
+                    <li class="nav-item"><a href="{% url 'products' %}" class="nav-link px-2 text-muted">Products</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+                </ul>
+                <p class="text-center text-muted">© 2022 Lowkey Menswear</p>
+                <div class="text-center">
+                    <p class="text-center text-dark text-muted">Developed by <a href='https://github.com/Faris-07' class="link-light"
+                        target="_onblank">Farrow</a>
+                    </p>
+                </div>
+            </footer>
+        </div>
+        <!-- Toast Script -->
+        {% block postloadjs %}
+        <script type="text/javascript">
+            $('.toast').toast('show');
+        </script>
+        {% endblock %}
+        <!-- Navbar active Script -->
+        <script>
+            $(document).ready(function(){
+               $('.navbar-nav').on('click', 'a', function(){
+                  $('.navbar-nav a.active').removeClass('active');
+                  $(this).addClass('active')
+               })
             })
-         })
-      </script>
-
-    <script>
-        $(document).ready(function(){
-	        $(window).scroll(function () {
-			    if ($(this).scrollTop() > 700) {
-				    $('#back-to-top').fadeIn();
-			    } else {
-				    $('#back-to-top').fadeOut();
-			    }
-		    });
-		    // scroll body to 0px on click
-		    $('#back-to-top').click(function () {
-			    $('body,html').animate({
-				    scrollTop: 0
-			    }, 400);
-			    return false;
-		    });
-    });
-    
-    </script>
-  </body>
+        </script>
+        <!-- Back to top Button Script -->
+        <script>
+            $(document).ready(function(){
+             $(window).scroll(function () {
+            if ($(this).scrollTop() > 700) {
+            $('#back-to-top').fadeIn();
+            } else {
+            $('#back-to-top').fadeOut();
+            }
+            });
+            // scroll body to 0px on click
+            $('#back-to-top').click(function () {
+            $('body,html').animate({
+            scrollTop: 0
+            }, 400);
+            return false;
+            });
+            });
+            
+        </script>
+    </body>
 </html>
