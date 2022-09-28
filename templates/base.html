@@ -107,7 +107,7 @@
                     <div class="dropdown-menu border-0" aria-labelledby="user-options">
                        {% if request.user.is_authenticated %}
                        {% if request.user.is_superuser %}
-                       <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                       <a href="{% url 'add_product' %}" class="dropdown-item">Manage</a>
                        {% endif %}
                        <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                        <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
@@ -159,6 +159,20 @@
 
     {% block content %}
     {% endblock %}
+
+    <footer class="py-3 my-4 col-12">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="{% url 'home' %}" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="{% url 'products' %}" class="nav-link px-2 text-muted">Products</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+      </ul>
+      <p class="text-center text-muted">© 2022 Lowkey Menswear</p>
+      <div class="text-center">
+         <p class="text-center text-dark text-muted">Developed by <a href='https://github.com/Faris-07' class="link-light"
+             target="_onblank">Farrow</a>
+         </p>
+     </div>
+    </footer>
 
     {% block postloadjs %}
       <script type="text/javascript">
