@@ -1,24 +1,27 @@
+import json
 from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
 
 # Create your views here.
-from .forms import OrderForm
+import stripe
 from products.models import Product
-from .models import Order, OrderItem
 from profiles.forms import UserProfileForm
 from profiles.models import UserProfile
 from bag.contexts import bag_contents
+from .forms import OrderForm
+from .models import Order, OrderItem
 
-import stripe
-import json
 
 @require_POST
 def cache_checkout_data(request):
+    """ To store save_info """
     try:
+        # get the pid and api_key
         pid = request.POST.get('client_secret').split('_secret')[0]
         stripe.api_key = settings.STRIPE_SECRET_KEY
+        # update the payment intents metadata, passing the information across
         stripe.PaymentIntent.modify(pid, metadata={
             'bag': json.dumps(request.session.get('bag', {})),
             'save_info': request.POST.get('save_info'),
@@ -30,13 +33,18 @@ def cache_checkout_data(request):
             processed right now. Please try again later.')
         return HttpResponse(content=e, status=400)
 
+
 def checkout(request):
+    """ Handles checkout information, order and errors """
+
+    # get the pulic and secret key from settings
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
     if request.method == 'POST':
+        # get the bag or render an empty bag if it doesn't exist
         bag = request.session.get('bag', {})
-
+        # get the form data from post request
         form_data = {
             'full_name': request.POST.get('full_name'),
             'email': request.POST.get('email'),
@@ -49,16 +57,22 @@ def checkout(request):
             'county': request.POST.get('county'),
         }
         order_form = OrderForm(form_data)
+        # if the form is valid
         if order_form.is_valid():
+            # create the order
             order = order_form.save(commit=False)
             pid = request.POST.get('client_secret').split('_secret')[0]
             order.stripe_pid = pid
+            # save the bag in the order model
             order.original_bag = json.dumps(bag)
+            # save order
             order.save()
+            # for each item & quantity
             for item_id, item_data in bag.items():
                 try:
                     product = Product.objects.get(id=item_id)
                     if isinstance(item_data, int):
+                        # create an order item
                         order_item = OrderItem(
                             order=order,
                             product=product,
@@ -76,12 +90,13 @@ def checkout(request):
                             order_item.save()
                 except Product.DoesNotExist:
                     messages.error(request, (
-                        "One of the products in your bag wasn't found in our database. "
-                        "Please call us for assistance!")
+                        "One of the products in your bag wasn't found in our "
+                        "database. Please call us for assistance!")
                     )
+                    # delete the order
                     order.delete()
                     return redirect(reverse('view_bag'))
-
+            # add save_info to session if the box was ticked
             request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse('checkout_success', args=[order.order_number]))
         else:
@@ -101,10 +116,12 @@ def checkout(request):
             amount=stripe_total,
             currency=settings.STRIPE_CURRENCY,
         )
-
+        # if user is logged in
         if request.user.is_authenticated:
             try:
+                # get user profile
                 profile = UserProfile.objects.get(user=request.user)
+                # pre-populate the form with data saved on the profile
                 order_form = OrderForm(initial={
                     'full_name': profile.user.get_full_name(),
                     'email': profile.user.email,
@@ -139,16 +156,17 @@ def checkout_success(request, order_number):
     """
     Handle successful checkouts
     """
+    # get save_info from session
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
-
+    # if user is logged in
     if request.user.is_authenticated:
         profile = UserProfile.objects.get(user=request.user)
         # Attach the user's profile to the order
         order.user_profile = profile
         order.save()
 
-        # Save the user's info
+        # Save the user's default billing details
         if save_info:
             profile_data = {
                 'full_name': profile.full_name,
@@ -163,13 +181,16 @@ def checkout_success(request, order_number):
             }
             user_profile_form = UserProfileForm(profile_data, instance=profile)
             if user_profile_form.is_valid():
+                # profile being updated
                 user_profile_form.save()
 
+    # display confirmation toast to customer
     messages.success(request, f'Order successfully processed! \
         Your order number is {order_number}. A confirmation \
         email will be sent to {order.email}.')
 
     if 'bag' in request.session:
+        # delete the basket once processed
         del request.session['bag']
 
     template = 'checkout/checkout_success.html'
