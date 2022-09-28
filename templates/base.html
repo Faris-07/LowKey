@@ -43,6 +43,7 @@
         <title>LowKey {% block extra_title %}{% endblock %}</title>
     </head>
     <body>
+      
         <!-- Navigation -->
         {% url 'home' as home %}
         {% url 'account_signup' as signup %}
@@ -133,8 +134,10 @@
                 </div>
             </div>
         </nav>
+
         <!-- Back-to-top Button -->
         <a id="back-to-top" href="#" class="btn btn-dark btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+
         <!-- Toast Messages -->
         {% if messages %}
         <div class="message-container">
@@ -155,9 +158,11 @@
         {% endif %}
         {% block page_header %}
         {% endblock %}
+
         {% block content %}
         <!-- Content Goes Here -->
         {% endblock %}
+        
         <!-- Footer --> 
         <div class="col-12 mt-5 mb-0 mw-100">
             <footer class="col-12 mt-3 bg-light">
@@ -174,12 +179,14 @@
                 </div>
             </footer>
         </div>
+
         <!-- Toast Script -->
         {% block postloadjs %}
         <script type="text/javascript">
             $('.toast').toast('show');
         </script>
         {% endblock %}
+
         <!-- Navbar active Script -->
         <script>
             $(document).ready(function(){
@@ -189,6 +196,7 @@
                })
             })
         </script>
+
         <!-- Back to top Button Script -->
         <script>
             $(document).ready(function(){
@@ -199,6 +207,7 @@
             $('#back-to-top').fadeOut();
             }
             });
+
             // scroll body to 0px on click
             $('#back-to-top').click(function () {
             $('body,html').animate({
@@ -207,7 +216,6 @@
             return false;
             });
             });
-            
         </script>
     </body>
 </html>
