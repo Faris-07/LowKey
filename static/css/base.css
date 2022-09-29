@@ -190,6 +190,11 @@ footer {
 	background-color: transparent;
 }
 
+/* Mailchimp */
+#mc_embed_signup form {
+	padding: 0;
+  }
+
 /* Back to top button media query */
 @media only screen and (max-width: 800px) {
 	#back-to-top {
