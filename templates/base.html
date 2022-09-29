@@ -46,14 +46,13 @@
         <title>LowKey {% block extra_title %}{% endblock %}</title>
     </head>
     <body>
-      
         <!-- Navigation -->
         {% url 'home' as home %}
         {% url 'account_signup' as signup %}
         {% url 'account_login' as login %}
         {% url 'account_logout' as logout %}
         <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
-            <a class="navbar-brand" href="{% url 'home' %}">Lowkey</a>
+            <a class="navbar-brand" href="{% url 'home' %}">Lowkey<small>Menswear</small></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -137,10 +136,8 @@
                 </div>
             </div>
         </nav>
-
         <!-- Back-to-top Button -->
         <a id="back-to-top" href="#" class="btn btn-dark btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
-
         <!-- Toast Messages -->
         {% if messages %}
         <div class="message-container">
@@ -161,111 +158,125 @@
         {% endif %}
         {% block page_header %}
         {% endblock %}
-
         {% block content %}
         <!-- Content Goes Here -->
         {% endblock %}
-        
-        <!-- Footer --> 
-        <div class="col-12 mt-5 mb-0 mw-100">
-            <footer class="col-12 mt-3 bg-light">
-                <ul class="nav justify-content-center mb-2">
-                    <li class="nav-item"><a href="{% url 'home' %}" class="nav-link px-2 text-muted">Home</a></li>
-                    <li class="nav-item"><a href="{% url 'products' %}" class="nav-link px-2 text-muted">Products</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-                </ul>
-                <p class="text-center text-muted">© 2022 Lowkey Menswear</p>
-                <div class="text-center">
-                    <p class="text-center text-dark text-muted">Developed by <a href='https://github.com/Faris-07' class="link-light"
-                        target="_onblank">Farrow</a>
-                    </p>
-                </div>
-            </footer>
-        </div>
-
-        <!-- Footer -->
-        <footer class="container-wrapper">
-            <div class="container quotes-container content-container">
-                <section class="footer">
-                    <div class="row">
-                        <div class="col-12 page-header mb-4">
-                            <h2 class="text-uppercase">Stay in touch:</h2>
-                            <hr class="block-divider block-divider--short">
-                        </div>
+        <!-- Site footer https://codepen.io/scanfcode/pen/MEZPNd -->
+        <footer class="site-footer text-dark bg-light col-12 mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <h6 class="text-center">Lowkey Menswear</h6>
+                        <p class="text-justify">Lowkey Menswear is a London based apparel store focusing on quality and affordable menswear</p>
                     </div>
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <h3>Social</h3>
-                            <p>Keep up to date with all our latest offers</p>
-                            <a href="https://www.facebook.com/profile.php?id=100086142590661" target="_blank"><i class="fab fa-facebook-square"></i> Follow us on Facebook!</a>
-                            <a href="https://www.privacypolicygenerator.info/live.php?token=5Ukhzae17ncRdhWOf2s0nINIOzTgi0Qv">Privacy Policy</a>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <!-- Mailchimp signup form here -->
-                            <!-- Begin Mailchimp Signup Form -->
-                            <div id="mc_embed_signup">
-                                <form action="https://gitpod.us14.list-manage.com/subscribe/post?u=f77b97ab9cf29f2288f10ddc3&amp;id=391db2afc5&amp;f_id=005d72e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                                    <div id="mc_embed_signup_scroll">
-                                        <h2>Subscribe</h2>
-                                        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-                                        <div class="mc-field-group">
-                                            <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-                                            </label>
-                                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
-                                            <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
-                                        </div>
-                                        <div id="mce-responses" class="clear foot">
-                                            <div class="response" id="mce-error-response" style="display:none"></div>
-                                            <div class="response" id="mce-success-response" style="display:none"></div>
-                                        </div>
-                                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f77b97ab9cf29f2288f10ddc3_391db2afc5" tabindex="-1" value=""></div>
-                                        <div class="optionalParent">
-                                            <div class="clear foot">
-                                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-                                                <p class="brandingLogo"><a href="http://eepurl.com/iacuAT" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
-                                            </div>
+                    <div class="col-sm">
+                        <h6 class="text-center">Quick Links</h6>
+                        <ul class="footer-links read-less text-center" id="opening-hours">
+                            <li><a href="{% url 'home' %}">Home</a></li>
+                            <li><a href="{% url 'products' %}">Products</a></li>
+                            <li><a href="{% url 'profile' %}">Profile</a></li>
+                            <li><a href="https://www.privacypolicygenerator.info/live.php?token=5Ukhzae17ncRdhWOf2s0nINIOzTgi0Qv" target="_blank">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm">
+                        <h6 class="text-center">Newsletter sign up!</h6>
+                        <!-- Begin Mailchimp Signup Form -->
+                        {% if request.user.is_authenticated and request.user.email in email_list %}
+                        <p class="white-text"><em>Thank you, you have already subscribed.</em></p>
+                        {% else %}
+                        <div id="mc_embed_signup">
+                            <form
+                                action="https://gitpod.us14.list-manage.com/subscribe/post?u=f77b97ab9cf29f2288f10ddc3&amp;id=391db2afc5&amp;f_id=005d72e0f0"
+                                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                                class="validate" target="_blank" novalidate>
+                                <div id="mc_embed_signup_scroll">
+                                    <div class="mc-field-group">
+                                        <label for="mce-EMAIL" aria-hidden="true" class="hidden">Email Address <span
+                                            class="asterisk">*</span>
+                                        </label>
+                                        <input type="email" value="" name="EMAIL" class="required email"
+                                            placeholder="email address" id="mce-EMAIL">
+                                    </div>
+                                    <div id="mce-responses" class="clear foot">
+                                        <div class="response" id="mce-error-response" style="display:none"></div>
+                                        <div class="response" id="mce-success-response" style="display:none"></div>
+                                    </div>
+                                    <!--  do not remove this or risk form bot signups-->
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input
+                                        type="text" name="b_ea91edf6940c130d5c85856bc_a9f944f3e8" tabindex="-1"
+                                        value=""></div>
+                                    <div class="optionalParent">
+                                        <div class="clear foot">
+                                            <input type="submit" class="text-center btn-dark border-0 p-2" value="subscribe" name="subscribe"
+                                                id="mc-embedded-subscribe" class="button bg-white brand-blue fw-bolder">
                                         </div>
                                     </div>
-                                </form>
-                            </div>
-                            <!-- Mailchimp scripts -->
-                            <script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'>
-                            </script>
-                            <script>
-                                (function ($) {
-                                    window.fnames = new Array();
-                                    window.ftypes = new Array();
-                                    fnames[0] = 'EMAIL';
-                                    ftypes[0] = 'email';
-                                    fnames[1] = 'FNAME';
-                                    ftypes[1] = 'text';
-                                    fnames[2] = 'LNAME';
-                                    ftypes[2] = 'text';
-                                    fnames[3] = 'ADDRESS';
-                                    ftypes[3] = 'address';
-                                    fnames[4] = 'PHONE';
-                                    ftypes[4] = 'phone';
-                                    fnames[5] = 'BIRTHDAY';
-                                    ftypes[5] = 'birthday';
-                                }(jQuery));
-                                var $mcj = jQuery.noConflict(true);
-                            </script>
-                            <!--End mc_embed_signup-->
+                                </div>
+                            </form>
                         </div>
+                        {% endif %}
+                        <!--End mc_embed_signup-->
                     </div>
-                </section>
+                </div>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by
+                            <a href="https://github.com/Faris-07" target="_blank">Farrow</a>.
+                        </p>
+                        <p class="footer-contact">Email Us: lowkeymenswear@gmail.com</p>
+                    </div>
+                    <div class="col-sm">
+                        <ul class="social-icons">
+                            <li><a class="facebook" href="https://www.facebook.com/profile.php?id=100086142590661" target="_blank"
+                                aria-label="Take a look at our facebook, opens in a new tab" rel="noreferrer"><i
+                                class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li><a class="twitter" href="https://twitter.com/?lang=en" target="_blank"
+                                aria-label="Take a look at our twitter, opens in a new tab" rel="noreferrer"><i
+                                class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li><a class="instagram" href="https://www.instagram.com/" target="_blank"
+                                aria-label="Take a look at our instagram, opens in a new tab" rel="noreferrer"><i
+                                class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </footer>
-        <!-- /.footer -->
-
+        <!-- Mailchimp scripts -->
+        <script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+        <script>
+            (function ($) {
+                window.fnames = new Array();
+                window.ftypes = new Array();
+                fnames[0] = 'EMAIL';
+                ftypes[0] = 'email';
+                fnames[1] = 'FNAME';
+                ftypes[1] = 'text';
+                fnames[2] = 'LNAME';
+                ftypes[2] = 'text';
+                fnames[3] = 'ADDRESS';
+                ftypes[3] = 'address';
+                fnames[4] = 'PHONE';
+                ftypes[4] = 'phone';
+                fnames[5] = 'BIRTHDAY';
+                ftypes[5] = 'birthday';
+            }(jQuery));
+            var $mcj = jQuery.noConflict(true);
+        </script>                   
         <!-- Toast Script -->
         {% block postloadjs %}
         <script type="text/javascript">
             $('.toast').toast('show');
         </script>
         {% endblock %}
-
         <!-- Navbar active Script -->
         <script>
             $(document).ready(function(){
@@ -275,7 +286,6 @@
                })
             })
         </script>
-
         <!-- Back to top Button Script -->
         <script>
             $(document).ready(function(){
@@ -286,7 +296,7 @@
             $('#back-to-top').fadeOut();
             }
             });
-
+            
             // scroll body to 0px on click
             $('#back-to-top').click(function () {
             $('body,html').animate({

@@ -1,13 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 {% load bag_tools %}
-{% block page_header %}
-<div class="container header-container">
-    <div class="row">
-        <div class="col"></div>
-    </div>
-</div>
-{% endblock %}
+
 {% block content %}
 
 <!-- Bag Heading -->
@@ -169,7 +163,7 @@
                                 <input type="hidden" name="product_size" value="{{ item.size }}">
                                 {% endif %}
                                 <!-- Quantity Form -->
-                                <form class="form update-form mt-2" method="POST" action="">
+                                <form class="form update-form mt-2" method="POST" action="{% url 'adjust_bag' item.item_id %}">
                                     {% csrf_token %}
                                     <div class="form-group">
                                         <div class="input-group">
@@ -228,7 +222,7 @@
             </div>
             {% else %}
             <!-- Empty Shopping Bag -->
-            <div class="col-12">
+            <div class="col-12 h-100">
                 <p>Your bag is empty.</p>
                 <a href="{% url 'products' %}" class="btn btn-dark rounded-0">
                 <span>Continue Shopping</span>
