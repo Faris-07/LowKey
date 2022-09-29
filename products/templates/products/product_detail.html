@@ -34,9 +34,30 @@
                 </form>
                 {% else %}
                 <!-- Button to trigger account required modal -->
-                <button type="button" class="btn-like">
-                <i class="far fa-heart"></i>
+                <button type="button" class="btn btn-like" data-toggle="modal" data-target="#account-required-modal">
+                    <i class="far fa-heart"></i>
                 </button>
+
+                <!-- Account Required Modal -->
+                <div class="col-12 d-flex col-6-sm">
+                <div id="account-required-modal" tabindex="-1" role="dialog" aria-labelledby="account-required-modal-label" class="modal fade">
+                    <div class="modal-dialog modal-confirm">
+                        <div class="modal-content">
+                            <div class="modal-header ">
+                                <h4 class="modal-title w-100">Account Required</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="text-dark">Please create an account or sign in to use this feature.</p>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <a class="btn btn-dark text-light border-0" href="{% url 'account_signup' %}">Register</a>
+                                <a class="btn btn-dark text-light border-0" href="{% url 'account_login' %}">Sign In</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
                 {% endif %}
                 {% else %}
                 <a href="">
