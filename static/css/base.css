@@ -328,6 +328,15 @@ footer {
 	border: hidden;
 }
 
+.btn-like-bg {
+	position: absolute;
+	top: 60px;
+	right: 30px;
+	background-color: transparent;
+	color: #dc3545;
+	border: hidden;
+}
+
 /* Jumbotron */
 .jumbotron {
 	background-color: transparent;

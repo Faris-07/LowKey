@@ -23,18 +23,18 @@
                 <form class="d-inline" action="{% url 'product_detail' product.id %}" method="POST">
                     {% csrf_token %}
                     {% if liked %}
-                    <button type="submit" value="{{ product.id }}" class="btn-like">
+                    <button type="submit" value="{{ product.id }}" class="btn-like-bg">
                     <i class="fas fa-heart"></i>
                     </button>
                     {% else %}
-                    <button type="submit" value="{{ product.id }}" class="btn-like">
+                    <button type="submit" value="{{ product.id }}" class="btn-like-bg">
                     <i class="far fa-heart"></i>
                     </button>
                     {% endif %}
                 </form>
                 {% else %}
                 <!-- Button to trigger account required modal -->
-                <button type="button" class="btn btn-like" data-toggle="modal" data-target="#account-required-modal">
+                <button type="button" class="btn btn-like-bg" data-toggle="modal" data-target="#account-required-modal">
                     <i class="far fa-heart"></i>
                 </button>
 
