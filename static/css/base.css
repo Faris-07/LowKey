@@ -1,3 +1,7 @@
+html {
+	height: 100%;
+}
+
 body {
 	min-height: 100vh;
 	overflow-x: hidden;
@@ -22,6 +26,10 @@ body {
 }
 
 /* Navbar */
+.navbar {
+	border-bottom: 1px solid;
+}
+
 .navbar .nav-item {
 	margin-left: 25px;
 }
@@ -58,6 +66,7 @@ footer {
   font-size:15px;
   line-height:24px;
   color:#737373;
+  border-top: 1px solid;
 }
 
 .site-footer hr {
