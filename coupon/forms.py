@@ -4,6 +4,7 @@ from coupon.models import Coupon
 
 
 class ApplyCouponForm(forms.Form):
+    """ Apply Coupon Form """
     code = forms.CharField()
 
     class Meta:
