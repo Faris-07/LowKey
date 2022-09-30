@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'coupon',
     'crispy_forms',
     'storages',
+    'tempus_dominus',
 ]
 
 MIDDLEWARE = [
