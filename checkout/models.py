@@ -2,11 +2,13 @@ import uuid
 from django.db import models
 from django.conf import settings
 from django.db.models import Sum
+from django.core.validators import MinValueValidator, MaxValueValidator
 
 from django_countries.fields import CountryField
 
 from products.models import Product
 from profiles.models import UserProfile
+from coupon.models import Coupon
 
 
 class Order(models.Model):
@@ -25,6 +27,12 @@ class Order(models.Model):
     postcode = models.CharField(max_length=20, null=False, blank=False)
     country = CountryField(blank_label='Country *', null=False, blank=False)
     order_date = models.DateTimeField(auto_now_add=True)
+    coupon = models.ForeignKey(Coupon, related_name='orders',
+                               null=True, blank=True,
+                               on_delete=models.SET_NULL)
+    discount = models.IntegerField(
+        default=0,
+        validators=[MinValueValidator(0), MaxValueValidator(100)])
     delivery_cost = models.DecimalField(max_digits=6, decimal_places=2,
                                         null=False, default=0)
     order_total = models.DecimalField(

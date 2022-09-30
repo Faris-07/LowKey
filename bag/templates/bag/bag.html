@@ -87,18 +87,37 @@
                             <a class="update-link text-info"><small>Update</small></a>
                             <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small>Remove</small></a>
                         </td>
-                        <!-- Subtotal -->
+                        <!-- Item Subtotal -->
                         <td class="py-3">
                             <p class="my-0">£{{ item.product.price | calc_subtotal:item.quantity  }}</p>
                         </td>
-                    </tr>
+                    </tr>  
                     {% endfor %}
                     <!-- Order Total -->
                     <tr>
                         <td colspan="5" class="pt-5 text-right">
+                            <p>Promotional Code</p>
+                            <form action="{% url 'apply_coupon' %}" method="POST">
+                                {% csrf_token %}
+                                    <div class="form-row">
+                                        <div class="form-group col-2 text-right mb-0">
+                                            {{ apply_coupon_form.code | as_crispy_field }}
+                                        </div>
+                                        <div>
+                                            <input type="submit" value="Apply Promo" class="p-2 btn-dark border-0">
+                                        </div>
+                                    </div>
+                            </form>
+                            {% if coupon %}
+                            <h6><strong>Sub Total: £{{ total|floatformat:2 }}</strong></h6>
+                            <h6><strong class="text-success">{{ coupon }}</strong> ({{ coupon.discount}}% off): <span class="text-danger">- £{{ discount | floatformat:2 }}</span></h6>
+                            <h6>Delivery: £{{ delivery|floatformat:2 }}</h6>
+                            <h4 class="mt-4"><strong>Total: £{{ grand_total|floatformat:2 }}</strong></h4>
+                            {% else %}
                             <h6><strong>Sub Total: £{{ total|floatformat:2 }}</strong></h6>
                             <h6>Delivery: £{{ delivery|floatformat:2 }}</h6>
                             <h4 class="mt-4"><strong>Total: £{{ grand_total|floatformat:2 }}</strong></h4>
+                            {% endif %}
                         </td>
                     </tr>
                     <!-- Shopping & Checkout Buttons -->

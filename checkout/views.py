@@ -4,9 +4,10 @@ from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
 
-# Create your views here.
+
 import stripe
 from products.models import Product
+from coupon.models import Coupon
 from profiles.forms import UserProfileForm
 from profiles.models import UserProfile
 from bag.contexts import bag_contents
@@ -44,6 +45,8 @@ def checkout(request):
     if request.method == 'POST':
         # get the bag or render an empty bag if it doesn't exist
         bag = request.session.get('bag', {})
+        # Get coupon code from session
+        coupon_id = request.session.get('coupon_id')
         # get the form data from post request
         form_data = {
             'full_name': request.POST.get('full_name'),
@@ -61,6 +64,11 @@ def checkout(request):
         if order_form.is_valid():
             # create the order
             order = order_form.save(commit=False)
+            # if form contains coupon
+            if coupon_id:
+                coupon = Coupon.objects.get(id=coupon_id)
+                order.coupon = coupon
+                order.discount = coupon.discount
             pid = request.POST.get('client_secret').split('_secret')[0]
             order.stripe_pid = pid
             # save the bag in the order model
@@ -98,6 +106,8 @@ def checkout(request):
                     return redirect(reverse('view_bag'))
             # add save_info to session if the box was ticked
             request.session['save_info'] = 'save-info' in request.POST
+            # Reset coupon 
+            request.session['coupon_id'] = ''
             return redirect(reverse('checkout_success', args=[order.order_number]))
         else:
             messages.error(request, 'There was an error with your form. \
