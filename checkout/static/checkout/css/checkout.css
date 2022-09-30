@@ -1,0 +1,109 @@
+.StripeElement,
+.stripe-style-input {
+  box-sizing: border-box;
+  height: 40px;
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  border-radius: 0px;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus,
+.stripe-style-input:focus,
+.stripe-style-input:active {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+.stripe-style-input::placeholder {
+    color: #aab7c4;
+}
+
+.fieldset-label {
+    position: relative;
+    right: .5rem;
+}
+
+#payment-form .form-control,
+#card-element {
+    color: #000;
+    border: 1px solid #000;
+}
+
+select,
+select option {
+    color: #000000;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #aab7c4 !important;
+}
+
+#loading-overlay {
+	display: none;
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #748386;
+    
+    opacity: 80%;
+    z-index: 9999;
+}
+
+.loader {
+	width: 64px;
+	height: 44px;
+	position: relative;
+	border: 5px solid rgb(0, 0, 0);
+	border-radius: 8px;
+  }
+
+.loader::before {
+	content: '';
+	position: absolute;
+	border: 5px solid #fff;
+	width: 32px;
+	height: 28px;
+	border-radius: 50% 50% 0 0;
+	left: 50%;
+	top: 0;
+	transform: translate(-50% , -100%)
+}
+
+.loader::after {
+	content: '';
+	position: absolute;
+	transform: translate(-50% , -50%);
+	left: 50%;
+	top: 50%;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #fff;
+	box-shadow: 16px 0 #fff, -16px 0 #fff;
+	animation: flash 0.5s ease-out infinite alternate;
+}
+  
+  @keyframes flash {
+	0% {
+	  background-color: rgba(255, 255, 255, 0.25);
+	  box-shadow: 16px 0 rgba(255, 255, 255, 0.25), -16px 0 rgba(255, 255, 255, 1);
+	}
+	50% {
+	  background-color: rgba(255, 255, 255, 1);
+	  box-shadow: 16px 0 rgba(255, 255, 255, 0.25), -16px 0 rgba(255, 255, 255, 0.25);
+	}
+	100% {
+	  background-color: rgba(255, 255, 255, 0.25);
+	  box-shadow: 16px 0 rgba(255, 255, 255, 1), -16px 0 rgba(255, 255, 255, 0.25);
+	}
+}

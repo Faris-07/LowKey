@@ -59,6 +59,7 @@ body {
 /* Footer */
 footer {
 	bottom: 0;
+	position: relative;
 }
 
 .site-footer {
@@ -289,6 +290,30 @@ footer {
 	margin: 100px auto;
 }
 
+/* Like Button */
+.btn-like {
+	position: absolute;
+	top: 37px;
+	right: 15px;
+	background-color: transparent;
+	color: #dc3545;
+	border: hidden;
+}
+
+.btn-like-bg {
+	position: absolute;
+	top: 60px;
+	right: 30px;
+	background-color: transparent;
+	color: #dc3545;
+	border: hidden;
+}
+
+/* Jumbotron */
+.jumbotron {
+	background-color: transparent;
+}
+
 /* Product Management Form */
 .btn-file {
 	position: relative;
@@ -318,34 +343,10 @@ footer {
 	border-radius: 0;
 }
 
-/* Like Button */
-.btn-like {
-	position: absolute;
-	top: 37px;
-	right: 15px;
-	background-color: transparent;
-	color: #dc3545;
-	border: hidden;
-}
-
-.btn-like-bg {
-	position: absolute;
-	top: 60px;
-	right: 30px;
-	background-color: transparent;
-	color: #dc3545;
-	border: hidden;
-}
-
-/* Jumbotron */
-.jumbotron {
-	background-color: transparent;
-}
-
 /* Mailchimp */
 #mc_embed_signup form {
 	padding: 0;
-  }
+}
 
 /* Back to top button media query */
 @media only screen and (max-width: 800px) {
