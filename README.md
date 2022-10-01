@@ -59,3 +59,15 @@ The target audience for 'Lowkey' are:
 #### EPIC | Marketing
 - As an Admin I conducted research and implemented SEO keywords to increase traffic to my website.
 - As an Admin I have created a Facebook shop page to increase traffic to my website.
+
+# Scope
+
+In order to achieve the desired user & business goals, the following features will be included in this release:
+
+- Responsive navbar that will navigate to the various pages throughout the site
+- Landing page with image carousel with information to be found on the website
+- Shop page, that displays all products available for purchase with the option to filter on the product category and price.
+- My Account page, for logged in users to update their details which in turn updates the user model. User is also able to view their previous orders and wishlist.
+- Register/login feature using Django AllAuth so that users can create an account.
+- Custom 404 error page.
+
