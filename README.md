@@ -243,3 +243,30 @@ These phrases where used in the metadata at the head of the page.
     - A success message will appear once a user successfully logs out.
 
     ![Accounts-Logout](assets/images/accounts-logout.png)
+
+## Profile
+
+- ### Heading
+    - The heading of the page reflects the user's username.
+
+    ![Profiles-Heading](assets/images/)
+
+- ### Delivery Details
+    - The delivery details section stores the user's delivery address and phone number.
+    - The information provided here is used to autofill the delivery address when placing an order.
+
+    ![Profiles-Delivery](assets/images/profiles-delivery.png)
+
+- ### Order History
+    - The order history section is a table that keeps a record of every order the user has placed.
+    - The table displays the order number, date it was ordered, items ordered, quantities of items, size of items and the order total.
+    - Hovering over the truncated order number reveals the whole order number.
+    - Clicking the order number will take the user to a more detailed summary of the order.
+    - The five most recent items are shown on the order history list.
+
+    ![Profiles-Order-History](assets/images/)
+
+- ### Wishlist
+    - The wishlist section contains all the products the user has liked.
+
+    ![Profiles-Favourites](assets/images/)
