@@ -84,4 +84,20 @@ The design of the app is based on the wireframes with a mix of another clothing 
 - The font used on Lowkey is Noto Sans as it is a clear and easily readable font. It is also a sleek and elegant font which goes with the theme of the site.  
 
 ## Imagery
-- All the images are based on clothing and where taken from [COS](https://www.cos.com/en_gbp/index.html) and [Blacksmith-store](https://www.blacksmith-store.com/)
+- All the images are based on clothing and where taken from [COS](https://www.cos.com/en_gbp/index.html) and [Blacksmith-store](https://www.blacksmith-store.com/).
+
+# Database Schema 
+
+The design of the database can be seen below.
+
+![Database Schema](/static/images/)
+
+### Products App
+
+This app controls the products that are displayed in the online shop. I have created two models to store the necessary data: `Products` & `Category`.
+
+`Products` enables individual products to be added to the database in order for them to be purchased via the online shop. Only admin users are able to access this functionality and it can be done from the front end using the `add_product` view. The admin can also edit and delete products from the front end using the `edit_product` and `delete_product` views respectively. This model has one Foreign Key which relates to the second model in this app, the category.
+
+`Category` stores the various category types of the clothing on sale, this allows the user to shop by category if they are looking for something specific.
+
+
