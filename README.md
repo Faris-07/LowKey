@@ -71,3 +71,14 @@ In order to achieve the desired user & business goals, the following features wi
 - Register/login feature using Django AllAuth so that users can create an account.
 - Custom 404 error page.
 
+# Design
+
+The design of the app is based on the wireframes with a mix of another clothing brand store called [COS](https://www.cos.com/en_gbp/index.html).   
+
+## Colour Scheme
+- The colour scheme for Lowkey is fairly simple, minimal and aesthetically pleasing. I used a light grey, white and some hints of black such as the black buttons to contrast the light colours of the site. I went for this style as it is clean but also because it is versatile as it matches with most colours which is important as the site would complement the colours of the product images, and keep the clothing the center of attention.
+
+- The light grey and black are from the bootstrap light and dark classes.
+
+## Typography
+- The font used on Lowkey is Noto Sans as it is a clear and easily readable font. It is also a sleek and elegant font which goes with the theme of the site.  
