@@ -124,6 +124,8 @@ The Lowkey menswear website is a business to customer e-commerce platform, built
 
 To further enhance sales there is also a Lowkey menswear Facebook page, that will display information about new product arrivals and styling tips/trends. The links to the facbook page and other social sites can be found in the footer.
 
+<i>*Note, this link may be broken as facebook regularly deletes inactive business pages.</i>
+
 Lowkey Menswear [Facebook Page](https://www.facebook.com/profile.php?id=100086142590661)
 
 ![](assets/images/)
@@ -131,3 +133,35 @@ Lowkey Menswear [Facebook Page](https://www.facebook.com/profile.php?id=10008614
 Users are also able to subscribe to receive the 'Lowkey' newsletter, using the MailChimp form found in the footer. 
 
 ![](assets/images/mailchimp-form.jpg)
+
+### Search Engine Optimization
+
+I created a sitemap.xml and robots.txt file to help aid search engines locate the site. To keep user's information safe, any pages that could contain sensitive information has been disallowed in the robots.txt.
+
+I conducted SEO research to decide on the keywords and phrases that would be used across the website.
+
+The initial keywords and phrases I came up with were:
+
+#### Short Tail Keywords
+- Menswear
+- Clothes
+- Clothing
+- Affordable menswear
+- Affordable Clothing
+- Quality
+- Quality basics
+- Quality essentials
+
+#### Long Tail Keywords
+- Affordable mens clothing
+- Affordable menswear
+- Quality clothing
+- Wardrobe staples
+- Wardrobe essentials
+- Mens Basic's
+
+These phrases where used in the metadata at the head of the page.
+
+
+
+
