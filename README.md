@@ -41,3 +41,11 @@ The target audience for 'Lowkey' are:
 - As an Admin, I can edit a product so that I can keep the products information up to date.
 - As an Admin, I can delete a product so that I can remove products no longer available.
 - As an admin, I can add coupon codes so that I can offer discounts to my customers.
+
+#### EPIC | Purchasing
+- As a User, I can add items to my basket in varying quantities so that I can keep the items in my basket until I'm ready to buy.
+- As a User, I can view my bag so that I can see the total cost of the transaction and the items I will be purchasing.
+- As a User, I can always see a running subtotal so that I know how much I'm spending.
+- As a User, I can easily enter my payment details so that I can checkout quickly with no problems.
+- As a User, I can view confirmation of my purchases so that I know the order was received and can review what I've purchased.
+- As a User I can apply promotional codes so that I can receive a discount on my purchase.
