@@ -41,6 +41,8 @@ The target audience for 'Lowkey' are:
 - As an Admin, I can edit a product so that I can keep the products information up to date.
 - As an Admin, I can delete a product so that I can remove products no longer available.
 - As an admin, I can add coupon codes so that I can offer discounts to my customers.
+- As an Admin I conducted research and implemented SEO keywords to increase traffic to my website.
+- As an Admin I have created a Facebook shop page to increase traffic to my website.
 
 #### EPIC | Purchasing
 - As a User, I can add items to my basket in varying quantities so that I can keep the items in my basket until I'm ready to buy.
@@ -49,3 +51,9 @@ The target audience for 'Lowkey' are:
 - As a User, I can easily enter my payment details so that I can checkout quickly with no problems.
 - As a User, I can view confirmation of my purchases so that I know the order was received and can review what I've purchased.
 - As a User I can apply promotional codes so that I can receive a discount on my purchase.
+
+#### EPIC | Interaction
+- As a User I can add items to my Wishlist so that I can save them for later.
+- As a User I can sign up for a newsletter to receive up to date information regarding items for sale and discounts.
+- As a User, I can connect to the site's social media pages so that I can follow them and keep up to date with their products and promotions.
+- As a User, I can contact the business so that I can find out any information that I require.
