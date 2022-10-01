@@ -220,3 +220,26 @@ These phrases where used in the metadata at the head of the page.
     - The footer also contains an email address so the user can contact the store.
 
     ![Footer](static/images/)
+
+## Accounts
+
+- ### Register Page
+    - The register page is used to create an account.
+    - The user enters a username, email, password and a confirmation of the password.
+    - Once submitting the form an authentication link will be emailed to the address the user provided. 
+
+    ![Accounts-Register](assets/images/)
+
+- ### Login Page
+    - The login page is used to log in users with an existing account.
+    - The user enters their username and password.
+    - A success message will appear once a user successfully logs in.
+    - A Forgot Password link is also present that enables users to recover their password.
+
+    ![Accounts-Login](assets/images/)
+
+- ### Log out Page
+    - The log out page is used to log out users who are signed in.
+    - A success message will appear once a user successfully logs out.
+
+    ![Accounts-Logout](assets/images/accounts-logout.png)
