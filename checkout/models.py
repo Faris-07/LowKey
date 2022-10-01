@@ -62,9 +62,10 @@ class Order(models.Model):
             total = self.orderitems.aggregate(Sum('orderitem_total'))['orderitem_total__sum']
             discount = total * discount_as_decimal
             self.order_total = total - discount
-            self.delivery_cost = self.order_total * settings.STANDARD_DELIVERY_PERCENTAGE / 100
+            self.delivery_cost = total * settings.STANDARD_DELIVERY_PERCENTAGE / 100
             self.grand_total = self.order_total + self.delivery_cost
             self.save()
+
 
     def full_address(self):
         """ return address """

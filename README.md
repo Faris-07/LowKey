@@ -242,7 +242,7 @@ These phrases where used in the metadata at the head of the page.
     - The log out page is used to log out users who are signed in.
     - A success message will appear once a user successfully logs out.
 
-    ![Accounts-Logout](assets/images/accounts-logout.png)
+    ![Accounts-Logout](assets/images/)
 
 ## Profile
 
@@ -255,7 +255,7 @@ These phrases where used in the metadata at the head of the page.
     - The delivery details section stores the user's delivery address and phone number.
     - The information provided here is used to autofill the delivery address when placing an order.
 
-    ![Profiles-Delivery](assets/images/profiles-delivery.png)
+    ![Profiles-Delivery](assets/images/)
 
 - ### Order History
     - The order history section is a table that keeps a record of every order the user has placed.
