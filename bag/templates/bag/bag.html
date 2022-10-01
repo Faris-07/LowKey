@@ -99,7 +99,7 @@
                             <p>Promotional Code</p>
                             <form action="{% url 'apply_coupon' %}" method="POST">
                                 {% csrf_token %}
-                                    <div class="form-row">
+                                    <div class="form-row justify-content-end">
                                         <div class="form-group col-2 text-right mb-0">
                                             {{ apply_coupon_form.code | as_crispy_field }}
                                         </div>
@@ -138,8 +138,10 @@
             </div>
             <!-- Empty Shopping Bag -->
             {% else %}
-            <div class="col-12">
+            <div class="col-12 h-100 mt-5">
                 <p class="text-center">Your bag is empty.</p>
+            </div>
+            <div class="col-12 d-flex justify-content-center mt-5">
                 <a href="{% url 'products' %}" class="btn btn-dark rounded-0">
                 <span>Continue Shopping</span>
                 </a>
@@ -151,7 +153,7 @@
 
 <!-- Shopping Bag for Smaller Screens -->
 <div class="row d-block d-sm-none d-none d-sm-block d-md-none">
-    <div class="product-container col-12">
+    <div class="product-container col-10 offset-1">
         <!-- Bag Subheading -->
         {% if bag_items %}
         <div class="row mb-2"></div>
@@ -222,7 +224,19 @@
             </div>
             {% endfor %}
             <!-- Order Total -->
-            <div class="col-10 offset-1 justify-content-center mt-4">
+            <div class="col-10 offset-1 justify-content-center mt-4 mb-4">
+                <p class="text-center">Promotional Code</p>
+                <form action="{% url 'apply_coupon' %}" method="POST">
+                {% csrf_token %}
+                    <div class="form-row justify-content-end">
+                        <div class="form-group col-4 text-right mb-0">
+                            {{ apply_coupon_form.code | as_crispy_field }}
+                        </div>
+                        <div>
+                        <input type="submit" value="Apply Promo" class="p-2 btn-dark border-0">
+                        </div>
+                    </div>
+                </form>
                 <h6><strong>Sub Total: £{{ total|floatformat:2 }}</strong></h6>
                 <h6>Delivery: £{{ delivery|floatformat:2 }}</h6>
                 <h4 class="mt-2"><strong>Total: £{{ grand_total|floatformat:2 }}</strong></h4>
@@ -239,10 +253,12 @@
                 </span>
                 </a>
             </div>
-            {% else %}
             <!-- Empty Shopping Bag -->
-            <div class="col-12 h-100">
-                <p>Your bag is empty.</p>
+            {% else %}
+            <div class="col-12 mt-5">
+                <p class="text-center">Your bag is empty.</p>
+            </div>
+            <div class="col-12 d-flex justify-content-center mt-5">
                 <a href="{% url 'products' %}" class="btn btn-dark rounded-0">
                 <span>Continue Shopping</span>
                 </a>

@@ -25,7 +25,7 @@ def profile(request):
                  Please ensure the form is valid.')
     else:
         form = UserProfileForm(instance=profile)
-    # List of the 5 most recent orders 
+    # List of the 5 most recent orders
     orders = profile.orders.all().order_by('-order_date')[:5]
 
     template = 'profiles/profile.html'

@@ -1,8 +1,8 @@
 import uuid
+from decimal import Decimal
 from django.db import models
 from django.conf import settings
 from django.db.models import Sum
-from decimal import Decimal
 from django.core.validators import MinValueValidator, MaxValueValidator
 
 from django_countries.fields import CountryField
@@ -62,7 +62,7 @@ class Order(models.Model):
             total = self.orderitems.aggregate(Sum('orderitem_total'))['orderitem_total__sum']
             discount = total * discount_as_decimal
             self.order_total = total - discount
-            self.delivery_cost = self.order_total - discount * settings.STANDARD_DELIVERY_PERCENTAGE / 100
+            self.delivery_cost = self.order_total * settings.STANDARD_DELIVERY_PERCENTAGE / 100
             self.grand_total = self.order_total + self.delivery_cost
             self.save()
 

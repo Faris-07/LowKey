@@ -7,14 +7,6 @@
     <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
 
-{% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
-{% endblock %}
-
 {% block content %}
     <!-- Checkout Heading -->
     <div class="container">
@@ -146,7 +138,11 @@
         </div>
     </div>
     <div id="loading-overlay">
-    <span class="loader"></span>
+    <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+    </div>
     </div>
 {% endblock %}
 
