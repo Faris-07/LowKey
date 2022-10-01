@@ -162,6 +162,37 @@ The initial keywords and phrases I came up with were:
 
 These phrases where used in the metadata at the head of the page.
 
+# Features
 
+## Navigation Bar
+
+- ### Links
+    - The navigation bar is at the top of every page and contains the links to all the other pages.
+    - The navbar is fully responsive, collapsing into a hamburger menu when the screen size is small e.g. mobile. 
+    - The current page is highlighted active to the user by bolder font. 
+    - The Shop link drops down into a sub-menu where the user can navigate to all products or choose from one of the four product categories.
+
+    ![Navbar-Links](assets/images/navbar-links.png) 
+
+- ### Search Bar
+    - The search bar is located in the middle of the navbar and can be used to search all products.
+    - Using the search bar will search both the product's title and description for a match.
+
+    ![Navbar-Search](assets/images/navbar-search.png) 
+
+- ### Account
+    - Located on the right side of the navbar is the account Icon where the user can manage their account.
+    - Clicking the account icon opens a dropdown menu with options for the user to register or sign in.
+    - If a user is signed in, the dropdown options change to 'My Profile' and 'Logout'.
+    - If the user signed in is a super user then a third option of 'Manage' is available. 
+
+    ![Navbar-Account](assets/images/navbar-account.png) 
+
+- ### Bag Icon
+    - Located on the right side of the navbar next to the accounts menu is the bag icon.
+    - Once a product is added to the bag, a number displaying the total quantity of items appears, located at the top right of the bag icon.
+    - Clicking the bag icon navigates the user to the shopping bag page which displays a summary of the bag where the user can edit and delete products from their bag.
+
+    ![Navbar-Bag](assets/images/navbar-bag.png)
 
 
