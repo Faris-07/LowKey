@@ -42,7 +42,7 @@ def profile(request):
 def user_orders(request, order_number):
     """ Displays the user's previous orders """
     order = get_object_or_404(Order, order_number=order_number)
-    order_date = order.date.strftime("%d-%m-%Y %H:%M:%S")
+    order_date = order.order_date.strftime("%d-%m-%Y %H:%M:%S")
 
     messages.info(request, (
         f'This is a past confirmation for order number {order_number}. '
