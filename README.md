@@ -115,3 +115,19 @@ There are some other model methods used at various points, `update_total` calcul
 ### Profile
 
 The profile app enables authenticated users to save their information so that when they are logged in the order form is pre-filled, creating an improved user experience. The `UserProfile` model is linked to the Django AllAuth user account.
+
+# Marketing
+
+### Plan
+
+The Lowkey menswear website is a business to customer e-commerce platform, built and designed to sell products to the user.
+
+To further enhance sales there is also a Lowkey menswear Facebook page, that will display information about new product arrivals and styling tips/trends. The links to the facbook page and other social sites can be found in the footer.
+
+Lowkey Menswear [Facebook Page](https://www.facebook.com/profile.php?id=100086142590661)
+
+![](assets/images/)
+
+Users are also able to subscribe to receive the 'Lowkey' newsletter, using the MailChimp form found in the footer. 
+
+![](assets/images/mailchimp-form.jpg)
