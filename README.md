@@ -92,7 +92,7 @@ The design of the database can be seen below.
 
 ![Database Schema](/static/images/)
 
-### Products App
+### Products
 
 This app controls the products that are displayed in the online shop. I have created two models to store the necessary data: `Products` & `Category`.
 
@@ -100,4 +100,12 @@ This app controls the products that are displayed in the online shop. I have cre
 
 `Category` stores the various category types of the clothing on sale, this allows the user to shop by category if they are looking for something specific.
 
+### Checkout
 
+The checkout app is used solely for the user to make purchases via the online shop; this app contains two models, `Order` & `OrderItem`. 
+
+`OrderItem` contains all of the information regarding the products that have been purchased as part of a specific order. It has a foreign key to `Product` & `Order`, it also contains the quantity purchased of that product and then the item total. This information is used to calculate the total cost for the order.
+
+`Order` contains all of the relevant address information for billing/shipping, a foreign key to the `UserProfile`, email & phone number. It also contains information regarding the payment itself, the stripe PID, original basket contents (so that if the order is changed, the admin user can see what was purchased initially). Each order has an order number which is automatically generated when a new order is added to the database using `UUID`.
+
+There are some other model methods used at various points, `update_total` calculates the overall total including any coupons that have been used depending on the order items linked to the order, ensuring the value is always correct.
