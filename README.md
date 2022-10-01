@@ -96,7 +96,9 @@ The design of the database can be seen below.
 
 This app controls the products that are displayed in the online shop. I have created two models to store the necessary data: `Products` & `Category`.
 
-`Products` enables individual products to be added to the database in order for them to be purchased via the online shop. Only admin users are able to access this functionality and it can be done from the front end using the `add_product` view. The admin can also edit and delete products from the front end using the `edit_product` and `delete_product` views respectively. This model has one Foreign Key which relates to the second model in this app, the category.
+`Products` enables individual products to be added to the database in order for them to be purchased via the online shop. Only admin users are able to access this functionality and it can be done from the front end using the `add_product` view. The admin can also edit and delete products from the front end using the `edit_product` and `delete_product` views respectively. The products model also contains the `likes` field which stores the like of a user and displays it as a wishlist item in their profile. 
+
+This model has one Foreign Key which relates to the second model in this app, the category.
 
 `Category` stores the various category types of the clothing on sale, this allows the user to shop by category if they are looking for something specific.
 
@@ -109,3 +111,7 @@ The checkout app is used solely for the user to make purchases via the online sh
 `Order` contains all of the relevant address information for billing/shipping, a foreign key to the `UserProfile`, email & phone number. It also contains information regarding the payment itself, the stripe PID, original basket contents (so that if the order is changed, the admin user can see what was purchased initially). Each order has an order number which is automatically generated when a new order is added to the database using `UUID`.
 
 There are some other model methods used at various points, `update_total` calculates the overall total including any coupons that have been used depending on the order items linked to the order, ensuring the value is always correct.
+
+### Profile
+
+The profile app enables authenticated users to save their information so that when they are logged in the order form is pre-filled, creating an improved user experience. The `UserProfile` model is linked to the Django AllAuth user account.
