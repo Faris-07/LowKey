@@ -2,6 +2,7 @@ import uuid
 from django.db import models
 from django.conf import settings
 from django.db.models import Sum
+from decimal import Decimal
 from django.core.validators import MinValueValidator, MaxValueValidator
 
 from django_countries.fields import CountryField
@@ -49,14 +50,21 @@ class Order(models.Model):
 
     def update_total(self):
         """ Updates total cost each time an order item is added """
-        self.order_total = self.orderitems.aggregate(
-            Sum('orderitem_total'))['orderitem_total__sum'] or 0
-        self.save()
+        if self.discount == 0:
+            self.order_total = self.orderitems.aggregate(
+                Sum('orderitem_total'))['orderitem_total__sum'] or 0
+            self.delivery_cost = self.order_total * settings.STANDARD_DELIVERY_PERCENTAGE / 100
+            self.grand_total = self.order_total + self.delivery_cost
+            self.save()
 
-        self.order_total = self.orderitems.aggregate(Sum('orderitem_total'))['orderitem_total__sum']
-        self.delivery_cost = self.order_total * settings.STANDARD_DELIVERY_PERCENTAGE / 100
-        self.grand_total = self.order_total + self.delivery_cost
-        self.save()
+        else:
+            discount_as_decimal = Decimal(self.discount / 100)
+            total = self.orderitems.aggregate(Sum('orderitem_total'))['orderitem_total__sum']
+            discount = total * discount_as_decimal
+            self.order_total = total - discount
+            self.delivery_cost = self.order_total - discount * settings.STANDARD_DELIVERY_PERCENTAGE / 100
+            self.grand_total = self.order_total + self.delivery_cost
+            self.save()
 
     def full_address(self):
         """ return address """

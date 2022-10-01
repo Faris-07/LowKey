@@ -204,16 +204,15 @@
     </div>
 
     <!-- Back to Profile & Products Buttons -->
-    <div class="row">
+    <div class="row col-6">
         {% if from_profile %}
-        <a href="{% url 'profile' %}" class="btn btn-black rounded-0 my-2">
-        <span class="icon mr-2">
-        <i class="fas fa-angle-left"></i>
-        </span>
-        <span class="text-uppercase">Back to Profile</span>
-        </a>
-        <div class="col-12 col-lg-7 text-right">
-            <a href="{% url 'products' %}" class="btn btn-dark rounded-0 my-2">
+        <div class="col-sm text-left">
+            <a href="{% url 'profile' %}" class="btn btn-dark rounded-0 p-2">
+            <span class="text-uppercase"><i class="fas fa-angle-left"></i> Profile</span>
+            </a>
+        </div>
+        <div class="col-sm text-right">
+            <a href="{% url 'products' %}" class="btn btn-dark rounded-0 p-2">
             <span class="text-uppercase">Back to Products</span>
             </a>
         </div>

@@ -139,7 +139,7 @@
             <!-- Empty Shopping Bag -->
             {% else %}
             <div class="col-12">
-                <p>Your bag is empty.</p>
+                <p class="text-center">Your bag is empty.</p>
                 <a href="{% url 'products' %}" class="btn btn-dark rounded-0">
                 <span>Continue Shopping</span>
                 </a>
@@ -257,6 +257,7 @@
 {% block postloadjs %}
 {{ block.super }}
 {% include 'products/includes/quantity_script.html' %}
+
 <!-- Update & Remove Buttons Script -->
 <script type="text/javascript">
     // Update quantity on click
