@@ -35,3 +35,9 @@ The target audience for 'Lowkey' are:
 - As a User, I can recover my password in case I forget it so that I can regain access to my account.
 - As a User, I can view my previous orders so that I can keep a record of what purchases I've made.
 - As a User, I can save my delivery information so that I do not have to refill it out for future orders.
+
+#### EPIC | Admin
+- As an Admin, I can add products so that I can update the site's inventory.
+- As an Admin, I can edit a product so that I can keep the products information up to date.
+- As an Admin, I can delete a product so that I can remove products no longer available.
+- As an admin, I can add coupon codes so that I can offer discounts to my customers.
