@@ -28,3 +28,10 @@ The target audience for 'Lowkey' are:
 - As a User, I can sort the products so that I can easily find products based on price, category, or title.
 - As a User I can add items to my Wishlist so that I can save them for later.
 
+#### EPIC | Accounts
+- As a User, I can register for an account so that I can use the features given to members.
+- As a User, I can receive a confirmation email when creating an account so that I know the registration was successful.
+- As a User I can log in and out of my account so that I can control and manage my account
+- As a User, I can recover my password in case I forget it so that I can regain access to my account.
+- As a User, I can view my previous orders so that I can keep a record of what purchases I've made.
+- As a User, I can save my delivery information so that I do not have to refill it out for future orders.
