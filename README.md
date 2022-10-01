@@ -82,3 +82,6 @@ The design of the app is based on the wireframes with a mix of another clothing 
 
 ## Typography
 - The font used on Lowkey is Noto Sans as it is a clear and easily readable font. It is also a sleek and elegant font which goes with the theme of the site.  
+
+## Imagery
+- All the images are based on clothing and where taken from [COS](https://www.cos.com/en_gbp/index.html) and [Blacksmith-store](https://www.blacksmith-store.com/)
