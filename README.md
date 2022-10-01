@@ -172,13 +172,13 @@ These phrases where used in the metadata at the head of the page.
     - The current page is highlighted active to the user by bolder font. 
     - The Shop link drops down into a sub-menu where the user can navigate to all products or choose from one of the four product categories.
 
-    ![Navbar-Links](assets/images/navbar-links.png) 
+    ![Navbar-Links](assets/images/) 
 
 - ### Search Bar
     - The search bar is located in the middle of the navbar and can be used to search all products.
     - Using the search bar will search both the product's title and description for a match.
 
-    ![Navbar-Search](assets/images/navbar-search.png) 
+    ![Navbar-Search](assets/images/) 
 
 - ### Account
     - Located on the right side of the navbar is the account Icon where the user can manage their account.
@@ -186,13 +186,37 @@ These phrases where used in the metadata at the head of the page.
     - If a user is signed in, the dropdown options change to 'My Profile' and 'Logout'.
     - If the user signed in is a super user then a third option of 'Manage' is available. 
 
-    ![Navbar-Account](assets/images/navbar-account.png) 
+    ![Navbar-Account](assets/images/) 
 
 - ### Bag Icon
     - Located on the right side of the navbar next to the accounts menu is the bag icon.
     - Once a product is added to the bag, a number displaying the total quantity of items appears, located at the top right of the bag icon.
     - Clicking the bag icon navigates the user to the shopping bag page which displays a summary of the bag where the user can edit and delete products from their bag.
 
-    ![Navbar-Bag](assets/images/navbar-bag.png)
+    ![Navbar-Bag](assets/images/)
 
+## Home Page
+    
+- ### Hero Image
+    - The hero image welcomes the user and tells the user to check out the latest arrivals for the season.
+    - A button labelled 'Shop Now' takes the user to the products page.
+    - The image will change depending on the size of the screen.
 
+    ![Hero-Image](assets/images/)
+
+- ### Essentials
+    - The essentials cards show the user some of the product categories they should check out.
+    - Clicking on one of the cards will take the user to that specififc categories page.
+    - On smaller screens the cards turn into a carousel which a user can swipe through.
+
+    ![Essentials-cards](assets/images/)
+
+- ### Footer 
+    - The footer rests at the bottom of each page.
+    - The footer is responsive and breaks up the page with a black border on the top.
+    - The footer is broken up into 3 sections. The about us, quick links and the newsletter sign up.
+    - The Quick Links section has links to all parts of the site as well as the privacy policy.
+    - The footer also includes social media links to lowkey menswear socials so they can stay up to date with any news. The links will open to a new tab to allow easy navigation for the user.
+    - The footer also contains an email address so the user can contact the store.
+
+    ![Footer](static/images/)
