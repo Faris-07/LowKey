@@ -58,17 +58,14 @@ body {
 }
 
 /* Footer */
-footer {
-	bottom: 0;
-	position: relative;
-}
-
 .site-footer {
-  padding:20px 0 10px;
-  font-size:15px;
-  line-height:24px;
-  color:#737373;
-  border-top: 1px solid;
+	bottom: 0;
+	position: fixed;	
+	padding:20px 0 10px;
+	font-size:15px;
+	line-height:24px;
+	color:#737373;
+	border-top: 1px solid;
 }
 
 .site-footer hr {
