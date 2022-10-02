@@ -42,3 +42,29 @@
     - Liked products will appear in the user's wishlist items list, located on the user's profile page.
     ![](assets/images/)
 
+#### EPIC | Accounts
+- As a User, I can register for an account so that I can use the features given to members.
+    - Users can click the 'Sign in/up' accounts icon located in the header of the page, and from there click the link 'Register'.
+Once on the registration page, users can fill in a short form to sign up for a Lowkey account.
+    ![](assets/images/)
+
+- As a User, I can receive a confirmation email when creating an account so that I know the registration was successful.
+    - Once the registration form has been submitted, the user will be sent a confirmation email which contains a link that the user has to follow to confirm their account.
+    ![](assets/images/)
+
+- As a User I can log in and out of my account so that I can control and manage my account
+    - Once a user has created an account they can log-in using the profile icon in the navbar.
+    ![](assets/images/)
+
+- As a User, I can recover my password in case I forget it so that I can regain access to my account.
+    - If a user forgets their password they can click the link in the login page to recieve an email so that they can create a new password.
+    ![](assets/images/)
+
+- As a User, I can view my previous orders so that I can keep a record of what purchases I've made.
+    - Once a user has created an account and placed an order, they can view their order's in their profile section located under the accounts menu.
+Clicking the user's order number will take you to a summary page of that order.
+    ![](assets/images/)
+
+- As a User, I can save my delivery information so that I do not have to refill it out for future orders.
+    - Users can fill in their delivery information on their profile page. This information will autofill the checkout form when the user checkouts.
+    ![](assets/images/)
