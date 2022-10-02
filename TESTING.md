@@ -88,3 +88,4 @@ Clicking the user's order number will take you to a summary page of that order.
     ![](assets/images/)
 
 - As an admin, I can add coupon codes so that I can offer discounts to my customers.
+    - 

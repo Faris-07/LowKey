@@ -64,7 +64,7 @@ def add_coupon(request):
         form = CouponForm()
 
     coupons = Coupon.objects.all()
-    template = 'coupons/add_coupon.html'
+    template = 'coupon/add_coupon.html'
     context = {
         'form': form,
         'coupons': coupons,

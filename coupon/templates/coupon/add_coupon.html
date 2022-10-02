@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Add Product Heading -->
+<div class="container mt-4">
+<div class="row">
+    <div class="col-12">
+        <h2 class="logo-font mb-4">Coupon Management</h2>
+        <h5 class="text-muted mb-4">Add a Coupon</h5>
+    </div>
+</div>
+
+<!-- Add product form -->
+<div class="container">
+    <div class="row d-flex justify-content-center">
+        <div class="col-12">
+            <form action="{% url 'add_coupon' %}" method="POST" class="" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form | crispy }}
+                <!-- Add & Cancel Buttons -->
+                <div class="text-center">
+                    <a class="btn btn-danger rounded-0 p-2 mt-2 mr-2" href="{% url 'home' %}">Cancel</a>
+                    <button type="submit" class="btn btn-dark rounded-0 p-2 w-30 mt-2">Add Coupon</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
