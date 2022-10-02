@@ -138,3 +138,10 @@ Clicking the user's order number will take you to a summary page of that order.
 - As a User, I can contact the business so that I can find out any information that I require.
     - Users can directly contact Lowkey Menswear via email which is provided in the footer
     ![](assets/images/)
+
+#### EPIC | Marketing
+- As an Admin I conducted research and implemented SEO keywords to increase traffic to my website.
+    - I have implemented SEO by using short and long tail keywords in the head of the website.
+
+- As an Admin I have created a Facebook shop page to increase traffic to my website.
+    - 
