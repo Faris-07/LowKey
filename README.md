@@ -442,3 +442,55 @@ These phrases where used in the metadata at the head of the page.
 - A FAQ page helping users with commonly asked questions.
 - A top products feature to dynamically show the top/bestselling products.
 - Option to share products on social media.
+
+## Technologies
+
+### Languages used
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+- [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+- [Python](https://www.python.org/)
+
+### Libraries and Programs Used
+
+- [Git](https://git-scm.com/)
+    - Version control.
+- [GitHub](https://github.com/)
+    - For storing code and deploying the site.
+- [Gitpod](https://www.gitpod.io/)
+    - Used for building and editing my code.
+- [Django](https://www.djangoproject.com/)
+    - A python based framework that was used to develop the site.
+- [Bootstrap](https://getbootstrap.com/)
+    - For help designing the html templates.
+- [Google Fonts](https://fonts.google.com/)
+    - Used to style the website's logo.
+- [Font Awesome](https://fontawesome.com/)
+    - Used to obtain the icons used.
+- [Google Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
+    - Used to help fix problem areas and identify bugs.
+- [AWS](https://aws.amazon.com/)
+    - Used to store static files and images.
+- [Favicon.io](https://favicon.io/)
+    - Used to generate the site's favicon.
+- [DrawSQL](https://drawsql.app/)
+    - Used for ERD diagram.
+- [PostgreSQL](https://www.postgresql.org/)
+    - Database used through heroku.
+- [W3C Markup Validation Service](https://validator.w3.org/) 
+    - Used to validate HTML code.
+- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input)
+    - Used to validate CSS code.
+- [Pep8](http://pep8online.com/)
+    - Used to validate Python code.
+- [JSHint](https://jshint.com/)
+    - Used to validate JS code.
+- [Crispy forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+    - Used to render forms.
+- [Django-tempus-dominus](https://pypi.org/project/django-tempus-dominus/)
+    - Used for a date and time picker on add coupon page.
+- [Stripe](https://stripe.com/en-gb)
+    - Used to take payments and generate webhooks.
+- [Heroku](https://www.heroku.com/)
+    - To deploy the project.
