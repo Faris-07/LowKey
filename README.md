@@ -774,3 +774,36 @@ Now that you have created a S3 bucket with its user group attached, we need to c
 16. Inside the new media folder you just created, click 'Upload', 'Add files', and then select all the images that you are using on your site.
 17. Then under 'Permissions' select the option 'Grant public-read access' and click upload. You may need to also check an acknowledgment warning checkbox too. 
 18. Once that is finished you're all set. All your static files and media files should be automatically linked from django to your S3 bucket.
+
+### Gmail SMTP
+
+I have used Gmail SMTP to send confirmation emails and all AllAuth related emails when the deployed version is used.
+
+![](assets/images/)
+
+### Stripe
+
+In order to take payments for the online store, I implemented Stripe; you first must create an account with them and then using the [documentation](https://stripe.com/docs/payments/quickstart). Then follow this [guide](https://stripe.com/docs/payments/accept-a-payment#web-collect-card-details) to setup stripe payments.
+
+#### Webhooks
+1. To set up a webhook, sign into your stripe account and click 'Developers' located in the top right of the navbar.
+2. Then in the side-nav under the Developers title, click on 'Webhooks', then 'Add endpoint'.
+3. On the next page you will need to input the link to your heroku app followed by /checkout/wh/. It should look something like this:  
+    ```
+    https://your-app-name.herokuapp.com/checkout/wh/
+    ```
+4. Then click '+ Select events' and check the 'Select all events' checkbox at the top before clicking 'Add events' at the bottom. Once this is done finish the form by clicking 'Add endpoint'.
+5. Your webhook is now created and you should see that it has generated a secret key. You will need this to add to your heroku config vars.
+6. Head over to your app in heroku and navigate to the config vars section under settings. You will need the secret key you just generated for your webhook, in addition to your Publishable key and secret key that you can find in the API keys section back in stripe.
+7. Add these values under these keys:  
+    ```
+    STRIPE_PUBLIC_KEY = 'insert your stripe publishable key'
+    STRIPE_SECRET_KEY = 'insert your secret key'
+    STRIPE_WH_SECRET = 'insert your webhooks secret key'
+    ```
+8. Finally, back in your setting.py file in django, insert the following near the bottom of the file:  
+    ```
+    STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+    STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
+    STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
+    ```
