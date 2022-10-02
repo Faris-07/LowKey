@@ -59,6 +59,10 @@ body {
 	z-index: 5;
 }
 
+.height-container {
+	min-height: 55vh;
+}
+
 /* Footer */
 .site-footer {
 	bottom: 0;
