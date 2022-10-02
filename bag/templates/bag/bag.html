@@ -100,7 +100,7 @@
                             <form action="{% url 'apply_coupon' %}" method="POST">
                                 {% csrf_token %}
                                     <div class="form-row justify-content-end">
-                                        <div class="form-group col-2 text-right mb-0">
+                                        <div class="form-group col-3 text-right mb-0">
                                             {{ apply_coupon_form.code | as_crispy_field }}
                                         </div>
                                         <div>
@@ -228,11 +228,11 @@
                 <p class="text-center">Promotional Code</p>
                 <form action="{% url 'apply_coupon' %}" method="POST">
                 {% csrf_token %}
-                    <div class="form-row justify-content-end">
-                        <div class="form-group col-6 text-right mb-0">
+                    <div class="form-row">
+                        <div class="form-group col-7 text-right mb-0">
                             {{ apply_coupon_form.code | as_crispy_field }}
                         </div>
-                        <div>
+                        <div class="col-3">
                         <input type="submit" value="Apply Promo" class="p-2 btn-dark border-0">
                         </div>
                     </div>

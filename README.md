@@ -516,8 +516,6 @@ All of my code has been validated using an online validator specific to the lang
 
 - [Pep8](http://pep8online.com/)
     - Used to test my Python code for any issues or errors; please note when using inline Flake8 linter some errors flagged up that didn't flag in pep8 and have therefore been left as they are.
-    
-    ![](assets/images/)
 
 ## Deployment
 
