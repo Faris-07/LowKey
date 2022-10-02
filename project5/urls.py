@@ -30,4 +30,4 @@ urlpatterns = [
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = 'project5.views.handler404'
-handler500 = 'project5.views.error_500'
+handler500 = 'project5.views.handler500'
