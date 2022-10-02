@@ -68,7 +68,7 @@
                         <a class="nav-link" href="#" id="shop-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Shop
                         </a>
-                        <div class="dropdown-menu border-1" aria-labelledby="clothing-link">
+                        <div class="dropdown-menu border-1" aria-label="clothing-link">
                             <a href="{% url 'products' %}" class="dropdown-item">New Arrivals</a>
                             <a href="{% url 'products' %}?category=shirts" class="dropdown-item">Shirts</a>
                             <a href="{% url 'products' %}?category=trousers_jeans" class="dropdown-item">Trouser & Jeans</a>
@@ -277,7 +277,7 @@
         
         <!-- Toast Script -->
         {% block postloadjs %}
-        <script type="text/javascript">
+        <script>
             $('.toast').toast('show');
         </script>
         {% endblock %}
