@@ -148,9 +148,9 @@ Clicking the user's order number will take you to a summary page of that order.
 
 ## Feature Testing
 
-### Nav Bar
+### Navigation Bar
 
-- ### Links
+- #### Links
     Tested:
     - The links change colour when hovered over.
     - The link to the current page is highlighted by bolder font.
@@ -179,5 +179,30 @@ Clicking the user's order number will take you to a summary page of that order.
     Tested:
     - When a product is added to the bag, a number displaying the total quantity of items appears, located at the top right of the bag icon.
     - Clicking the bag icon navigates the user to the shopping bag page which displays a summary of what's been added.
+
+    ![](assets/images/)
+
+### Home Page
+    
+- #### Hero Image
+    Tested:
+    - The button labelled 'Shop Now' takes the user to the products page.
+    - The image changes depending on the size of the screen.
+
+    ![](assets/images/)
+
+- #### Essentials
+    Tested:
+    - Clicking one of the categories takes the user to the page displaying only products from that category. 
+    - Tested that on smaller screen sizes the cards turn into a card carousel so users can swipe through them.
+
+    ![](assets/images/)
+
+- #### Footer
+    Tested:
+    - All the links change colour when hovered over.
+    - All the links in the Quick Links section work.
+    - Clicking the social media links takes you to the relevant website.
+    - The Newsletter section has an option to input your email and sign up for the weekly newsletter.
 
     ![](assets/images/)
