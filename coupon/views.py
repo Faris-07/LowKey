@@ -1,6 +1,7 @@
-from django.shortcuts import redirect
+from django.shortcuts import render, redirect, reverse
 from django.utils import timezone
 from django.views.decorators.http import require_POST
+from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .models import Coupon
 from .forms import ApplyCouponForm, CouponForm
@@ -39,3 +40,34 @@ def apply_coupon(request):
                 )
     # Redirect user to bag view
     return redirect('bag_view')
+
+
+@login_required
+def add_coupon(request):
+    """ Add a coupon to the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Only store owners can do that.')
+        return redirect(reverse('home'))
+
+    if request.method == 'POST':
+        form = CouponForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully added coupon!')
+            return redirect('add_coupon')
+        else:
+            messages.error(
+                request,
+                'Failed to add coupon. Please ensure the form is valid.'
+                )
+    else:
+        form = CouponForm()
+
+    coupons = Coupon.objects.all()
+    template = 'coupons/add_coupon.html'
+    context = {
+        'form': form,
+        'coupons': coupons,
+    }
+
+    return render(request, template, context)

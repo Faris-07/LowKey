@@ -42,7 +42,7 @@
     - Liked products will appear in the user's wishlist items list, located on the user's profile page.
     ![](assets/images/)
 
-#### EPIC | Accounts
+### EPIC | Accounts
 - As a User, I can register for an account so that I can use the features given to members.
     - Users can click the 'Sign in/up' accounts icon located in the header of the page, and from there click the link 'Register'.
 Once on the registration page, users can fill in a short form to sign up for a Lowkey account.
@@ -67,4 +67,24 @@ Clicking the user's order number will take you to a summary page of that order.
 
 - As a User, I can save my delivery information so that I do not have to refill it out for future orders.
     - Users can fill in their delivery information on their profile page. This information will autofill the checkout form when the user checkouts.
+    - When placing an order a checkbox under the delivery information can be checked to save the information added to the form.
     ![](assets/images/)
+
+### EPIC | Admin
+- As an Admin, I can add products so that I can update the site's inventory.
+    - Admins can navigate to the 'Manage' page under the accounts menu.
+    - Once on the product management page the admin can add new products by filling out the 'add product form'.
+    ![](assets/images/)
+
+- As an Admin, I can edit a product so that I can keep the products information up to date.
+    - If an admin is logged in, the edit button will be displayed in the product detail page.
+    - When the 'Edit' button is clicked the admin is taken to the 'Edit product' page. The admin can then edit existing products using the 'edit product form'.
+    ![](assets/images/)
+
+- As an Admin, I can delete a product so that I can remove products no longer available.
+    - If an admin is logged in, the delete button will be displayed in the product detail page.
+    - When the 'delete' button is clicked a confirmation model is diplayed asking the admin if they want to delete the specific product.
+    - If the admin wants to delete the product they click delete, else if they no longer want to delete the product they can press the 'cancel' button or click outside of the modal to exit the confirmation modal.
+    ![](assets/images/)
+
+- As an admin, I can add coupon codes so that I can offer discounts to my customers.
