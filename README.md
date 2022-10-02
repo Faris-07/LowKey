@@ -346,3 +346,44 @@ These phrases where used in the metadata at the head of the page.
     - If the coupon code entered is invalid, an error message will be displayed, and the totals will not change.
 
     ![Bag-Coupons](assets/images/)
+
+## Checkout
+
+- ### Details
+    - The details section appears on the left on large screens or underneath the order summary on smaller screens.
+    - The user fills out their contact details, delivery address, and card number.
+    - If the user is a guest user, a link to create an account or login is displayed under the delivery information form.
+    - If the user is signed in a checkbox to save the delivery information can be checked.
+    - If the user is signed in and has delivery information saved, the delivery details and email address will be automatically filled in. 
+    - All fields that have an Asterix are required. If any field is left blank on the form then the affected field will be highlighted.  
+
+    ![Checkout-Details](assets/images/)
+
+- ### Order Summary
+    - The order summary section appears on the right on large screens or at the top on smaller screens. 
+    - This section lists all the items about to be purchased, along with the quantity, size, subtotal, delivery and order total.
+    - Clicking the image of any items in the summary will take the user to that specific product's detail page. 
+
+    ![Checkout-Order-Summary](assets/images/)
+
+- ### Payment
+    - Underneath the delivery details is the card payment box which is from [Stripe](https://dashboard.stripe.com/login). 
+    - Only numbers can be entered into the card payment box. Incorrect card numbers will automatically show an invalid card number error.
+    - The site can be tested by using the Stripe dummy card number 4242 4242 4242 4242 with the expiry date 04/24 and the CVC code 242.
+    - At the bottom of the page there is the 'Complete order' and 'Bag' button which either let the user checkout or return back to their bag. There is also a warning message informing the user of how much their card is about to be charged.
+
+    ![Checkout-Payment](assets/images/)
+
+
+- ### Loading Spinner
+    - When the form is valid and the user makes the payment a loading spinner will render until the information is processed. 
+    
+    ![Checkout-Spinner](assets/images/)
+
+- ### Confirmation 
+    - Once the order has been processed the user is taken to the checkout success page.
+    - This page summarises the completed order. It lists the order number, order date, the items ordered with their quantities, item images, delivery address, and the billing info. 
+    - A confirmation email is sent to the email address provided, and this is displayed at the top of the page. 
+    - At the end of the summary is a button that the user can click which will take them back to the main shop.
+    
+     ![Checkout-Confirmation](assets/images/)
