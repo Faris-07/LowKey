@@ -1,26 +1,18 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
-    <div class="container h-100">
-        <div class="row h-100">
-            <div class="col-12 my-auto">
-                <h1 class="display-5 text-dark">
-                    The page you are looking for isn't available
-                </h1>
-                <div class="my-5">
-                    <h4>
-                        <a href="{% url 'products' %}" 
-                            class="btn btn-lg rounded-0 btn-dark p-2">
-                                Return to shop
-                        </a>
-                    </h4>
-                </div>
+<div class="container h-100">
+    <div class="row h-100">
+        <div class="col-12 my-auto">
+            <div class="text-center">
+                <h1 class="display-1 fw-bold">404</h1>
+                <p class="fs-3"> <span class="text-danger">Opps!</span> Page not found.</p>
+                <p class="lead">
+                    The page your looking for doesnt exist.
+                  </p>
+                <a href="{% url 'home' %}" class="btn btn-dark border-0 p-2">Go Home</a>
             </div>
         </div>
     </div>
+</div>
 {% endblock %}
