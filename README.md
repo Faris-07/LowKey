@@ -509,7 +509,7 @@ All of my code has been validated using an online validator specific to the lang
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input)
     - Used to validate all CSS code written and used in this webpage.
 
-![](assets/images/)
+![](assets/images/CSS-validator.png)
 
 - [JSHint](https://jshint.com/)
     - Used to validate JS code
