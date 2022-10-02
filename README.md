@@ -531,3 +531,39 @@ Cloning your repository will allow you to download a local version of the reposi
 4. Now open Gitpod & select the directory location where you would like the clone created
 5. In the terminal type 'git clone' & then paste the link you copied in GitHub
 6. Press enter and your local clone will be created.
+
+### Django
+
+This project uses the Django framework. To install django, follow these steps:
+
+1. In your IDE type the command:  
+    `pip3 install django`
+2. Then to name your project type:  
+    `django-admin startproject *Your project name here*`  
+This will add your django project folder to your file explorer
+3. Next you will need to add a gitignore file. To do this enter the command line:  
+    `touch .gitignore`
+4. Inside this file add these 3 lines:  
+    ``` 
+    *.sqlite3
+    *.pyc
+    __pycache__
+    ```
+5. To check everything is up and running, run the command:  
+    `python3 manage.py runserver`
+    This should expose port 8000. Open that port and you should be welcomed by Django's success page.
+6. Next you need to perform the initial migrations. This is done by running the command:
+    `python3 manage.py migrate`
+7. Finally, in order to have access to the admin panel you will need to create a superuser. This is done by running the command:
+    `python3 manage.py createsuperuser`
+    This will then ask you to create a username and password with an optional email address.
+8. Once these steps are completed you can push your changes to github by running the commands, in order:
+    ```
+    git add .
+    git commit -m "initial commit"
+    git push
+    ```
+
+#### All Auth
+
+Inside the django framework is a package called Allauth. This package handles all the registration and sign in processes. The steps to install Allauth can be found [here](https://django-allauth.readthedocs.io/en/latest/installation.html).
