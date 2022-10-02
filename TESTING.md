@@ -234,3 +234,29 @@ Clicking the user's order number will take you to a summary page of that order.
     - Toast messages inform the user of their status.
 
     ![](assets/images/)
+
+### Profile
+
+- #### Delivery Details
+    Tested:
+    - The delivery details section stores the user's delivery address and phone number.
+    - The saved delivery details auto-fill the delivery form at the checkout.
+    - A toast message informs the user that the delivery details have been updated.
+
+    ![](assets/images/)
+   
+- #### Order History
+    Tested:
+    - The table displays the order number, date it was ordered, items ordered, item size, quantities of the items and the order total.
+    - Clicking the order number will take the user to the orders detail page/order success page.
+    - Hovering over the truncated order number reveals the whole order number.
+    - The order summary page has a button to take the user back to their profile page. 
+    - The order history shows the five most recent orders.
+
+    ![](assets/images/)
+
+- #### Wishlist Items
+    Tested:
+    - The Wishlist items section keeps a list of all products that the user has liked.
+
+    ![](assets/images/)
