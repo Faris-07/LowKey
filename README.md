@@ -499,6 +499,8 @@ These phrases where used in the metadata at the head of the page.
 
 The main branch of this repository has been used for the deployed version of this application.
 
+The site was deployed via Heroku, and the live link can be found here - [Lowkey Menswear](https://lowkey-menswear.herokuapp.com/)
+
 ### Using Github & Gitpod
 
 To deploy my Django application, I had to use the [Code Institute Full Template](https://github.com/Code-Institute-Org/gitpod-full-template).
@@ -807,3 +809,14 @@ In order to take payments for the online store, I implemented Stripe; you first 
     STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
     STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
     ```
+## Credits
+
+Throughout the process of building this website, I have used various sources online to help me fix bugs & tackle problems
+
+- When researching on how to implement the coupon function I came across this [stack overflow](https://stackoverflow.com/questions/64196872/how-to-verify-a-coupon-using-django-framework-and-sqlite) post which helped me conceptualize how the coupon functionality would work.
+- This project was inspired by the [Code Institutes](https://codeinstitute.net/) Boutique Ado project. Which inspired the overall feel of the bag, checkout and profile pages and some site  functionality.
+- The [Django documentation](https://docs.djangoproject.com/en/4.0/) was very useful when trying to diagnose or solve issues.
+
+### Media
+    - All product images were taken from [Blacksmith-store](https://www.blacksmith-store.com/) and [COS](https://www.cos.com/en_gbp/index.html).
+    - All static site images were taken from [COS](https://www.cos.com/en_gbp/index.html) and [Zara](https://www.zara.com/uk/)
