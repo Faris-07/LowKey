@@ -91,3 +91,32 @@ Clicking the user's order number will take you to a summary page of that order.
     - Admins can navigate to the 'Coupon' page under the accounts menu.
     - Once on the coupon management page the admin can add new coupons by filling out the 'add coupon form'.
     ![](assets/images/)
+
+#### EPIC | Purchasing
+- As a User, I can add items to my basket in varying quantities so that I can keep the items in my basket until I'm ready to buy.
+    - On the product's detail page, shoppers can adjust the quantity by using the quantity selector, or by typing in the amount and clicking the 'Add to bag' button, to add the item to the bag.
+    - At the bottom of the products card, is an 'Add to Bag' button which adds 1 item to the bag by default.
+    ![](assets/images/)
+
+- As a User, I can view my bag so that I can see the total cost of the transaction and the items I will be purchasing.
+    - Clicking the bag icon in the top right corner will take the user to their bag.
+    - The shopping bag page lists the items added by the user, along with the subtotal of each item, delivery costs, and the total to pay.
+    ![](assets/images/)
+
+- As a User, I can always see a running subtotal so that I know how much I'm spending.
+    - The bag icon will update automatically to reflect how many items are in the bag.
+    - The user will also get success toast messages for every product they add to their bag which displays the bag items, quantity, size and bag total.
+    ![](assets/images/)
+
+- As a User, I can easily enter my payment details so that I can checkout quickly with no problems.
+    - Paying for items is simple as the user enters their card details into the payment box on the checkout page and click the 'Complete Order' button.
+    ![](assets/images/)
+
+- As a User, I can view confirmation of my purchases so that I know the order was received and can review what I've purchased.
+    - After an order has been completed, the user will be taken to a confirmation page with a summary of the order.
+    - Users will also recieve a confirmation email of their order.
+    ![](assets/images/)
+
+- As a User I can apply promotional codes so that I can receive a discount on my purchase.
+    - Users can use coupon codes to take off a certain percent of their order.
+     ![](assets/images/)
