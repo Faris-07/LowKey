@@ -120,3 +120,21 @@ Clicking the user's order number will take you to a summary page of that order.
 - As a User I can apply promotional codes so that I can receive a discount on my purchase.
     - Users can use coupon codes to take off a certain percent of their order.
      ![](assets/images/)
+
+#### EPIC | Interaction
+- As a User I can add items to my Wishlist so that I can save them for later.
+    - Users can click a 'Add to Wishlist' heart button, which is on the upper right corner of the product image on the product's detail page.
+    - Clicking the heart will add the product to the users wishlist and fill in the heart. Otherwise, if the product is already liked and the user unlikes it then the product will be removed from the users wishlist and the filled in heart will become empty.
+    ![](assets/images/)
+
+- As a User I can sign up for a newsletter to receive up to date information regarding items for sale and discounts.
+    - In the footer is a 'Newsletter' section, where the user can input their email address to sign up.
+    ![](assets/images/)
+
+- As a User, I can connect to the site's social media pages so that I can follow them and keep up to date with their products and promotions.
+    - Users can connect with Lowkey Menswear by following their social media pages using the links found in the footer.
+    ![](assets/images/)
+
+- As a User, I can contact the business so that I can find out any information that I require.
+    - Users can directly contact Lowkey Menswear via email which is provided in the footer
+    ![](assets/images/)
