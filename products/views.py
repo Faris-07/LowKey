@@ -46,7 +46,8 @@ def products_view(request):
                      criteria!")
                 return redirect(reverse("products"))
 
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = Q(
+                name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -76,7 +77,8 @@ def product_detail(request, product_id):
             messages.success(
                 request, f'Added {product.name} to your wishlist'
                 )
-        return HttpResponseRedirect(reverse('product_detail', args=[product.id]))
+        return HttpResponseRedirect(
+            reverse('product_detail', args=[product.id]))
     else:
         product = get_object_or_404(Product, pk=product_id)
         liked = False
