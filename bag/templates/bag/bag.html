@@ -110,7 +110,7 @@
                             </form>
                             {% if coupon %}
                             <h6><strong>Sub Total: £{{ total|floatformat:2 }}</strong></h6>
-                            <h6><strong class="text-success">{{ coupon }}</strong> ({{ coupon.discount}}% off): <span class="text-danger">- £{{ discount | floatformat:2 }}</span></h6>
+                            <h6><strong class="text-success">{{ coupon }}</strong> ({{ coupon.discount}}% off)</h6>
                             <h6>Delivery: £{{ delivery|floatformat:2 }}</h6>
                             <h4 class="mt-4"><strong>Total: £{{ grand_total|floatformat:2 }}</strong></h4>
                             {% else %}
@@ -229,7 +229,7 @@
                 <form action="{% url 'apply_coupon' %}" method="POST">
                 {% csrf_token %}
                     <div class="form-row justify-content-end">
-                        <div class="form-group col-4 text-right mb-0">
+                        <div class="form-group col-6 text-right mb-0">
                             {{ apply_coupon_form.code | as_crispy_field }}
                         </div>
                         <div>
@@ -237,9 +237,16 @@
                         </div>
                     </div>
                 </form>
+                {% if coupon %}
+                <h6><strong>Sub Total: £{{ total|floatformat:2 }}</strong></h6>
+                <h6><strong class="text-success">{{ coupon }}</strong> ({{ coupon.discount}}% off)</h6>
+                <h6>Delivery: £{{ delivery|floatformat:2 }}</h6>
+                <h4 class="mt-2"><strong>Total: £{{ grand_total|floatformat:2 }}</strong></h4>
+                {% else %}
                 <h6><strong>Sub Total: £{{ total|floatformat:2 }}</strong></h6>
                 <h6>Delivery: £{{ delivery|floatformat:2 }}</h6>
                 <h4 class="mt-2"><strong>Total: £{{ grand_total|floatformat:2 }}</strong></h4>
+                {% endif %}
             </div>
             <!-- Back & Checkout Buttons -->
             <div class="col-10 offset-1 mt-2">

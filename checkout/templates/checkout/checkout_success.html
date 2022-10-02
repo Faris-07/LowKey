@@ -86,6 +86,7 @@
                         <small class="font-weight-bold">Delivering To:</small>
                     </div>
                 </div>
+                <!-- Full Name -->
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p class="mb-0">Full Name:</p>
@@ -94,6 +95,7 @@
                         <p class="mb-0">{{ order.full_name }}</p>
                     </div>
                 </div>
+                <!-- Address Line 1 -->
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p class="mb-0">Address 1:</p>
@@ -102,6 +104,7 @@
                         <p class="mb-0">{{ order.street_address1 }}</p>
                     </div>
                 </div>
+                <!-- Address Line 2 -->
                 {% if order.street_address2 %}
                 <div class="row">
                     <div class="col-12 col-md-4">
@@ -112,6 +115,7 @@
                     </div>
                 </div>
                 {% endif %}
+                <!-- Postcode -->
                 {% if order.postcode %}
                 <div class="row">
                     <div class="col-12 col-md-4">
@@ -122,6 +126,7 @@
                     </div>
                 </div>
                 {% endif %}
+                <!-- Town or city -->
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p class="mb-0">Town or City:</p>
@@ -130,6 +135,7 @@
                         <p class="mb-0">{{ order.town_city }}</p>
                     </div>
                 </div>
+                <!-- County -->
                 {% if order.county %}
                 <div class="row">
                     <div class="col-12 col-md-4">
@@ -139,6 +145,7 @@
                         <p class="mb-0">{{ order.county }}</p>
                     </div>
                 </div>
+                <!-- Country -->
                 {% endif %}
                 <div class="row">
                     <div class="col-12 col-md-4">
@@ -148,6 +155,7 @@
                         <p class="mb-0">{{ order.country }}</p>
                     </div>
                 </div>
+                <!-- Phone Number -->
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p class="mb-0">Phone Number:</p>
@@ -156,11 +164,13 @@
                         <p class="mb-0">{{ order.phone_number }}</p>
                     </div>
                 </div>
+                <!-- Billing info -->
                 <div class="row">
                     <div class="col">
                         <small class="font-weight-bold">Billing Info:</small>
                     </div>
                 </div>
+                <!-- Subtotal -->
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p class="mb-0">Subtotal:</p>
@@ -169,18 +179,14 @@
                         <p class="mb-0">{{ order.order_total }}</p>
                     </div>
                 </div>
+                <!-- Coupon -->
                 {% if order.coupon %}
                 <div class="row">
-                    <div class="col">
-                        <p class="mb-1">Subtotal: {{ order.order_total }} </p>
+                    <div class="col-12 col-md-4">
+                        <p class="mb-0">Promo: <span class="text-success">{{ order.coupon }}</span> ({{order.discount}}%)</p>
                     </div>
                 </div>
-
-                <div class="row">
-                    <div class="col">
-                        <p class="mb-1"><span class="text-success">{{ order.coupon }}</span> ({{order.discount}}% off):<span class="text-danger"> -£{{ discount }}</span> </p>
-                    </div>
-                </div>
+                <!-- Delivery -->
                 {% endif %}
                 <div class="row">
                     <div class="col-12 col-md-4">
@@ -211,7 +217,7 @@
             <span class="text-uppercase"><i class="fas fa-angle-left"></i> Profile</span>
             </a>
         </div>
-        <div class="col-sm text-right">
+        <div class="col-12 col-lg-7 text-right">
             <a href="{% url 'products' %}" class="btn btn-dark rounded-0 p-2">
             <span class="text-uppercase">Back to Products</span>
             </a>
