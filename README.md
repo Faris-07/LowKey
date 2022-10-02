@@ -495,6 +495,30 @@ These phrases where used in the metadata at the head of the page.
 - [Heroku](https://www.heroku.com/)
     - To deploy the project.
 
+## Testing
+I have used a combination of manual and automated testing to ensure the website's functionality meets the desired intent.
+
+### Code Validation
+All of my code has been validated using an online validator specific to the language, all code now passes with zero errors. 
+
+- [W3C Markup Validation Service](https://validator.w3.org/) 
+    - Used to validate all HTML code written and used in this webpage.
+
+![](assets/images/)
+
+- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input)
+    - Used to validate all CSS code written and used in this webpage.
+
+![](assets/images/)
+
+- [JSHint](https://jshint.com/)
+    - Used to validate JS code
+
+- [Pep8](http://pep8online.com/)
+    - Used to test my Python code for any issues or errors; please note when using inline Flake8 linter some errors flagged up that didn't flag in pep8 and have therefore been left as they are.
+    
+    ![](assets/images/)
+
 ## Deployment
 
 The main branch of this repository has been used for the deployed version of this application.
@@ -818,5 +842,5 @@ Throughout the process of building this website, I have used various sources onl
 - The [Django documentation](https://docs.djangoproject.com/en/4.0/) was very useful when trying to diagnose or solve issues.
 
 ### Media
-    - All product images were taken from [Blacksmith-store](https://www.blacksmith-store.com/) and [COS](https://www.cos.com/en_gbp/index.html).
-    - All static site images were taken from [COS](https://www.cos.com/en_gbp/index.html) and [Zara](https://www.zara.com/uk/)
+- All product images were taken from [Blacksmith-store](https://www.blacksmith-store.com/) and [COS](https://www.cos.com/en_gbp/index.html).
+- All static site images were taken from [COS](https://www.cos.com/en_gbp/index.html) and [Zara](https://www.zara.com/uk/)
