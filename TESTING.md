@@ -206,3 +206,31 @@ Clicking the user's order number will take you to a summary page of that order.
     - The Newsletter section has an option to input your email and sign up for the weekly newsletter.
 
     ![](assets/images/)
+
+### Accounts
+
+- #### Register Page
+    Tested:
+    - Submitting the registration form sends an authentication link to the email provided.
+    - Clicking the confirmation link confirms the account.
+    - After creating an account the user can use their details to sign in. 
+
+    ![](assets/images/)
+
+- #### Login Page
+    Tested:
+    - The login page can be used to log in users with an existing account.
+    - Users can sign in with either their username or their email address.
+    - Toast messages inform the user of their status.
+    - The 'Forgot Password' link enables the user to recover their password.
+    - When logged in the account dropdown menu turns from 'Sign in/up' to 'My Profile' and 'Log Out'.
+
+    ![](assets/images/)
+
+- #### Log out Page
+    Tested:
+    - The logout page logs out users who are signed in.
+    - The account icon label turns from 'My Profile' and 'Log Out' to 'Sign in/up'.
+    - Toast messages inform the user of their status.
+
+    ![](assets/images/)
