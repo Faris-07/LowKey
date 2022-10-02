@@ -418,3 +418,27 @@ These phrases where used in the metadata at the head of the page.
     - If the user decides they do not want to delete the product they can press the cancel button or click outside of the modal. The modal will close and there will be no effect to the product and database. 
 
     ![Product-Management-Delete](assets/images/product-management-delete.png)
+
+## More Features
+
+- ### Back To Top Button
+    - On large screens, once the user has scrolled past a certain point on the page, a button will appear at the bottom right of the screen.
+    - The button has a fade in and fade out animation to make it feel smoother and effortless adding to the user experience.
+    - Clicking the button scrolls the user back to the top of the page. 
+
+    ![Scroll-arrow](assets/images/)
+
+- ### 404 page
+    - If any links are broken or the user types in an address that doesn't exist, a custom 404 error page will be rendered.
+
+    ![404](assets/images/)
+
+- ### Responsiveness 
+    - Every page on this site is fully responsive. This allows for a smoother overall experience no matter the size of the device, therefore improving the user experience.
+
+## Features left to implement
+*There are no features left to implement from the initial scope of my project, however I have some features that I would like to add in the future.*
+
+- A FAQ page helping users with commonly asked questions.
+- A top products feature to dynamically show the top/bestselling products.
+- Option to share products on social media.
