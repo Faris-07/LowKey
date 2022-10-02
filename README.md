@@ -284,3 +284,31 @@ These phrases where used in the metadata at the head of the page.
     - Each product card shows an image of the product, title and price.
     - Clicking anywhere inside the product card will take the user directly to that products detail page.
     - Each product is broken down into their categories with a matching heading.
+
+### Product Details
+
+- #### Product Information
+    - The page is split between the product image on one side and the product information on the other for larger screens, and with the image on top and information on the bottom for smaller screens
+    - The product information section shows information about the product such as its name, description, size, composition, quantity and price.
+    - If the user is a super user, the edit and delete buttons will appear underneath the "add to bag" button.
+
+    ![Products-Product-Info](assets/images/)
+
+- #### Like Button
+    - The heart (like) button is located on the top right corner of the product image.
+    - The heart button renders as empty if either the user is signed out or the product is not liked by the user.
+    - Liking a product fills in the heart and adds the product to the user's wishlist items list on their profile page.
+    - Unliking a product unfills the heart and removes the product from the user's wishlist items list on their profile page.
+    - If the heart is clicked when a user is not signed in, an 'Account Required' modal pops up informing the user that they need to either sign in or create an account to use that feature.
+     
+    ![Products-Like](assets/images/)
+
+- #### Quantity Buttons
+    - The quantity buttons are located underneath the product composition and are used to add a chosen amount of the item to the bag.
+    - The up arrow and down arrow buttons increase and decrease the input value. 
+    - If the value is set to 1 the minus quantity will be disabled. Respectively if the value is set to 5 the plus button is disabled.
+    - Clicking the 'Add to Bag' button takes the number in the input field and adds that amount of products to the bag.
+    - Clicking the 'Add to Bag' button when the input is blank adds one item to the bag.
+    - Trying to add an amount less than 1 or above 5, renders an error message informing the user of the parameters needed to add an item to their bag.
+
+    ![Products-Quantity-Button](assets/images/)
