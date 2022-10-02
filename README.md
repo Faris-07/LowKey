@@ -387,3 +387,34 @@ These phrases where used in the metadata at the head of the page.
     - At the end of the summary is a button that the user can click which will take them back to the main shop.
     
      ![Checkout-Confirmation](assets/images/)
+
+## Product Management - Admin
+
+- ### Add Product
+    - The add product page is accessed by the account dropdown menu, under "Manage". It is only accessible by superusers/admin.
+    - The form lists all the required fields to create a new product. 
+    - The user must fill out all the fields that contain an Asterix. Failure to do so will display an error message containing which fields are missing.
+    - The SKU field must be unique. An error message will appear if the user inputs an SKU that already exists.
+    - If a price is added with more than 6 digits the form will fail and an error message will appear under the price field.
+    - The user has the option to add an image. If none is chosen then a default image is used.
+    - Clicking the 'Add Product' button at the bottom of the form will create the product if the form is valid.
+
+    ![Product-Management-Add](assets/images/)
+
+- ### Edit Product
+    - The edit product page can only be accessed by superusers/admin. 
+    - The edit product page can be accessed by clicking the edit button located under the 'add to bag' on the products detail page.
+    - The edit product page is identical to the add product page but allows superusers to edit the selected product. The details of the product is already filled in. 
+    - The image field displays a thumbnail of the current image and has a checkbox option to remove it. Checking this will change the image to the default image.
+    - Clicking the 'Update Product' button will save any changes made to the existing product.  
+
+    ![Product-Management-Edit](assets/images/)
+
+- ### Delete Product
+    - Only superusers can delete products.
+    - The Delete Product button can be found to the left of the 'edit' button on the products detail page. 
+    - Clicking the delete button will bring up a delete confirmation modal, asking the user if they are sure they want to delete the product, and informing them that it can not be undone. 
+    - Once the warning modal has been activated, if the user then clicks the delete button the product will be deleted from the database. 
+    - If the user decides they do not want to delete the product they can press the cancel button or click outside of the modal. The modal will close and there will be no effect to the product and database. 
+
+    ![Product-Management-Delete](assets/images/product-management-delete.png)
