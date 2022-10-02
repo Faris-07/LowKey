@@ -285,16 +285,16 @@ These phrases where used in the metadata at the head of the page.
     - Clicking anywhere inside the product card will take the user directly to that products detail page.
     - Each product is broken down into their categories with a matching heading.
 
-### Product Details
+## Product Details
 
-- #### Product Information
+- ### Product Information
     - The page is split between the product image on one side and the product information on the other for larger screens, and with the image on top and information on the bottom for smaller screens
     - The product information section shows information about the product such as its name, description, size, composition, quantity and price.
     - If the user is a super user, the edit and delete buttons will appear underneath the "add to bag" button.
 
     ![Products-Product-Info](assets/images/)
 
-- #### Like Button
+- ### Like Button
     - The heart (like) button is located on the top right corner of the product image.
     - The heart button renders as empty if either the user is signed out or the product is not liked by the user.
     - Liking a product fills in the heart and adds the product to the user's wishlist items list on their profile page.
@@ -303,7 +303,7 @@ These phrases where used in the metadata at the head of the page.
      
     ![Products-Like](assets/images/)
 
-- #### Quantity Buttons
+- ### Quantity Buttons
     - The quantity buttons are located underneath the product composition and are used to add a chosen amount of the item to the bag.
     - The up arrow and down arrow buttons increase and decrease the input value. 
     - If the value is set to 1 the minus quantity will be disabled. Respectively if the value is set to 5 the plus button is disabled.
@@ -312,3 +312,37 @@ These phrases where used in the metadata at the head of the page.
     - Trying to add an amount less than 1 or above 5, renders an error message informing the user of the parameters needed to add an item to their bag.
 
     ![Products-Quantity-Button](assets/images/)
+
+## Bag
+
+- ### Items
+    - The bag page displays all items that the user has added to it. 
+    - The page will list the items added with its image, followed by its title and SKU. 
+
+    ![Bag-Items](assets/images/)
+
+- ### Quantity and Price
+    - The price and quantity section has four elements, the product's price, size, quantity, and the subtotal of that item's line.
+    - The quantity element has buttons either side for the user to increase or decrease the total of that item in the bag.
+    - The minus quantity button will be disabled if the quantity of the item is one. The plus button will also be disabled if the quantity of the item is 5.
+    - Under the quantity selector is the update and delete buttons.
+    - Clicking the 'Update' button saves any changes to the quantity and updates the item's subtotal which in turn updates the order total.
+    - Clicking the 'Remove' button removes the item completely from the user's bag. 
+    - Manually inputting the number zero or anything below and clicking 'Update' will remove the item from the bag. 
+    - Manually inputting a number above 5 and clicking 'update' will result in an error message informing the user of the correct parameters. 
+    
+    ![](assets/images/)
+    
+- ### Totals and messaging
+    - At the end of the order items is a summary of the costs.
+    - The summary features the bags subtotal, delivery charges and the total to pay.
+    - Under the order total is two buttons. Where the user can either continue to the checkout or return to the products page by clicking 'Continue Shopping' which turns into 'Back' on smaller screen sizes.
+
+    ![](assets/images/)
+
+- ### Coupons
+    - Above the subtotal is an input box where users can enter a coupon code.
+    - If the coupon code entered is valid, a success message will be displayed and a summary of the coupon added, and the discount given will be shown above the delivery and order totals.
+    - If the coupon code entered is invalid, an error message will be displayed, and the totals will not change.
+
+    ![Bag-Coupons](assets/images/)
