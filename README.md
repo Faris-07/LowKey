@@ -6,7 +6,7 @@ Lowkey Menswear is a London based online apparel store which specialize in quali
 
 The live link can be found here - [Lowkey Menswear](https://lowkey-menswear.herokuapp.com/)
 
-![responsive](/static/images/)
+![responsive](/assets/images/responsive-lowkey.png)
 
 # User Experience (UX)
 
@@ -90,7 +90,7 @@ The design of the app is based on the wireframes with a mix of another clothing 
 
 The design of the database can be seen below.
 
-![Database Schema](/static/images/)
+![Database Schema](/assets/images/Lowkey-ERD.png)
 
 ### Products
 
@@ -128,11 +128,14 @@ To further enhance sales there is also a Lowkey menswear Facebook page, that wil
 
 Lowkey Menswear [Facebook Page](https://www.facebook.com/profile.php?id=100086142590661)
 
-![](assets/images/)
+![Facebook](assets/images/lowkey-fb-1.png)
+
+![Facebook Post](assets/images/lowkey-fb-2.png)
+
 
 Users are also able to subscribe to receive the 'Lowkey' newsletter, using the MailChimp form found in the footer. 
 
-![](assets/images/mailchimp-form.jpg)
+![Mailchimp Form](assets/images/newsletter-mailchimp.png)
 
 ### Search Engine Optimization
 
@@ -172,13 +175,15 @@ These phrases where used in the metadata at the head of the page.
     - The current page is highlighted active to the user by bolder font. 
     - The Shop link drops down into a sub-menu where the user can navigate to all products or choose from one of the four product categories.
 
-    ![Navbar-Links](assets/images/) 
+![Navbar](assets/images/lowkey-navbar-full.png) 
+
+![Navbar Small](assets/images/lowkey-navbar-small.png)
 
 - ### Search Bar
     - The search bar is located in the middle of the navbar and can be used to search all products.
     - Using the search bar will search both the product's title and description for a match.
 
-    ![Navbar-Search](assets/images/) 
+![Navbar Search](assets/images/nav-search.png) 
 
 - ### Account
     - Located on the right side of the navbar is the account Icon where the user can manage their account.
@@ -186,14 +191,14 @@ These phrases where used in the metadata at the head of the page.
     - If a user is signed in, the dropdown options change to 'My Profile' and 'Logout'.
     - If the user signed in is a super user then a third option of 'Manage' is available. 
 
-    ![Navbar-Account](assets/images/) 
+![Navbar Account](assets/images/navbar-account.png) 
 
 - ### Bag Icon
     - Located on the right side of the navbar next to the accounts menu is the bag icon.
     - Once a product is added to the bag, a number displaying the total quantity of items appears, located at the top right of the bag icon.
     - Clicking the bag icon navigates the user to the shopping bag page which displays a summary of the bag where the user can edit and delete products from their bag.
 
-    ![Navbar-Bag](assets/images/)
+![Navbar Bag](assets/images/bag-icon.png)
 
 ## Home Page
     
@@ -202,14 +207,14 @@ These phrases where used in the metadata at the head of the page.
     - A button labelled 'Shop Now' takes the user to the products page.
     - The image will change depending on the size of the screen.
 
-    ![Hero-Image](assets/images/)
+![Hero Image](assets/images/hero-image-lowkey.png)
 
 - ### Essentials
     - The essentials cards show the user some of the product categories they should check out.
     - Clicking on one of the cards will take the user to that specififc categories page.
     - On smaller screens the cards turn into a carousel which a user can swipe through.
 
-    ![Essentials-cards](assets/images/)
+![Essentials-cards](assets/images/essentials.png)
 
 - ### Footer 
     - The footer rests at the bottom of each page.
@@ -219,7 +224,7 @@ These phrases where used in the metadata at the head of the page.
     - The footer also includes social media links to lowkey menswear socials so they can stay up to date with any news. The links will open to a new tab to allow easy navigation for the user.
     - The footer also contains an email address so the user can contact the store.
 
-    ![Footer](static/images/)
+![Footer](assets/images/lowkey-footer.png)
 
 ## Accounts
 
@@ -228,7 +233,7 @@ These phrases where used in the metadata at the head of the page.
     - The user enters a username, email, password and a confirmation of the password.
     - Once submitting the form an authentication link will be emailed to the address the user provided. 
 
-    ![Accounts-Register](assets/images/)
+![Accounts Register](assets/images/register-page-lowkey.png)
 
 - ### Login Page
     - The login page is used to log in users with an existing account.
@@ -236,26 +241,26 @@ These phrases where used in the metadata at the head of the page.
     - A success message will appear once a user successfully logs in.
     - A Forgot Password link is also present that enables users to recover their password.
 
-    ![Accounts-Login](assets/images/)
+![Accounts Login](assets/images/signin-page-lowkey.png)
 
 - ### Log out Page
     - The log out page is used to log out users who are signed in.
     - A success message will appear once a user successfully logs out.
 
-    ![Accounts-Logout](assets/images/)
+![Accounts Logout](assets/images/logout-page-lowkey.png)
 
 ## Profile
 
 - ### Heading
     - The heading of the page reflects the user's username.
 
-    ![Profiles-Heading](assets/images/)
+![Profiles Heading](assets/images/profile-page-lowkey.png)
 
 - ### Delivery Details
     - The delivery details section stores the user's delivery address and phone number.
     - The information provided here is used to autofill the delivery address when placing an order.
 
-    ![Profiles-Delivery](assets/images/)
+![Profiles Delivery](assets/images/profile-info-2.png)
 
 - ### Order History
     - The order history section is a table that keeps a record of every order the user has placed.
@@ -264,26 +269,29 @@ These phrases where used in the metadata at the head of the page.
     - Clicking the order number will take the user to a more detailed summary of the order.
     - The five most recent items are shown on the order history list.
 
-    ![Profiles-Order-History](assets/images/)
+![Profiles Order History](assets/images/profile-order-history.png)
 
 - ### Wishlist
     - The wishlist section contains all the products the user has liked.
 
-    ![Profiles-Wishlist](assets/images/)
+![Profiles Wishlist](assets/images/profile-wishlist.png)
 
 ## All Products
 
 - ### Sorting
     - The sort-by box is located to the top right of the products section on medium and large screens, and centred on smaller screens.
-    - Clicking the box opens up a dropdown menu with price options on how to sort the products e.g. Price (Low to High). 
+    - Clicking the box opens up a dropdown menu with price options on how to sort the products e.g. Price (Low to High).
+    - On the left side of the sort selector is an item counter which shows how many items are on that specific page.
 
-    ![Products-sort](assets/images/)
+![Products sort](assets/images/sort.png)
 
 - ### Products Page
     - The products page is fully responsive, adjusting how many products are on each row depending on the user's screen size.
     - Each product card shows an image of the product, title and price.
     - Clicking anywhere inside the product card will take the user directly to that products detail page.
     - Each product is broken down into their categories with a matching heading.
+
+![Products Page](assets/images/products-page.png)
 
 ## Product Details
 
@@ -292,7 +300,7 @@ These phrases where used in the metadata at the head of the page.
     - The product information section shows information about the product such as its name, description, size, composition, quantity and price.
     - If the user is a super user, the edit and delete buttons will appear underneath the "add to bag" button.
 
-    ![Products-Product-Info](assets/images/)
+![Products Detail](assets/images/product-detail-page.png)
 
 - ### Like Button
     - The heart (like) button is located on the top right corner of the product image.
@@ -301,7 +309,9 @@ These phrases where used in the metadata at the head of the page.
     - Unliking a product unfills the heart and removes the product from the user's wishlist items list on their profile page.
     - If the heart is clicked when a user is not signed in, an 'Account Required' modal pops up informing the user that they need to either sign in or create an account to use that feature.
      
-    ![Products-Like](assets/images/)
+![Products-Like](assets/images/like-btn.png)
+
+![Products-Unlike](assets/images/unlike-btn.png)
 
 - ### Quantity Buttons
     - The quantity buttons are located underneath the product composition and are used to add a chosen amount of the item to the bag.
@@ -311,7 +321,7 @@ These phrases where used in the metadata at the head of the page.
     - Clicking the 'Add to Bag' button when the input is blank adds one item to the bag.
     - Trying to add an amount less than 1 or above 5, renders an error message informing the user of the parameters needed to add an item to their bag.
 
-    ![Products-Quantity-Button](assets/images/)
+![Product Quantity Button](assets/images/qtn-btn.png)
 
 ## Bag
 
@@ -319,7 +329,9 @@ These phrases where used in the metadata at the head of the page.
     - The bag page displays all items that the user has added to it. 
     - The page will list the items added with its image, followed by its title and SKU. 
 
-    ![Bag-Items](assets/images/)
+![Bag Items Success Message](assets/images/bag-success-msg.png)
+
+![Bag Items](assets/images/bag.png)
 
 - ### Quantity and Price
     - The price and quantity section has four elements, the product's price, size, quantity, and the subtotal of that item's line.
@@ -331,21 +343,21 @@ These phrases where used in the metadata at the head of the page.
     - Manually inputting the number zero or anything below and clicking 'Update' will remove the item from the bag. 
     - Manually inputting a number above 5 and clicking 'update' will result in an error message informing the user of the correct parameters. 
     
-    ![](assets/images/)
+![Bag Details](assets/images/qtny-price-bag.png)
     
 - ### Totals and messaging
     - At the end of the order items is a summary of the costs.
     - The summary features the bags subtotal, delivery charges and the total to pay.
     - Under the order total is two buttons. Where the user can either continue to the checkout or return to the products page by clicking 'Continue Shopping' which turns into 'Back' on smaller screen sizes.
 
-    ![](assets/images/)
+![Bag Total](assets/images/totals-bag.png)
 
 - ### Coupons
     - Above the subtotal is an input box where users can enter a coupon code.
     - If the coupon code entered is valid, a success message will be displayed and a summary of the coupon added, and the discount given will be shown above the delivery and order totals.
     - If the coupon code entered is invalid, an error message will be displayed, and the totals will not change.
 
-    ![Bag-Coupons](assets/images/)
+![Bag Coupon](assets/images/coupon.png)
 
 ## Checkout
 
@@ -357,14 +369,14 @@ These phrases where used in the metadata at the head of the page.
     - If the user is signed in and has delivery information saved, the delivery details and email address will be automatically filled in. 
     - All fields that have an Asterix are required. If any field is left blank on the form then the affected field will be highlighted.  
 
-    ![Checkout-Details](assets/images/)
+![Checkout Details](assets/images/checkout-page.png)
 
 - ### Order Summary
     - The order summary section appears on the right on large screens or at the top on smaller screens. 
     - This section lists all the items about to be purchased, along with the quantity, size, subtotal, delivery and order total.
     - Clicking the image of any items in the summary will take the user to that specific product's detail page. 
 
-    ![Checkout-Order-Summary](assets/images/)
+![Checkout Order Summary](assets/images/order-summary.png)
 
 - ### Payment
     - Underneath the delivery details is the card payment box which is from [Stripe](https://dashboard.stripe.com/login). 
@@ -372,13 +384,11 @@ These phrases where used in the metadata at the head of the page.
     - The site can be tested by using the Stripe dummy card number 4242 4242 4242 4242 with the expiry date 04/24 and the CVC code 242.
     - At the bottom of the page there is the 'Complete order' and 'Bag' button which either let the user checkout or return back to their bag. There is also a warning message informing the user of how much their card is about to be charged.
 
-    ![Checkout-Payment](assets/images/)
+![Checkout Payment](assets/images/checkout-payment.png)
 
 
 - ### Loading Spinner
     - When the form is valid and the user makes the payment a loading spinner will render until the information is processed. 
-    
-    ![Checkout-Spinner](assets/images/)
 
 - ### Confirmation 
     - Once the order has been processed the user is taken to the checkout success page.
@@ -386,7 +396,7 @@ These phrases where used in the metadata at the head of the page.
     - A confirmation email is sent to the email address provided, and this is displayed at the top of the page. 
     - At the end of the summary is a button that the user can click which will take them back to the main shop.
     
-     ![Checkout-Confirmation](assets/images/)
+![Checkout Confirmation](assets/images/checkout-success-page.png)
 
 ## Product Management - Admin
 
@@ -399,7 +409,7 @@ These phrases where used in the metadata at the head of the page.
     - The user has the option to add an image. If none is chosen then a default image is used.
     - Clicking the 'Add Product' button at the bottom of the form will create the product if the form is valid.
 
-    ![Product-Management-Add](assets/images/)
+![Product Management Add](assets/images/add-product-page-lowkey.png)
 
 - ### Edit Product
     - The edit product page can only be accessed by superusers/admin. 
@@ -408,7 +418,7 @@ These phrases where used in the metadata at the head of the page.
     - The image field displays a thumbnail of the current image and has a checkbox option to remove it. Checking this will change the image to the default image.
     - Clicking the 'Update Product' button will save any changes made to the existing product.  
 
-    ![Product-Management-Edit](assets/images/)
+![Product Management Edit](assets/images/edit-product-page.png)
 
 - ### Delete Product
     - Only superusers can delete products.
@@ -417,7 +427,7 @@ These phrases where used in the metadata at the head of the page.
     - Once the warning modal has been activated, if the user then clicks the delete button the product will be deleted from the database. 
     - If the user decides they do not want to delete the product they can press the cancel button or click outside of the modal. The modal will close and there will be no effect to the product and database. 
 
-    ![Product-Management-Delete](assets/images/product-management-delete.png)
+![Product Management Delete](assets/images/delete-product-modal.png)
 
 ## More Features
 
@@ -426,12 +436,12 @@ These phrases where used in the metadata at the head of the page.
     - The button has a fade in and fade out animation to make it feel smoother and effortless adding to the user experience.
     - Clicking the button scrolls the user back to the top of the page. 
 
-    ![Scroll-arrow](assets/images/)
+![Back To Top Button](assets/images/back-to-top-btn.png)
 
 - ### 404 page
     - If any links are broken or the user types in an address that doesn't exist, a custom 404 error page will be rendered.
 
-    ![404](assets/images/)
+![404](assets/images/404-error-page.png)
 
 - ### Responsiveness 
     - Every page on this site is fully responsive. This allows for a smoother overall experience no matter the size of the device, therefore improving the user experience.
@@ -515,7 +525,7 @@ All of my code has been validated using an online validator specific to the lang
     - Used to validate JS code
 
 - [Pep8](http://pep8online.com/)
-    - Used to test my Python code for any issues or errors; please note when using inline Flake8 linter some errors flagged up that didn't flag in pep8 and have therefore been left as they are.
+    - Used to test my Python code for any issues or errors; please note when using inline Flake8 linter some errors flagged up which can be ignored they are due to unrecognised syntax.
 
 ## Deployment
 

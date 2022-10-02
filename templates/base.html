@@ -62,10 +62,10 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == home %} active-link {% endif %}" href="{% url 'home' %}">Home</a>
+                        <a class="nav-link text-dark {% if request.path == home %} font-weight-bold {% endif %}" href="{% url 'home' %}">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="shop-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link text-dark" href="#" id="shop-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Shop
                         </a>
                         <div class="dropdown-menu border-1" aria-label="clothing-link">

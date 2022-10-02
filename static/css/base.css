@@ -1,6 +1,7 @@
 html {
 	min-height: 100vh;
 	overflow-x: hidden;
+	overflow-y: visible;
 }
 
 body {
@@ -373,4 +374,11 @@ body {
   {
     text-align:center
   }
+}
+
+@media only screen and (max-width: 575px) {
+	.site-footer {
+		position: relative;
+		max-height: none;
+	}
 }

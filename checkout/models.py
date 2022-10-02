@@ -66,7 +66,6 @@ class Order(models.Model):
             self.grand_total = self.order_total + self.delivery_cost
             self.save()
 
-
     def full_address(self):
         """ return address """
         return (f"{self.street_address1}, {self.street_address2}, "
