@@ -92,7 +92,7 @@ Clicking the user's order number will take you to a summary page of that order.
     - Once on the coupon management page the admin can add new coupons by filling out the 'add coupon form'.
     ![](assets/images/)
 
-#### EPIC | Purchasing
+### EPIC | Purchasing
 - As a User, I can add items to my basket in varying quantities so that I can keep the items in my basket until I'm ready to buy.
     - On the product's detail page, shoppers can adjust the quantity by using the quantity selector, or by typing in the amount and clicking the 'Add to bag' button, to add the item to the bag.
     - At the bottom of the products card, is an 'Add to Bag' button which adds 1 item to the bag by default.
@@ -121,7 +121,7 @@ Clicking the user's order number will take you to a summary page of that order.
     - Users can use coupon codes to take off a certain percent of their order.
      ![](assets/images/)
 
-#### EPIC | Interaction
+### EPIC | Interaction
 - As a User I can add items to my Wishlist so that I can save them for later.
     - Users can click a 'Add to Wishlist' heart button, which is on the upper right corner of the product image on the product's detail page.
     - Clicking the heart will add the product to the users wishlist and fill in the heart. Otherwise, if the product is already liked and the user unlikes it then the product will be removed from the users wishlist and the filled in heart will become empty.
@@ -139,9 +139,45 @@ Clicking the user's order number will take you to a summary page of that order.
     - Users can directly contact Lowkey Menswear via email which is provided in the footer
     ![](assets/images/)
 
-#### EPIC | Marketing
+### EPIC | Marketing
 - As an Admin I conducted research and implemented SEO keywords to increase traffic to my website.
     - I have implemented SEO by using short and long tail keywords in the head of the website.
 
 - As an Admin I have created a Facebook shop page to increase traffic to my website.
-    - 
+    - I have created a facebook page to increase traffic to my website. A link to the Lowkey Menswear Facebook page is in the websites footer.
+
+## Feature Testing
+
+### Nav Bar
+
+- ### Links
+    Tested:
+    - The links change colour when hovered over.
+    - The link to the current page is highlighted by bolder font.
+    - The Shop link drops down into a sub-menu displaying new arrivals and all product categories.
+    - The links collapse into a hamburger menu once the screen size becomes too small. 
+
+    ![](assets/images/)
+
+- ### Search Bar
+    Tested:
+    - The search bar will search both the product's title and description for a match.
+    - On smaller screens, the search bar is in the hamburger menu.
+
+    ![](assets/images/)
+
+- #### Account
+    Tested:
+    - Hovering over the account icon changes its colour.
+    - Clicking the account icon opens a dropdown menu with options for the user to register or sign in.
+    - If a user is signed in the dropdown options change to 'My Profile' and 'Logout'.
+    - If the super user is signed in then two more options of 'Product' and 'Coupon' are displayed. 
+
+    ![](assets/images/)
+
+- #### Bag Icon
+    Tested:
+    - When a product is added to the bag, a number displaying the total quantity of items appears, located at the top right of the bag icon.
+    - Clicking the bag icon navigates the user to the shopping bag page which displays a summary of what's been added.
+
+    ![](assets/images/)
