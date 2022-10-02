@@ -88,4 +88,6 @@ Clicking the user's order number will take you to a summary page of that order.
     ![](assets/images/)
 
 - As an admin, I can add coupon codes so that I can offer discounts to my customers.
-    - 
+    - Admins can navigate to the 'Coupon' page under the accounts menu.
+    - Once on the coupon management page the admin can add new coupons by filling out the 'add coupon form'.
+    ![](assets/images/)
