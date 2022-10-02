@@ -6,8 +6,6 @@ from django.db.models import Q
 from .models import Product, Category
 from .forms import ProductForm
 
-# Create your views here.
-
 
 def products_view(request):
     """ A view to show all products, including sorting and search queries """

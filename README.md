@@ -269,4 +269,18 @@ These phrases where used in the metadata at the head of the page.
 - ### Wishlist
     - The wishlist section contains all the products the user has liked.
 
-    ![Profiles-Favourites](assets/images/)
+    ![Profiles-Wishlist](assets/images/)
+
+## All Products
+
+- ### Sorting
+    - The sort-by box is located to the top right of the products section on medium and large screens, and centred on smaller screens.
+    - Clicking the box opens up a dropdown menu with price options on how to sort the products e.g. Price (Low to High). 
+
+    ![Products-sort](assets/images/)
+
+- ### Products Page
+    - The products page is fully responsive, adjusting how many products are on each row depending on the user's screen size.
+    - Each product card shows an image of the product, title and price.
+    - Clicking anywhere inside the product card will take the user directly to that products detail page.
+    - Each product is broken down into their categories with a matching heading.
