@@ -4,6 +4,7 @@ html {
 }
 
 body {
+	margin: 0px;
 	min-height: 100vh;
 	overflow-x: hidden;
 	font-family: 'Noto Sans', sans-serif;
@@ -60,12 +61,13 @@ body {
 /* Footer */
 .site-footer {
 	bottom: 0;
-	position: fixed;	
+	position: relative;	
 	padding:20px 0 10px;
 	font-size:15px;
 	line-height:24px;
 	color:#737373;
 	border-top: 1px solid;
+	height: auto;
 }
 
 .site-footer hr {
@@ -371,10 +373,4 @@ body {
   {
     text-align:center
   }
-}
-
-@media only screen and (max-width: 575px) {
-	.site-footer {
-		position: relative;
-	}
 }
