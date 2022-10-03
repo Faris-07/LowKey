@@ -447,3 +447,36 @@ Clicking the user's order number will take you to a summary page of that order.
     - If it cannot find the original order, it will create one using the information provided by the user in the original instance.
 
     ![]()
+
+### Other
+
+- #### Scroll To Top Button
+    Tested:
+    - On large screens, once the user has scrolled past a certain point, an arrow will appear at the bottom, right side of the screen.
+    - Clicking the arrow scrolls the user back to the top of the page. 
+    
+    ![]()
+
+- #### Toasts
+    Tested:
+    - Toasts appear in the top right-hand corner of the display informing the user of any actions they have performed.
+
+    ![]()
+
+- #### 404 page
+    Tested:
+    - If any links are broken or the user types in an address that doesn't exist, a 404 error page will be displayed.
+
+    ![]()
+
+- #### Newsletter 
+    Tested:
+    - Signing up to the newsletter registers the email given to [Mailchimp](https://mailchimp.com/en-gb/).
+
+    ![]()
+
+- #### Responsiveness 
+    Tested:
+    - Every page on the site is fully responsive.
+
+    ![]()
