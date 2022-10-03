@@ -483,6 +483,13 @@ Clicking the user's order number will take you to a summary page of that order.
 
 ## Validators
 
+### HTML
+
+- All Pages were checked with the official [W3C validator](https://validator.w3.org/). 
+
+#### Home Page validation 
+![home-w3](assets/images/home-html.png)
+
 ### CSS
 
 - All CSS was checked with the official [Jigsaw validator](https://jigsaw.w3.org/css-validator/). 
@@ -515,3 +522,9 @@ Clicking the user's order number will take you to a summary page of that order.
 - Flake8 only shows the type of errors that can be ignored as they are due to unrecognised syntax. At the time of testing PEP8 online was not availabe due to an expired domain.
 
 ![pylint](assets/images/flake-8.png)
+
+### Lighthouse
+
+- Lighthouse reported great in all areas.
+
+![Lighthouse](assets/images/lighthouse.png)

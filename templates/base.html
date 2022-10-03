@@ -114,7 +114,7 @@
                                 {% if request.user.is_authenticated %}
                                 {% if request.user.is_superuser %}
                                 <a href="{% url 'add_product' %}" class="dropdown-item" aria-label="Admin product management">Product</a>
-                                <a href="{% url 'add_coupon' %}" class="dropdown-item" aria-label="Profile" aria-label="Admin coupon management">Coupon</a>
+                                <a href="{% url 'add_coupon' %}" class="dropdown-item" aria-label="Admin coupon management">Coupon</a>
                                 <hr>
                                 {% endif %}
                                 <a href="{% url 'profile' %}" class="dropdown-item" aria-label="My Profile">My Profile</a>
