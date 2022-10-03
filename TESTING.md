@@ -483,37 +483,6 @@ Clicking the user's order number will take you to a summary page of that order.
 
 ## Validators
 
-### HTML
-
-- All Pages were checked with the official [W3C validator](https://validator.w3.org/). 
-
-#### Home Page validation 
-![home-w3]()
-#### Products Page validation
-![products-w3](assets/images/products-w3.png)
-#### Product Details validation
-![product-details-w3](assets/images/product-details-w3.png)
-#### About Us validation
-![about-us-w3](assets/images/about-us-w3.png)
-#### Contact validation
-![contact-w3](assets/images/contact-w3.png)
-#### Bag validation
-![bag-w3](assets/images/bag-w3.png)
-#### Checkout validation 
-![checkout-w3](assets/images/checkout-w3.png)
-#### Checkout Success validation
-![checkout-success-w3](assets/images/checkout-success-w3.png)
-#### Product Management validation 
-![add-product-w3](assets/images/add-product-w3.png)    
-- The add product page shows two errors. These are to do with the image upload widget and thus changing the code breaks the field.
-#### Edit Review validation
-![edit-review-w3](assets/images/edit-review-w3.png)
-#### Add Coupon validation
-![add-coupon-w3](assets/images/add-coupon-w3.png)   
-#### Edit Coupon validation
-![edit-coupon-w3](assets/images/edit-coupon-w3.png)
-- The add and edit coupon page shows eight errors. These are to do with the datetimepicker widget so cannot be changed.
-
 ### CSS
 
 - All CSS was checked with the official [Jigsaw validator](https://jigsaw.w3.org/css-validator/). 
@@ -543,12 +512,6 @@ Clicking the user's order number will take you to a summary page of that order.
 
 ### PEP8
 
-- PEP8 only shows the type of errors that can be ignored.
+- Flake8 only shows the type of errors that can be ignored as they are due to unrecognised syntax. At the time of testing PEP8 online was not availabe due to an expired domain.
 
-![pylint](assets/images/pylint.png)
-
-### Lighthouse
-
-- Lighthouse registered green in all areas.
-
-![Lighthouse](assets/images/lighthouse.png)
+![pylint](assets/images/flake-8.png)
