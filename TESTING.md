@@ -284,3 +284,33 @@ Clicking the user's order number will take you to a summary page of that order.
     - If the user is a superuser, the admin buttons 'Edit' and 'Delete' will be displayed beneath the 'Add to Bag' button.
 
     ![]()
+
+### Products Details
+
+- #### Product Information
+    Tested:
+    - The product information section shows information about the product and buttons to add the item to the bag in multiple quantities.
+    - Users can select the size of the product, and only select 5 of each size of an item.
+    - If the user is a superuser, the admin buttons 'Edit' and 'Delete' will be displayed beneath the 'Add to Bag' button.
+
+    ![]()
+
+- #### Like Button
+    Tested:
+    - The heart button renders as empty if either the user is signed out or the product is not liked by the user.
+    - Liking a product fills in the heart and adds the product to the user's wishlist on their profile page.
+    - Unliking a product unfills the heart and removes the product from the user's wishlist on their profile page.
+    - A toast message informs the user when a product has been added or removed from their wishlist.
+    - If the heart is clicked when a user is not signed in, an 'Account Required' modal pops up informing the user that they need to either sign in or create an account to use that feature.
+
+    ![]()
+
+- #### Quantity Buttons
+    Tested:
+    - The up and down arrow buttons increase and decrease the quantity. 
+    - If the value is set to 1 the down arrow quantity will be disabled. Respectively if the value is set to 5 the up arrow button is disabled.
+    - Clicking the 'Add to Bag' button takes the number in the input field and adds that amount of products to the bag.
+    - Trying to add an amount less than one or above five, renders an error message informing the user of the parameters needed to be successful.
+    - Clicking the 'Add to Bag' button adds one item to the bag by default. 
+
+    ![]()
