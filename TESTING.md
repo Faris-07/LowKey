@@ -603,4 +603,4 @@ Clicking the user's order number will take you to a summary page of that order.
 
 - Lighthouse reported great in all areas.
 
-![Lighthouse](assets/images/lighthouse.png)
+![Lighthouse](assets/images/lowkey-lighthouse.png)
