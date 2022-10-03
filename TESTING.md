@@ -62,97 +62,111 @@ Once on the registration page, users can fill in a short form to sign up for a L
 
 - As a User I can log in and out of my account so that I can control and manage my account
     - Once a user has created an account they can log-in using the profile icon in the navbar.
-    ![](assets/images/)
+    ![Sign In Page](assets/images/signin-page-lowkey.png)
+
+    ![Account link](assets/images/account-link.png)
 
 - As a User, I can recover my password in case I forget it so that I can regain access to my account.
     - If a user forgets their password they can click the link in the login page to recieve an email so that they can create a new password.
-    ![](assets/images/)
+    ![Remember Password](assets/images/remember-password.png)
 
 - As a User, I can view my previous orders so that I can keep a record of what purchases I've made.
     - Once a user has created an account and placed an order, they can view their order's in their profile section located under the accounts menu.
 Clicking the user's order number will take you to a summary page of that order.
-    ![](assets/images/)
+    ![Order History](assets/images/profile-order-history.png)
+
+    ![Order Summary](assets/images/order-summary.png)
 
 - As a User, I can save my delivery information so that I do not have to refill it out for future orders.
     - Users can fill in their delivery information on their profile page. This information will autofill the checkout form when the user checkouts.
     - When placing an order a checkbox under the delivery information can be checked to save the information added to the form.
-    ![](assets/images/)
+    ![Profile information](assets/images/profile-info-2.png)
+
+    ![Checkout Form](assets/images/checkout-page.png)
 
 ### EPIC | Admin
 - As an Admin, I can add products so that I can update the site's inventory.
     - Admins can navigate to the 'Manage' page under the accounts menu.
     - Once on the product management page the admin can add new products by filling out the 'add product form'.
-    ![](assets/images/)
+    ![Add Product](assets/images/add-product-page-lowkey.png)
 
 - As an Admin, I can edit a product so that I can keep the products information up to date.
     - If an admin is logged in, the edit button will be displayed in the product detail page.
     - When the 'Edit' button is clicked the admin is taken to the 'Edit product' page. The admin can then edit existing products using the 'edit product form'.
-    ![](assets/images/)
+    ![Edit Product](assets/images/edit-product-page.png)
 
 - As an Admin, I can delete a product so that I can remove products no longer available.
     - If an admin is logged in, the delete button will be displayed in the product detail page.
     - When the 'delete' button is clicked a confirmation model is diplayed asking the admin if they want to delete the specific product.
     - If the admin wants to delete the product they click delete, else if they no longer want to delete the product they can press the 'cancel' button or click outside of the modal to exit the confirmation modal.
-    ![](assets/images/)
+    ![Delete Product](assets/images/delete-product-modal.png)
 
 - As an admin, I can add coupon codes so that I can offer discounts to my customers.
     - Admins can navigate to the 'Coupon' page under the accounts menu.
     - Once on the coupon management page the admin can add new coupons by filling out the 'add coupon form'.
-    ![](assets/images/)
+    ![Add Coupon](assets/images/add-coupon.png)
 
 ### EPIC | Purchasing
 - As a User, I can add items to my basket in varying quantities so that I can keep the items in my basket until I'm ready to buy.
     - On the product's detail page, shoppers can adjust the quantity by using the quantity selector, or by typing in the amount and clicking the 'Add to bag' button, to add the item to the bag.
     - At the bottom of the products card, is an 'Add to Bag' button which adds 1 item to the bag by default.
-    ![](assets/images/)
+    ![Quantity button and add to bag](assets/images/add-to-bag-qtny-btn.png)
 
 - As a User, I can view my bag so that I can see the total cost of the transaction and the items I will be purchasing.
     - Clicking the bag icon in the top right corner will take the user to their bag.
     - The shopping bag page lists the items added by the user, along with the subtotal of each item, delivery costs, and the total to pay.
-    ![](assets/images/)
+    ![Bag Icon](assets/images/bag-icon.png)
+
+    ![Bag Page](assets/images/bag.png)
 
 - As a User, I can always see a running subtotal so that I know how much I'm spending.
     - The bag icon will update automatically to reflect how many items are in the bag.
     - The user will also get success toast messages for every product they add to their bag which displays the bag items, quantity, size and bag total.
-    ![](assets/images/)
+    ![Bag counter and Toast Message](assets/images/bag-toast-counter.png)
 
 - As a User, I can easily enter my payment details so that I can checkout quickly with no problems.
     - Paying for items is simple as the user enters their card details into the payment box on the checkout page and click the 'Complete Order' button.
-    ![](assets/images/)
+    ![Checkout payment](assets/images/checkout-payment.png)
 
 - As a User, I can view confirmation of my purchases so that I know the order was received and can review what I've purchased.
     - After an order has been completed, the user will be taken to a confirmation page with a summary of the order.
     - Users will also recieve a confirmation email of their order.
-    ![](assets/images/)
+    ![Order Summary](assets/images/order-summary.png)
 
 - As a User I can apply promotional codes so that I can receive a discount on my purchase.
     - Users can use coupon codes to take off a certain percent of their order.
-     ![](assets/images/)
+     ![Coupon](assets/images/coupon.png)
 
 ### EPIC | Interaction
 - As a User I can add items to my Wishlist so that I can save them for later.
     - Users can click a 'Add to Wishlist' heart button, which is on the upper right corner of the product image on the product's detail page.
     - Clicking the heart will add the product to the users wishlist and fill in the heart. Otherwise, if the product is already liked and the user unlikes it then the product will be removed from the users wishlist and the filled in heart will become empty.
-    ![](assets/images/)
+    ![Like Button](assets/images/like-btn.png)
+
+    ![Unlike Button](assets/images/unlike-btn.png)
+
+    ![Wishlist](assets/images/profile-wishlist.png)
 
 - As a User I can sign up for a newsletter to receive up to date information regarding items for sale and discounts.
     - In the footer is a 'Newsletter' section, where the user can input their email address to sign up.
-    ![](assets/images/)
+    ![Newsletter](assets/images/newsletter-mailchimp.png)
 
 - As a User, I can connect to the site's social media pages so that I can follow them and keep up to date with their products and promotions.
     - Users can connect with Lowkey Menswear by following their social media pages using the links found in the footer.
-    ![](assets/images/)
+    ![Social Links](assets/images/social-links-footer.png)
 
 - As a User, I can contact the business so that I can find out any information that I require.
     - Users can directly contact Lowkey Menswear via email which is provided in the footer
-    ![](assets/images/)
+    ![Email Footer](assets/images/email-footer.png)
 
 ### EPIC | Marketing
 - As an Admin I conducted research and implemented SEO keywords to increase traffic to my website.
     - I have implemented SEO by using short and long tail keywords in the head of the website.
+    ![SEO](assets/images/SEO-head.png)
 
 - As an Admin I have created a Facebook shop page to increase traffic to my website.
     - I have created a facebook page to increase traffic to my website. A link to the Lowkey Menswear Facebook page is in the websites footer.
+    ![Social Links](assets/images/social-links-footer.png)
 
 ## Feature Testing
 
@@ -164,15 +178,18 @@ Clicking the user's order number will take you to a summary page of that order.
     - The link to the current page is highlighted by bolder font.
     - The Shop link drops down into a sub-menu displaying new arrivals and all product categories.
     - The links collapse into a hamburger menu once the screen size becomes too small. 
+    ![Active Page](assets/images/active-page.png)
 
-    ![](assets/images/)
+    ![Shop Link](assets/images/shop-link.png)
+
+    ![Small Navbar](assets/images/lowkey-navbar-small.png)
 
 - ### Search Bar
     Tested:
     - The search bar will search both the product's title and description for a match.
     - On smaller screens, the search bar is in the hamburger menu.
 
-    ![](assets/images/)
+    ![Search Item](assets/images/search-item.png)
 
 - #### Account
     Tested:
@@ -181,14 +198,20 @@ Clicking the user's order number will take you to a summary page of that order.
     - If a user is signed in the dropdown options change to 'My Profile' and 'Logout'.
     - If the super user is signed in then two more options of 'Product' and 'Coupon' are displayed. 
 
-    ![](assets/images/)
+    ![Signed Out Account Link](assets/images/account-link.png)
+
+    ![Signed In Account Link](assets/images/user-signed-in.png)
+
+    ![Admin Signed In Account Link](assets/images/admin-account-link.png)
 
 - #### Bag Icon
     Tested:
     - When a product is added to the bag, a number displaying the total quantity of items appears, located at the top right of the bag icon.
     - Clicking the bag icon navigates the user to the shopping bag page which displays a summary of what's been added.
 
-    ![](assets/images/)
+    ![Bag Counter](assets/images/bag-toast-counter.png)
+
+    ![Bag Page](assets/images/bag.png)
 
 ### Home Page
     
@@ -197,14 +220,18 @@ Clicking the user's order number will take you to a summary page of that order.
     - The button labelled 'Shop Now' takes the user to the products page.
     - The image changes depending on the size of the screen.
 
-    ![](assets/images/)
+    ![Shop Now Button](assets/images/shop-now-btn.png)
+
+    ![Small Screen Index Page](assets/images/small-index-page.png)
 
 - #### Essentials
     Tested:
     - Clicking one of the categories takes the user to the page displaying only products from that category. 
     - Tested that on smaller screen sizes the cards turn into a card carousel so users can swipe through them.
 
-    ![](assets/images/)
+    ![Essentials](assets/images/essentials.png)
+
+    ![Essentials](assets/images/sm-essentials-page.png)
 
 - #### Footer
     Tested:
@@ -213,7 +240,7 @@ Clicking the user's order number will take you to a summary page of that order.
     - Clicking the social media links takes you to the relevant website.
     - The Newsletter section has an option to input your email and sign up for the weekly newsletter.
 
-    ![](assets/images/)
+    ![Footer](assets/images/lowkey-footer.png)
 
 ### Accounts
 
@@ -223,7 +250,9 @@ Clicking the user's order number will take you to a summary page of that order.
     - Clicking the confirmation link confirms the account.
     - After creating an account the user can use their details to sign in. 
 
-    ![](assets/images/)
+    ![Confirmation Page](assets/images/confirm-email.png)
+
+    ![Confirmation Email](assets/images/Confirmation-email-2.png)
 
 - #### Login Page
     Tested:
@@ -233,7 +262,9 @@ Clicking the user's order number will take you to a summary page of that order.
     - The 'Forgot Password' link enables the user to recover their password.
     - When logged in the account dropdown menu turns from 'Sign in/up' to 'My Profile' and 'Log Out'.
 
-    ![](assets/images/)
+    ![Sign In Message](assets/images/sign-in-msg.png)
+
+    ![Signed In Account Link](assets/images/user-signed-in.png)
 
 - #### Log out Page
     Tested:
@@ -241,7 +272,9 @@ Clicking the user's order number will take you to a summary page of that order.
     - The account icon label turns from 'My Profile' and 'Log Out' to 'Sign in/up'.
     - Toast messages inform the user of their status.
 
-    ![](assets/images/)
+    ![Sign Out Message](assets/images/user-signout-msg.png)
+
+    ![Signed Out Account Link](assets/images/account-link.png)
 
 ### Profile
 
@@ -251,7 +284,7 @@ Clicking the user's order number will take you to a summary page of that order.
     - The saved delivery details auto-fill the delivery form at the checkout.
     - A toast message informs the user that the delivery details have been updated.
 
-    ![](assets/images/)
+    ![User Delivery Details](assets/images/user-profile.png)
    
 - #### Order History
     Tested:
@@ -261,27 +294,36 @@ Clicking the user's order number will take you to a summary page of that order.
     - The order summary page has a button to take the user back to their profile page. 
     - The order history shows the five most recent orders.
 
-    ![](assets/images/)
+    ![Order History](assets/images/user-order-history.png)
+
+    ![Order Success](assets/images/user-order-success.png)
 
 - #### Wishlist Items
     Tested:
     - The Wishlist items section keeps a list of all products that the user has liked.
 
-    ![](assets/images/)
+    ![Wishlist Message](assets/images/user-wishlist-msg.png)
+
+    ![User Wishlist](assets/images/user-wishlist.png)
 
 ### All Products
 
 - #### Page Heading
     Tested:
     - That each page heading is unique based on the category selected.
-    ![]()
+
+    ![Products Page](assets/images/products-page.png)
 
 - #### Sorting
     Tested:
     - Clicking the box opens up a dropdown menu with the price options on how to sort the products.
     - Clicking each option sorts the products in the way described.
 
-    ![]()
+    ![Sort Items](assets/images/sort-items.png)
+
+    ![High To Low](assets/images/low-high-sort.png)
+
+    ![Low To High](assets/images/high-low-sort.png)
 
 - #### Products
     Tested:
@@ -291,7 +333,7 @@ Clicking the user's order number will take you to a summary page of that order.
     - Any products that have been liked by the user displays a red heart in the top right corner. 
     - If the user is a superuser, the admin buttons 'Edit' and 'Delete' will be displayed beneath the 'Add to Bag' button.
 
-    ![]()
+    ![Products Page](assets/images/products-page.png)
 
 ### Products Details
 
@@ -301,7 +343,7 @@ Clicking the user's order number will take you to a summary page of that order.
     - Users can select the size of the product, and only select 5 of each size of an item.
     - If the user is a superuser, the admin buttons 'Edit' and 'Delete' will be displayed beneath the 'Add to Bag' button.
 
-    ![]()
+    ![Products Detail](assets/images/product-detail-page.png)
 
 - #### Like Button
     Tested:
@@ -311,7 +353,13 @@ Clicking the user's order number will take you to a summary page of that order.
     - A toast message informs the user when a product has been added or removed from their wishlist.
     - If the heart is clicked when a user is not signed in, an 'Account Required' modal pops up informing the user that they need to either sign in or create an account to use that feature.
 
-    ![]()
+    ![Like Button](assets/images/like-btn.png)
+
+    ![Unlike Button](assets/images/unlike-btn.png)
+
+    ![Wishlist Message](assets/images/user-wishlist-msg.png)
+
+    ![User Wishlist](assets/images/user-wishlist.png)
 
 - #### Quantity Buttons
     Tested:
@@ -321,7 +369,9 @@ Clicking the user's order number will take you to a summary page of that order.
     - Trying to add an amount less than one or above five, renders an error message informing the user of the parameters needed to be successful.
     - Clicking the 'Add to Bag' button adds one item to the bag by default. 
 
-    ![]()
+    ![Quantity Low](assets/images/qtny-0.png)
+
+    ![Quantity High](assets/images/qtny-6.png)
 
 ### Product Management
 
@@ -336,7 +386,11 @@ Clicking the user's order number will take you to a summary page of that order.
     - Clicking the 'Add Product' button at the bottom of the form creates the product.
     - A toast message informs the user if the product is added successfully.
 
-    ![]()
+    ![Add Product](assets/images/add-product-page-lowkey.png)
+
+    ![Add Product Error](assets/images/add-product-error-form.png)
+
+    ![Add Product Message](assets/images/add-product-success-msg.png)
 
 - #### Edit Product
     Tested:
@@ -345,7 +399,11 @@ Clicking the user's order number will take you to a summary page of that order.
     - The image field displays a thumbnail of the current image and has a checkbox option to remove it. Checking this will change the image to the default image.
     - Clicking the 'Edit Product' button saves any changes made to the existing product.  
 
-    ![]()
+    ![Edit Product](assets/images/edit-product-page.png)
+
+    ![Edit Product Error](assets/images/edit-product-error-form.png)
+
+    ![Edit Product Message](assets/images/edit-product-success-msg.png)
 
 - #### Delete Product
     Tested:
@@ -355,7 +413,9 @@ Clicking the user's order number will take you to a summary page of that order.
     - Pressing the cancel button or clicking outside of the model closes the confirmation modal.
     - A toast message appears, informing the user that the product has been deleted.
 
-    ![]()
+    ![Delete Product](assets/images/test-delete.png)
+
+    ![Delete Product Message](assets/images/delete-success-msg.png)
 
 - #### Add Coupon
     Tested:
@@ -366,7 +426,11 @@ Clicking the user's order number will take you to a summary page of that order.
     - If a discount percentage is added that is less than 0 or greater than 100 the form will fail and an error message will appear under the field.
     - Clicking the 'Add Coupon' button at the bottom of the form will create the coupon if the form is valid.
     
-    ![]()
+    ![Add Coupon](assets/images/add-coupon.png)
+
+    ![Add Coupon Error](assets/images/add-coupon-error.png)
+
+    ![Add Coupon Message](assets/images/add-coupon-msg.png)
 
 ### Bag
 
@@ -376,7 +440,9 @@ Clicking the user's order number will take you to a summary page of that order.
     - The page lists the items added, displaying it's image, followed by it's title and SKU.
     - Adding an item to the bag triggers a toast message informing the user of their actions.
 
-     ![]()
+     ![Bag Page](assets/images/bag.png)
+
+     ![Bag Message](assets/images/bag-toast-counter.png)
 
 - #### Quantity and Price
     Tested:
@@ -387,14 +453,18 @@ Clicking the user's order number will take you to a summary page of that order.
     - Manually inputting the number zero or anything below and clicking 'Update' will remove the item from the bag. 
     - Manually inputting a number above 5 and clicking 'Update' will result in an error message informing the user of the correct parameters. 
 
-    ![]()
+    ![Bag Page](assets/images/bag.png)
+
+    ![Bag Quantity High](assets/images/qnty-high-bag-error.png)
+
+    ![Bag Remove Item](assets/images/remove-item-bag.png)
     
 - #### Totals and messaging
     Tested: 
     - The checkout button takes the user to the checkout.
     - The 'Continue Shopping' link takes users back to the store.
 
-    ![]()
+    ![Bag Buttons](assets/images/bag-btns.png)
 
 - #### Coupons
     Tested:
@@ -402,7 +472,9 @@ Clicking the user's order number will take you to a summary page of that order.
     - If the coupon code entered is valid, a success toast message will pop and a summary of the coupon added, and the discount given will appear in the summary of the costs.
     - If the coupon code entered is invalid, an error toast message will pop, and the totals will not change.
 
-    ![]()
+    ![Coupon Invalid](assets/images/coupon-error-bag.png)
+
+    ![Coupon Valid](assets/images/coupon-success-bag.png)
 
 ### Checkout
 
@@ -412,11 +484,13 @@ Clicking the user's order number will take you to a summary page of that order.
     - If the user is signed in a checkbox to save the delivery information can be checked, and if checked the information is saved.
     - If the user is signed in and has delivery information saved, the delivery details and email address are automatically filled in. 
 
-    ![]()
+    ![Logged In Checkout](assets/images/logout-checkout.png)
+
+    ![Logged In Checkout](assets/images/login-checkout.png)
 
     - Any field with an Asterix is required. If a user tries to complete the form with any of these fields left blank the affected field is highlighted.  
 
-    ![]()
+    ![Checkout Error](assets/images/checkout-error-form.png)
 
 - #### Order Summary
     Tested:
@@ -424,7 +498,7 @@ Clicking the user's order number will take you to a summary page of that order.
     - This section lists all the items about to be purchased, along with the name, size, quantity, subtotal and total.
     - Next to the order summary title will be a number reflecting the total number of items that appear in the order.
 
-    ![]()
+    ![Order Summary](assets/images/order-summary-2.png)
 
 - #### Payment
     Tested:
@@ -433,13 +507,11 @@ Clicking the user's order number will take you to a summary page of that order.
     - At the end of the page is a button to complete the order or to return back to the bag. 
     - There is a warning message informing the user of how much their card is about to be charged.
 
-    ![]()
+    ![Payment](assets/images/checkout-payment.png)
 
 - #### Loading Spinner
     Tested:
     - Upon clicking the complete order button, as long as the form is valid, a loading spinner is displayed until the information is processed.
-
-    ![]() 
     
 - #### Confirmation
     Tested: 
@@ -447,14 +519,12 @@ Clicking the user's order number will take you to a summary page of that order.
     - A confirmation email is also sent to the email address provided, and this is noted at the top of the page. 
     - At the end of the summary is a button that the user can click to take them back to the main shop.
 
-    ![]()
+    ![Confirmation](assets/images/order-summary-3.png)
 
 - #### Webhooks
     Tested:
     - Once an order is placed, a webhook will search the database to confirm the order exists. 
     - If it cannot find the original order, it will create one using the information provided by the user in the original instance.
-
-    ![]()
 
 ### Other
 
@@ -463,31 +533,29 @@ Clicking the user's order number will take you to a summary page of that order.
     - On large screens, once the user has scrolled past a certain point, an arrow will appear at the bottom, right side of the screen.
     - Clicking the arrow scrolls the user back to the top of the page. 
     
-    ![]()
+    ![Back to Top Button](assets/images/back-to-top-btn.png)
 
 - #### Toasts
     Tested:
     - Toasts appear in the top right-hand corner of the display informing the user of any actions they have performed.
 
-    ![]()
-
 - #### 404 page
     Tested:
     - If any links are broken or the user types in an address that doesn't exist, a 404 error page will be displayed.
 
-    ![]()
+    ![404 Error Page](assets/images/404-error-page.png)
 
 - #### Newsletter 
     Tested:
     - Signing up to the newsletter registers the email given to [Mailchimp](https://mailchimp.com/en-gb/).
 
-    ![]()
+    ![Mailchimp Sub](assets/images/mailchimp-sub.png)
+
+    ![Mailchimp Mailing List](assets/images/mailchimp-success.png)
 
 - #### Responsiveness 
     Tested:
     - Every page on the site is fully responsive.
-
-    ![]()
 
 ## Validators
 
@@ -496,7 +564,7 @@ Clicking the user's order number will take you to a summary page of that order.
 - All Pages were checked with the official [W3C validator](https://validator.w3.org/). 
 
 #### Home Page validation 
-![home-w3](assets/images/home-html.png)
+![home-w3](assets/images/lowkey-html-validator.png)
 
 ### CSS
 
