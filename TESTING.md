@@ -260,3 +260,27 @@ Clicking the user's order number will take you to a summary page of that order.
     - The Wishlist items section keeps a list of all products that the user has liked.
 
     ![](assets/images/)
+
+### All Products
+
+- #### Page Heading
+    Tested:
+    - That each page heading is unique based on the category selected.
+    ![]()
+
+- #### Sorting
+    Tested:
+    - Clicking the box opens up a dropdown menu with the price options on how to sort the products.
+    - Clicking each option sorts the products in the way described.
+
+    ![]()
+
+- #### Products
+    Tested:
+    - The products page is fully responsive, adjusting how many products are on each row depending on the screen size.
+    - Each product card shows an image of the product, its name and price.
+    - An 'Add to Bag' button can be used to add the item to the bag.
+    - Any products that have been liked by the user displays a red heart in the top right corner. 
+    - If the user is a superuser, the admin buttons 'Edit' and 'Delete' will be displayed beneath the 'Add to Bag' button.
+
+    ![]()
