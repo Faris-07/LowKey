@@ -395,3 +395,55 @@ Clicking the user's order number will take you to a summary page of that order.
     - If the coupon code entered is invalid, an error toast message will pop, and the totals will not change.
 
     ![]()
+
+### Checkout
+
+- #### Details
+    Tested:
+    - If the user is anonymous, a link to create an account or login will be displayed at the bottom of the checkout form.
+    - If the user is signed in a checkbox to save the delivery information can be checked, and if checked the information is saved.
+    - If the user is signed in and has delivery information saved, the delivery details and email address are automatically filled in. 
+
+    ![]()
+
+    - Any field with an Asterix is required. If a user tries to complete the form with any of these fields left blank the affected field is highlighted.  
+
+    ![]()
+
+- #### Order Summary
+    Tested:
+    - Clicking the image of any items in the summary takes the user to that product's detail page.
+    - This section lists all the items about to be purchased, along with the name, size, quantity, subtotal and total.
+    - Next to the order summary title will be a number reflecting the total number of items that appear in the order.
+
+    ![]()
+
+- #### Payment
+    Tested:
+    - Only numbers can be entered into the card payment box. Incorrect card numbers automatically show an invalid card number error.
+    - The site can be tested by using the dummy card number 4242 4242 4242 4242 with the expiry date 04/24 and the CVC code 242.
+    - At the end of the page is a button to complete the order or to return back to the bag. 
+    - There is a warning message informing the user of how much their card is about to be charged.
+
+    ![]()
+
+- #### Loading Spinner
+    Tested:
+    - Upon clicking the complete order button, as long as the form is valid, a loading spinner is displayed until the information is processed.
+
+    ![]() 
+    
+- #### Confirmation
+    Tested: 
+    - Once the order has been processed the user is taken to the checkout success page. 
+    - A confirmation email is also sent to the email address provided, and this is noted at the top of the page. 
+    - At the end of the summary is a button that the user can click to take them back to the main shop.
+
+    ![]()
+
+- #### Webhooks
+    Tested:
+    - Once an order is placed, a webhook will search the database to confirm the order exists. 
+    - If it cannot find the original order, it will create one using the information provided by the user in the original instance.
+
+    ![]()
