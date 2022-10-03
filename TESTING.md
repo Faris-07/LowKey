@@ -314,3 +314,48 @@ Clicking the user's order number will take you to a summary page of that order.
     - Clicking the 'Add to Bag' button adds one item to the bag by default. 
 
     ![]()
+
+### Product Management
+
+- #### Add Product
+    Tested:
+    - The add product page is accessed by the account dropdown menu, under product.
+    - If the form is submitted with any of the fields left blank then an error message appears above that particular field, notifying the user of the issue.
+    - An error message appears if an already existing SKU is attempted.
+    - If a price is added with more than 6 digits the form fails and an error message appears under the price field.
+    - If no image is chosen the default image is used.
+    - The superuser can also see which users have liked the product.
+    - Clicking the 'Add Product' button at the bottom of the form creates the product.
+    - A toast message informs the user if the product is added successfully.
+
+    ![]()
+
+- #### Edit Product
+    Tested:
+    - The Edit Product page can be accessed from the 'Edit' button under the 'Add to Bag' button on the product's detail page.
+    - Clicking the edit button takes the user to the edit product page where the information is already autofilled with the specific product information.
+    - The image field displays a thumbnail of the current image and has a checkbox option to remove it. Checking this will change the image to the default image.
+    - Clicking the 'Edit Product' button saves any changes made to the existing product.  
+
+    ![]()
+
+- #### Delete Product
+    Tested:
+    - The delete product page can be accessed from by the 'Delete' button under the 'Add to Bag' button on the product's detail page.
+    - Clicking the delete button displays a warning modal, asking the superuser if they are sure they want to delete the product, and informing them that it cannot be undone. 
+    - Once the warning modal has been activated, the delete button deletes the product from the database. 
+    - Pressing the cancel button or clicking outside of the model closes the confirmation modal.
+    - A toast message appears, informing the user that the product has been deleted.
+
+    ![]()
+
+- #### Add Coupon
+    Tested:
+    - The add coupon page is accessed by the account dropdown menu, under coupon.
+    - The form lists all the necessary fields to create a new coupon. 
+    - The user must fill out all fields with an Asterix. If the form is submitted with any of these fields left empty then an error message will appear above that specific field, notifying the user of the issue.
+    - The Discount code field must be unique. An error message will appear if an already existing discount code is attempted.
+    - If a discount percentage is added that is less than 0 or greater than 100 the form will fail and an error message will appear under the field.
+    - Clicking the 'Add Coupon' button at the bottom of the form will create the coupon if the form is valid.
+    
+    ![]()
