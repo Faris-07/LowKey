@@ -359,3 +359,39 @@ Clicking the user's order number will take you to a summary page of that order.
     - Clicking the 'Add Coupon' button at the bottom of the form will create the coupon if the form is valid.
     
     ![]()
+
+### Bag
+
+- #### Items
+    Tested:
+    - The bag page displays all items that the user has added to it. 
+    - The page lists the items added, displaying it's image, followed by it's title and SKU.
+    - Adding an item to the bag triggers a toast message informing the user of their actions.
+
+     ![]()
+
+- #### Quantity and Price
+    Tested:
+    - The quantity element has buttons either side and increases or decreases the total.
+    - The minus quantity button will be disabled if the quantity of the item is one. Respectively the plus button will also be disabled if the quantity of the item is 5.
+    - Clicking the 'Update' button saves any changes to the quantity and updates the item's subtotal.
+    - Clicking the 'Remove' button removes the item completely from the user's bag. 
+    - Manually inputting the number zero or anything below and clicking 'Update' will remove the item from the bag. 
+    - Manually inputting a number above 5 and clicking 'Update' will result in an error message informing the user of the correct parameters. 
+
+    ![]()
+    
+- #### Totals and messaging
+    Tested: 
+    - The checkout button takes the user to the checkout.
+    - The 'Continue Shopping' link takes users back to the store.
+
+    ![]()
+
+- #### Coupons
+    Tested:
+    - Above the subtotal is an input box where users can enter a coupon/promo code.
+    - If the coupon code entered is valid, a success toast message will pop and a summary of the coupon added, and the discount given will appear in the summary of the costs.
+    - If the coupon code entered is invalid, an error toast message will pop, and the totals will not change.
+
+    ![]()
